@@ -965,7 +965,7 @@ body {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #0affd6;
+  background: #149598;
 }
 .sidebar-nav {
   margin: 0 0 20px;
@@ -2037,4 +2037,20 @@ body {
   .use-motion .site-search form {
     top: 0 !important;
   }
+}
+.feel {
+  color: #2f4f4f;
+}
+.no_link {
+  border: none;
+  color: #2f4f4f;
+}
+.book_title {
+  color: #e9967a;
+}
+.book_title_tech {
+  color: #ffa500;
+}
+.book_title_z {
+  color: #a0522d;
 }
