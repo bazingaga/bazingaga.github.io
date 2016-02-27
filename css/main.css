@@ -965,7 +965,7 @@ body {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #149598;
+  background: #9d42d0;
 }
 .sidebar-nav {
   margin: 0 0 20px;
@@ -2041,10 +2041,6 @@ body {
 .feel {
   color: #2f4f4f;
 }
-.no_link {
-  border: none;
-  color: #2f4f4f;
-}
 .book_title {
   color: #e9967a;
 }
@@ -2053,4 +2049,11 @@ body {
 }
 .book_title_z {
   color: #a0522d;
+}
+.jump_p {
+  color: #2f4f4f;
+}
+.jump_p:hover {
+  color: #000;
+  cursor: alias;
 }
