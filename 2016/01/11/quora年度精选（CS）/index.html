@@ -1,8 +1,14 @@
 <!doctype html>
-<html class="theme-next   use-motion ">
+
+
+
+  
+
+
+<html class="theme-next muse use-motion" lang="zh-Hans">
 <head>
   <meta charset="UTF-8"/>
-<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
 
 
@@ -21,18 +27,48 @@
 
 
 
-  <link href="/vendors/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css"/>
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
 
 
 
 
-  <link href="//fonts.useso.com/css?family=Lato:300,400,700,400italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+  
+  
+  
+  
+
+  
+    
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    
+    
+    <link href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+  
 
 
 
-<link href="/vendors/font-awesome/css/font-awesome.min.css?v=4.4.0" rel="stylesheet" type="text/css" />
 
-<link href="/css/main.css?v=0.4.5.2" rel="stylesheet" type="text/css" />
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.1.0" rel="stylesheet" type="text/css" />
 
 
   <meta name="keywords" content="Hexo, NexT" />
@@ -44,7 +80,7 @@
 
 
 
-  <link rel="shortcut icon" type="image/x-icon" href="/images/favicon.ico?v=0.4.5.2" />
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=5.1.0" />
 
 
 
@@ -68,29 +104,44 @@
 
 
 
-<script type="text/javascript" id="hexo.configuration">
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
   var CONFIG = {
-    scheme: '',
-    sidebar: 'post',
-    motion: true
+    root: '/',
+    scheme: 'Muse',
+    sidebar: {"position":"left","display":"post","offset":12,"offset_float":0,"b2t":false,"scrollpercent":false},
+    fancybox: true,
+    motion: true,
+    duoshuo: {
+      userId: '0',
+      author: '博主'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
   };
 </script>
+
+
+
+  <link rel="canonical" href="http://yoursite.com/2016/01/11/quora年度精选（CS）/"/>
+
+
+
+
 
   <title> Quora年度精选2015（CS） | 王尔德的德 </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
 
-  <!--[if lte IE 8]>
-  <div style=' clear: both; height: 59px; padding:0 0 0 15px; position: relative;margin:0 auto;'>
-    <a href="http://windows.microsoft.com/en-US/internet-explorer/products/ie/home?ocid=ie6_countdown_bannercode">
-      <img src="http://7u2nvr.com1.z0.glb.clouddn.com/picouterie.jpg" border="0" height="42" width="820"
-           alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today or use other browser ,like chrome firefox safari."
-           style='margin-left:auto;margin-right:auto;display: block;'/>
-    </a>
-  </div>
-<![endif]-->
   
+
+
 
 
 
@@ -98,7 +149,7 @@
     var _hmt = _hmt || [];
     (function() {
       var hm = document.createElement("script");
-      hm.src = "//hm.baidu.com/hm.js?9b185bc5f01c1f98636e8a20db40101a";
+      hm.src = "https://hm.baidu.com/hm.js?9b185bc5f01c1f98636e8a20db40101a";
       var s = document.getElementsByTagName("script")[0];
       s.parentNode.insertBefore(hm, s);
     })();
@@ -107,42 +158,57 @@
 
 
 
-  <div class="container one-column page-post-detail">
+
+
+
+
+
+
+  
+  
+    
+  
+
+  <div class="container one-collumn sidebar-position-left page-post-detail ">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
-      <div class="header-inner"><div class="site-meta ">
-  
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
 
-  <div class="custom-logo-site-title">
-    <a href="/"  class="brand" rel="start">
-      <span class="logo-line-before"><i></i></span>
-      <span class="site-title">王尔德的德</span>
-      <span class="logo-line-after"><i></i></span>
-    </a>
+    <div class="custom-logo-site-title">
+      <a href="/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">王尔德的德</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle">我们一路轻歌浅唱，好像漫步在云上</p>
+      
   </div>
-  <p class="site-subtitle">我们一路轻歌浅唱，好像漫步在云上</p>
-</div>
 
-<div class="site-nav-toggle">
-  <button>
-    <span class="btn-bar"></span>
-    <span class="btn-bar"></span>
-    <span class="btn-bar"></span>
-  </button>
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
 </div>
 
 <nav class="site-nav">
   
 
   
-    <ul id="menu" class="menu ">
+    <ul id="menu" class="menu">
       
         
         <li class="menu-item menu-item-home">
           <a href="/" rel="section">
             
-              <i class="menu-item-icon fa fa-home fa-fw"></i> <br />
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
             
             首页
           </a>
@@ -152,7 +218,7 @@
         <li class="menu-item menu-item-archives">
           <a href="/archives" rel="section">
             
-              <i class="menu-item-icon fa fa-archive fa-fw"></i> <br />
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
             
             归档
           </a>
@@ -162,7 +228,7 @@
         <li class="menu-item menu-item-tags">
           <a href="/tags" rel="section">
             
-              <i class="menu-item-icon fa fa-tags fa-fw"></i> <br />
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
             
             标签
           </a>
@@ -170,25 +236,26 @@
       
 
       
-      
     </ul>
   
 
   
 </nav>
 
+
+
  </div>
     </header>
 
     <main id="main" class="main">
       <div class="main-inner">
-        <div id="content" class="content">
-          
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
 
   <div id="posts" class="posts-expand">
     
 
-  
   
 
   
@@ -196,6 +263,17 @@
   
 
   <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2016/01/11/quora年度精选（CS）/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="王鹏">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="http://7xpl7j.com1.z0.glb.clouddn.com/blogheard2.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="王尔德的德">
+    </span>
 
     
       <header class="post-header">
@@ -214,10 +292,21 @@
 
         <div class="post-meta">
           <span class="post-time">
-            发表于
-            <time itemprop="dateCreated" datetime="2016-01-11T23:11:57+08:00" content="2016-01-11">
-              2016-01-11
-            </time>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2016-01-11T23:11:57+08:00">
+                2016-01-11
+              </time>
+            
+
+            
+
+            
           </span>
 
           
@@ -227,19 +316,26 @@
           
 
           
+          
+
+          
+
+          
+
+          
 
         </div>
       </header>
     
 
 
-    <div class="post-body">
+    <div class="post-body" itemprop="articleBody">
 
       
       
 
       
-        <span itemprop="articleBody"><p><img style="border:none" src="http://7xpl7j.com1.z0.glb.clouddn.com/quora2_02.jpg"><br>&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; &nbsp;最近开始使用<a href="https://www.quora.com/" target="_blank" rel="external"><strong>Quora</strong></a>，也就是国外版的<a href="https://www.zhihu.com/" target="_blank" rel="external">知乎</a>，只不过知乎出现在Quora之后。<em>follow</em>了几个很有趣的答主，也看到了一些很有意思的答案。在这里发现了<a href="https://www.quora.com/What-are-Quoras-best-answers-of-2015" target="_blank" rel="external">What are Quora’s best answers of 2015?</a>，于是陆陆续续翻译几个里面的答案。以下是<strong>Computer Science </strong>部分。<br><a id="more"></a></p>
+        <p><img style="border:none" src="http://7xpl7j.com1.z0.glb.clouddn.com/quora2_02.jpg"><br>&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; &nbsp;最近开始使用<a href="https://www.quora.com/" target="_blank" rel="external"><strong>Quora</strong></a>，也就是国外版的<a href="https://www.zhihu.com/" target="_blank" rel="external">知乎</a>，只不过知乎出现在Quora之后。<em>follow</em>了几个很有趣的答主，也看到了一些很有意思的答案。在这里发现了<a href="https://www.quora.com/What-are-Quoras-best-answers-of-2015" target="_blank" rel="external">What are Quora’s best answers of 2015?</a>，于是陆陆续续翻译几个里面的答案。以下是<strong>Computer Science </strong>部分。<br><a id="more"></a></p>
 <hr>
 <h1 id="使用MacBookAir编程好不好？"><a href="#使用MacBookAir编程好不好？" class="headerlink" title="使用MacBookAir编程好不好？"></a>使用MacBookAir编程好不好？</h1><p>  <a href="https://www.quora.com/Is-the-MacBook-Air-good-for-programming/answer/Quincy-Larson" target="_blank" rel="external">Is the MacBook Air good for programming?</a></p>
 <p><br><br><strong>对于大多数的编程，Macbook Air已经足够强大了。</strong></p>
@@ -447,11 +543,30 @@ System.out.println(z);
 <p>这是一种对任何事都很粗暴的方式。就像趟浑水一样。强行把自己推到足够远，遇到困境的时候就放弃。对小的项目这样还算可以，但如果复杂度很高的时候，这样就不行了。</p>
 <p>当然，人们被教育成遇见什么事都要走捷径，他们也把这个当成信条。我遇见过一两个家伙，他们会考虑到几乎所有的细节并且花很多的时间将想法系统化，这会让他们很纠结。而当开始做的时候，需求又戏剧化的改变了，他们不得不重新开始。</p>
 <p>生活中的大多事，走这两个极端都很不好，你必须拿捏好二者的分寸，这取决于你的项目。适度的规划，项目开始之前对于确定的功能做一些实验和测试，讨论和尽可能多的复用等，这就是我想说的。与此同时，别太让自己纠结，停滞不前。</p>
-</span>
+
       
     </div>
 
+    <div>
+      
+        
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+
     <footer class="post-footer">
+      
+
+      
+        
       
 
       
@@ -463,6 +578,8 @@ System.out.println(z);
               </a>
             
           </div>
+
+          <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
             
@@ -486,22 +603,20 @@ System.out.println(z);
     </div>
   </div>
 
+          
+          </div>
+          
 
-        </div>
 
-        
-
-
-        
+          
   <div class="comments" id="comments">
     
   </div>
 
 
-      </div>
-
-      
+        </div>
         
+          
   
   <div class="sidebar-toggle">
     <div class="sidebar-toggle-line-wrap">
@@ -527,33 +642,30 @@ System.out.println(z);
         </ul>
       
 
-      <section class="site-overview sidebar-panel ">
+      <section class="site-overview sidebar-panel">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
-          <img class="site-author-image" src="http://7xpl7j.com1.z0.glb.clouddn.com/blogheard2.jpg" alt="王鹏" itemprop="image"/>
+          <img class="site-author-image" itemprop="image"
+               src="http://7xpl7j.com1.z0.glb.clouddn.com/blogheard2.jpg"
+               alt="王鹏" />
           <p class="site-author-name" itemprop="name">王鹏</p>
+           
+              <p class="site-description motion-element" itemprop="description">希望早日研发出全球失败人士同步自杀仪</p>
+          
         </div>
-        <p class="site-description motion-element" itemprop="description"></p>
         <nav class="site-state motion-element">
-          <div class="site-state-item site-state-posts">
-            <a href="/archives">
-              <span class="site-state-item-count">6</span>
-              <span class="site-state-item-name">日志</span>
-            </a>
-          </div>
-
-          <div class="site-state-item site-state-categories">
-            
-              <span class="site-state-item-count">0</span>
-              <span class="site-state-item-name">分类</span>
-              
-          </div>
-
-          <div class="site-state-item site-state-tags">
-            <a href="/tags">
-              <span class="site-state-item-count">0</span>
-              <span class="site-state-item-name">标签</span>
+        
+          
+            <div class="site-state-item site-state-posts">
+              <a href="/archives">
+                <span class="site-state-item-count">6</span>
+                <span class="site-state-item-name">日志</span>
               </a>
-          </div>
+            </div>
+          
+
+          
+
+          
 
         </nav>
 
@@ -566,36 +678,40 @@ System.out.println(z);
         
         
 
-        <div class="links-of-author motion-element">
-          
-        </div>
+        
+        
+
+        
+
 
       </section>
 
       
+      <!--noindex-->
         <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
-          <div class="post-toc-indicator-top post-toc-indicator">
-            <i class="fa fa-angle-double-up"></i>
-          </div>
           <div class="post-toc">
+
             
               
             
+
             
               <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#使用MacBookAir编程好不好？"><span class="nav-number">1.</span> <span class="nav-text">使用MacBookAir编程好不好？</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#学习编程最不好的方式是什么？"><span class="nav-number">2.</span> <span class="nav-text">学习编程最不好的方式是什么？</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#如果在学java和python之间选择，我应该首先选择哪一个？"><span class="nav-number">3.</span> <span class="nav-text">如果在学java和python之间选择，我应该首先选择哪一个？</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#我们为什么需要程序员，计算机不是能做得更好吗？"><span class="nav-number">4.</span> <span class="nav-text">我们为什么需要程序员，计算机不是能做得更好吗？</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#成为一个好的程序员需要了解什么算法？"><span class="nav-number">5.</span> <span class="nav-text">成为一个好的程序员需要了解什么算法？</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#先从线性结构和算法开始。"><span class="nav-number">5.1.</span> <span class="nav-text">先从线性结构和算法开始。</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#然后引出主要的算法："><span class="nav-number">5.2.</span> <span class="nav-text">然后引出主要的算法：</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#然后学习一些流行的算法技术："><span class="nav-number">5.3.</span> <span class="nav-text">然后学习一些流行的算法技术：</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#然后是些经典的数据结构："><span class="nav-number">5.4.</span> <span class="nav-text">然后是些经典的数据结构：</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#然后，你可以学习一下图像学："><span class="nav-number">5.5.</span> <span class="nav-text">然后，你可以学习一下图像学：</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#提前树和图表："><span class="nav-number">5.6.</span> <span class="nav-text">提前树和图表：</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#推进字符串算法："><span class="nav-number">5.7.</span> <span class="nav-text">推进字符串算法：</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#高级数学运算："><span class="nav-number">5.8.</span> <span class="nav-text">高级数学运算：</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#进阶："><span class="nav-number">5.9.</span> <span class="nav-text">进阶：</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#C-适合入门吗？"><span class="nav-number">6.</span> <span class="nav-text">C++适合入门吗？</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#自学编程的程序员有哪些不好的习惯？"><span class="nav-number">7.</span> <span class="nav-text">自学编程的程序员有哪些不好的习惯？</span></a></li></ol></div>
             
-          </div>
-          <div class="post-toc-indicator-bottom post-toc-indicator">
-            <i class="fa fa-angle-double-down"></i>
+
           </div>
         </section>
+      <!--/noindex-->
+      
+
       
 
     </div>
   </aside>
 
 
-      
+        
+      </div>
     </main>
 
     <footer id="footer" class="footer">
@@ -605,228 +721,147 @@ System.out.println(z);
   &copy; 
   <span itemprop="copyrightYear">2017</span>
   <span class="with-love">
-    <i class="icon-next-heart fa fa-heart"></i>
+    <i class="fa fa-heart"></i>
   </span>
   <span class="author" itemprop="copyrightHolder">王鹏</span>
 </div>
 
+
 <div class="powered-by">
-  由 <a class="theme-link" href="http://hexo.io">Hexo</a> 强力驱动
+  由 <a class="theme-link" href="https://hexo.io">Hexo</a> 强力驱动
 </div>
 
 <div class="theme-info">
   主题 -
   <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
-    NexT
+    NexT.Muse
   </a>
 </div>
 
 
+        
 
+        
       </div>
     </footer>
 
-    <div class="back-to-top"></div>
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+    
   </div>
 
-  <script type="text/javascript" src="/vendors/jquery/index.js?v=2.1.3"></script>
-
-  
   
 
-  
-    
-    
-
-  
-
-
-  
-
-  
-  <script type="text/javascript" src="/vendors/fancybox/source/jquery.fancybox.pack.js"></script>
-  <script type="text/javascript" src="/js/fancy-box.js?v=0.4.5.2"></script>
-
-
-  <script type="text/javascript" src="/js/helpers.js?v=0.4.5.2"></script>
-  <script type="text/javascript" src="/vendors/velocity/velocity.min.js"></script>
-<script type="text/javascript" src="/vendors/velocity/velocity.ui.min.js"></script>
-
-<script type="text/javascript" src="/js/motion.js?v=0.4.5.2" id="motion.global"></script>
-
-
-  <script type="text/javascript" src="/vendors/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
-  <script type="text/javascript" src="/vendors/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
-
-  
-  
-<script type="text/javascript" src="/js/bootstrap.scrollspy.js?v=0.4.5.2" id="bootstrap.scrollspy.custom"></script>
-
-
-<script type="text/javascript" id="sidebar.toc.highlight">
-  $(document).ready(function () {
-    var tocSelector = '.post-toc';
-    var $tocSelector = $(tocSelector);
-    var activeCurrentSelector = '.active-current';
-
-    $tocSelector
-      .on('activate.bs.scrollspy', function () {
-        var $currentActiveElement = $(tocSelector + ' .active').last();
-
-        removeCurrentActiveClass();
-        $currentActiveElement.addClass('active-current');
-
-        $tocSelector[0].scrollTop = $currentActiveElement.position().top;
-      })
-      .on('clear.bs.scrollspy', function () {
-        removeCurrentActiveClass();
-      });
-
-    function removeCurrentActiveClass () {
-      $(tocSelector + ' ' + activeCurrentSelector)
-        .removeClass(activeCurrentSelector.substring(1));
-    }
-
-    function processTOC () {
-      getTOCMaxHeight();
-      toggleTOCOverflowIndicators();
-    }
-
-    function getTOCMaxHeight () {
-      var height = $('.sidebar').height() -
-                   $tocSelector.position().top -
-                   $('.post-toc-indicator-bottom').height();
-
-      $tocSelector.css('height', height);
-
-      return height;
-    }
-
-    function toggleTOCOverflowIndicators () {
-      tocOverflowIndicator(
-        '.post-toc-indicator-top',
-        $tocSelector.scrollTop() > 0 ? 'show' : 'hide'
-      );
-
-      tocOverflowIndicator(
-        '.post-toc-indicator-bottom',
-        $tocSelector.scrollTop() >= $tocSelector.find('ol').height() - $tocSelector.height() ? 'hide' : 'show'
-      )
-    }
-
-    $(document).on('sidebar.motion.complete', function () {
-      processTOC();
-    });
-
-    $('body').scrollspy({ target: tocSelector });
-    $(window).on('resize', function () {
-      if ( $('.sidebar').hasClass('sidebar-active') ) {
-        processTOC();
-      }
-    });
-
-    onScroll($tocSelector);
-
-    function onScroll (element) {
-      element.on('mousewheel DOMMouseScroll', function (event) {
-          var oe = event.originalEvent;
-          var delta = oe.wheelDelta || -oe.detail;
-
-          this.scrollTop += ( delta < 0 ? 1 : -1 ) * 30;
-          event.preventDefault();
-
-          toggleTOCOverflowIndicators();
-      });
-    }
-
-    function tocOverflowIndicator (indicator, action) {
-      var $indicator = $(indicator);
-      var opacity = action === 'show' ? 1 : 0;
-      $indicator.velocity ?
-        $indicator.velocity('stop').velocity({
-          opacity: opacity
-        }, { duration: 100 }) :
-        $indicator.stop().animate({
-          opacity: opacity
-        }, 100);
-    }
-
-  });
-</script>
-
-<script type="text/javascript" id="sidebar.nav">
-  $(document).ready(function () {
-    var html = $('html');
-    var TAB_ANIMATE_DURATION = 200;
-    var hasVelocity = $.isFunction(html.velocity);
-
-    $('.sidebar-nav li').on('click', function () {
-      var item = $(this);
-      var activeTabClassName = 'sidebar-nav-active';
-      var activePanelClassName = 'sidebar-panel-active';
-      if (item.hasClass(activeTabClassName)) {
-        return;
-      }
-
-      var currentTarget = $('.' + activePanelClassName);
-      var target = $('.' + item.data('target'));
-
-      hasVelocity ?
-        currentTarget.velocity('transition.slideUpOut', TAB_ANIMATE_DURATION, function () {
-          target
-            .velocity('stop')
-            .velocity('transition.slideDownIn', TAB_ANIMATE_DURATION)
-            .addClass(activePanelClassName);
-        }) :
-        currentTarget.animate({ opacity: 0 }, TAB_ANIMATE_DURATION, function () {
-          currentTarget.hide();
-          target
-            .stop()
-            .css({'opacity': 0, 'display': 'block'})
-            .animate({ opacity: 1 }, TAB_ANIMATE_DURATION, function () {
-              currentTarget.removeClass(activePanelClassName);
-              target.addClass(activePanelClassName);
-            });
-        });
-
-      item.siblings().removeClass(activeTabClassName);
-      item.addClass(activeTabClassName);
-    });
-
-    $('.post-toc a').on('click', function (e) {
-      e.preventDefault();
-      var targetSelector = escapeSelector(this.getAttribute('href'));
-      var offset = $(targetSelector).offset().top;
-      hasVelocity ?
-        html.velocity('stop').velocity('scroll', {
-          offset: offset  + 'px',
-          mobileHA: false
-        }) :
-        $('html, body').stop().animate({
-          scrollTop: offset
-        }, 500);
-    });
-
-    // Expand sidebar on post detail page by default, when post has a toc.
-    motionMiddleWares.sidebar = function () {
-      var $tocContent = $('.post-toc-content');
-      if (CONFIG.sidebar === 'post') {
-        if ($tocContent.length > 0 && $tocContent.html().trim().length > 0) {
-          displaySidebar();
-        }
-      }
-    };
-  });
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
 </script>
 
 
 
-  <script type="text/javascript" src="/js/bootstrap.js"></script>
+
+
+
+
+
+
+  
+
+
+
+
+  
+  <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+
+  
+  <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+
+  
+  <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+
+  
+  <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.0"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.0"></script>
+
+
 
   
   
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.0"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.0"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.0"></script>
+
+
+
+  
+
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+
   
 
 </body>
