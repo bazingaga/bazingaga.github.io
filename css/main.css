@@ -1698,7 +1698,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #2114ff;
+  background: #b1bd06;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -2543,4 +2543,23 @@ embed {
 }
 .links-of-blogroll-inline .links-of-blogroll-item {
   display: inline-block;
+}
+.feel {
+  color: #2f4f4f;
+}
+.book_title {
+  color: #e9967a;
+}
+.book_title_tech {
+  color: #ffa500;
+}
+.book_title_z {
+  color: #a0522d;
+}
+.jump_p {
+  color: #2f4f4f;
+}
+.jump_p:hover {
+  color: #000;
+  cursor: alias;
 }
