@@ -185,7 +185,7 @@ th {
 }
 body {
   position: relative;
-  font-family: "Microsoft YaHei", Verdana, sans-serif;
+  font-family: 'Lato', "PingFang SC", "Microsoft YaHei", sans-serif;
   font-size: 18px;
   line-height: 2;
   color: #555;
@@ -216,7 +216,7 @@ h6 {
   padding: 0;
   font-weight: bold;
   line-height: 1.5;
-  font-family: Georgia, sans;
+  font-family: 'Lato', "PingFang SC", "Microsoft YaHei", sans-serif;
 }
 h2,
 h3,
@@ -226,51 +226,51 @@ h6 {
   margin: 20px 0 15px;
 }
 h1 {
-  font-size: 27px;
+  font-size: 26px;
 }
 @media (max-width: 767px) {
   h1 {
-    font-size: 23px;
+    font-size: 22px;
   }
 }
 h2 {
-  font-size: 25px;
+  font-size: 24px;
 }
 @media (max-width: 767px) {
   h2 {
-    font-size: 21px;
+    font-size: 20px;
   }
 }
 h3 {
-  font-size: 23px;
+  font-size: 22px;
 }
 @media (max-width: 767px) {
   h3 {
-    font-size: 19px;
+    font-size: 18px;
   }
 }
 h4 {
-  font-size: 21px;
+  font-size: 20px;
 }
 @media (max-width: 767px) {
   h4 {
-    font-size: 17px;
+    font-size: 16px;
   }
 }
 h5 {
-  font-size: 19px;
+  font-size: 18px;
 }
 @media (max-width: 767px) {
   h5 {
-    font-size: 15px;
+    font-size: 14px;
   }
 }
 h6 {
-  font-size: 17px;
+  font-size: 16px;
 }
 @media (max-width: 767px) {
   h6 {
-    font-size: 13px;
+    font-size: 12px;
   }
 }
 p {
@@ -1100,7 +1100,7 @@ pre .javascript .function {
   opacity: 0;
 }
 .post-body {
-  font-family: 'Class Grotesque W01', 'Lato', "PingFang SC", "Microsoft YaHei", sans-serif;
+  font-family: 'Lato', "PingFang SC", "Microsoft YaHei", sans-serif;
 }
 @media (max-width: 767px) {
   .post-body {
@@ -1365,7 +1365,7 @@ pre .javascript .function {
 .posts-expand .post-meta {
   margin: 3px 0 60px 0;
   color: #999;
-  font-family: 'Class Grotesque W01', 'Lato', "PingFang SC", "Microsoft YaHei", sans-serif;
+  font-family: 'Lato', "PingFang SC", "Microsoft YaHei", sans-serif;
   font-size: 12px;
   text-align: center;
 }
@@ -1698,7 +1698,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #ff2bff;
+  background: #01ff73;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -2646,4 +2646,14 @@ embed {
   font-weight: 700;
   src: local('Lato Bold Italic'), local('Lato-BoldItalic'), url("http://fonts.gstatic.com/s/lato/v13/HkF_qI1x_noxlxhrhMQYEJBw1xU1rKptJj_0jans920.woff2") format('woff2');
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}
+.post-body p a {
+  color: #0593d3;
+  border-bottom: none;
+  border-bottom: 1px solid #0593d3;
+}
+.post-body p a:hover {
+  color: #fc6423;
+  border-bottom: none;
+  border-bottom: 1px solid #fc6423;
 }
