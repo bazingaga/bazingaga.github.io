@@ -101,7 +101,7 @@ Scrape
 <meta property="og:image" content="http://o8cju5u0y.bkt.clouddn.com/UC20180417_011753.png">
 <meta property="og:image" content="http://o8cju5u0y.bkt.clouddn.com/UC20180417_012548.png">
 <meta property="og:image" content="http://o8cju5u0y.bkt.clouddn.com/UC20180417_014555.png">
-<meta property="og:updated_time" content="2018-04-16T17:47:59.909Z">
+<meta property="og:updated_time" content="2018-04-16T17:50:03.182Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Web Scraper——简单爬取豆瓣音乐250">
 <meta name="twitter:description" content="需求寻找值得听的专辑，并排序
@@ -345,7 +345,7 @@ Scrape
               
                 <span class="post-meta-item-text">更新于</span>
               
-              <time title="更新于" itemprop="dateModified" datetime="2018-04-17T01:47:59+08:00">
+              <time title="更新于" itemprop="dateModified" datetime="2018-04-17T01:50:03+08:00">
                 2018-04-17
               </time>
             
@@ -399,7 +399,7 @@ Scrape
                     <span class="post-meta-item-text">字数统计</span>
                   
                     <span title="字数统计" }}">
-                      649 字
+                      787 字
                     </span>
               
 
@@ -415,7 +415,7 @@ Scrape
                     <span class="post-meta-item-text">阅读时长</span>
                   
                     <span title="阅读时长" }}">
-                      2 分钟
+                      3 分钟
                     </span>
               
             </div>
@@ -496,6 +496,11 @@ Scrape
 <p>改为</p>
 <p><a href="https://music.douban.com/top250?start=[0-20]" target="_blank" rel="external">https://music.douban.com/top250?start=[0-20]</a></p>
 <p>即爬取前20页的数据。</p>
+<h2 id="爬虫导出与导入"><a href="#爬虫导出与导入" class="headerlink" title="爬虫导出与导入"></a>爬虫导出与导入</h2><p>爬虫不仅可以自己用，还可以用别人的和给别人做。导出格式为 json</p>
+<p>比如我「爬取豆瓣音乐250」的爬虫 json ：</p>
+<blockquote>
+<p>{“_id”:”douban-music”,”startUrl”:[“<a href="https://music.douban.com/top250?start=[0-225:25]&quot;],&quot;selectors&quot;:[{&quot;id&quot;:&quot;专辑名&quot;,&quot;type&quot;:&quot;SelectorElement&quot;,&quot;selector&quot;:&quot;div.pl2&quot;,&quot;parentSelectors&quot;:[&quot;_root&quot;],&quot;multiple&quot;:true,&quot;delay&quot;:0},{&quot;id&quot;:&quot;专辑的名字&quot;,&quot;type&quot;:&quot;SelectorText&quot;,&quot;selector&quot;:&quot;a:nth-of-type(1)&quot;,&quot;parentSelectors&quot;:[&quot;专辑名&quot;],&quot;multiple&quot;:false,&quot;regex&quot;:&quot;&quot;,&quot;delay&quot;:0},{&quot;id&quot;:&quot;作者是谁&quot;,&quot;type&quot;:&quot;SelectorText&quot;,&quot;selector&quot;:&quot;p.pl&quot;,&quot;parentSelectors&quot;:[&quot;专辑名&quot;],&quot;multiple&quot;:false,&quot;regex&quot;:&quot;&quot;,&quot;delay&quot;:0},{&quot;id&quot;:&quot;排名分数&quot;,&quot;type&quot;:&quot;SelectorText&quot;,&quot;selector&quot;:&quot;span.rating_nums&quot;,&quot;parentSelectors&quot;:[&quot;专辑名&quot;],&quot;multiple&quot;:false,&quot;regex&quot;:&quot;&quot;,&quot;delay&quot;:0}]}" target="_blank" rel="external">https://music.douban.com/top250?start=[0-225:25]&quot;],&quot;selectors&quot;:[{&quot;id&quot;:&quot;专辑名&quot;,&quot;type&quot;:&quot;SelectorElement&quot;,&quot;selector&quot;:&quot;div.pl2&quot;,&quot;parentSelectors&quot;:[&quot;_root&quot;],&quot;multiple&quot;:true,&quot;delay&quot;:0},{&quot;id&quot;:&quot;专辑的名字&quot;,&quot;type&quot;:&quot;SelectorText&quot;,&quot;selector&quot;:&quot;a:nth-of-type(1)&quot;,&quot;parentSelectors&quot;:[&quot;专辑名&quot;],&quot;multiple&quot;:false,&quot;regex&quot;:&quot;&quot;,&quot;delay&quot;:0},{&quot;id&quot;:&quot;作者是谁&quot;,&quot;type&quot;:&quot;SelectorText&quot;,&quot;selector&quot;:&quot;p.pl&quot;,&quot;parentSelectors&quot;:[&quot;专辑名&quot;],&quot;multiple&quot;:false,&quot;regex&quot;:&quot;&quot;,&quot;delay&quot;:0},{&quot;id&quot;:&quot;排名分数&quot;,&quot;type&quot;:&quot;SelectorText&quot;,&quot;selector&quot;:&quot;span.rating_nums&quot;,&quot;parentSelectors&quot;:[&quot;专辑名&quot;],&quot;multiple&quot;:false,&quot;regex&quot;:&quot;&quot;,&quot;delay&quot;:0}]}</a></p>
+</blockquote>
 
       
     </div>
