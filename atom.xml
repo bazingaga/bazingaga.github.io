@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2018-04-15T15:57:46.497Z</updated>
+  <updated>2018-04-16T17:47:59.909Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,46 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Web Scraper——简单爬取豆瓣音乐250</title>
+    <link href="http://yoursite.com/2018/04/17/Web-Scraper%E2%80%94%E2%80%94%E7%AE%80%E5%8D%95%E7%88%AC%E5%8F%96%E8%B1%86%E7%93%A3%E9%9F%B3%E4%B9%90250/"/>
+    <id>http://yoursite.com/2018/04/17/Web-Scraper——简单爬取豆瓣音乐250/</id>
+    <published>2018-04-16T17:38:16.000Z</published>
+    <updated>2018-04-16T17:47:59.909Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="需求"><a href="#需求" class="headerlink" title="需求"></a>需求</h2><p>寻找值得听的专辑，并排序</p><h2 id="数据来源"><a href="#数据来源" class="headerlink" title="数据来源"></a>数据来源</h2><p><a href="https://music.douban.com/top250" target="_blank" rel="external">豆瓣音乐 250</a></p><h2 id="工具"><a href="#工具" class="headerlink" title="工具"></a>工具</h2><ul><li>Web Scraper</li><li>Excel</li></ul><h2 id="方法"><a href="#方法" class="headerlink" title="方法"></a>方法</h2><blockquote><ol><li>Chrome 商店安装下载 Web Scraper 插件</li><li>选择爬取页面</li><li>选择器鼠标点选所爬元素与子元素</li><li>Scrape</li><li>下载 csv 文件</li></ol></blockquote><a id="more"></a><h3 id="1-Web-Scraper"><a href="#1-Web-Scraper" class="headerlink" title="1. Web Scraper"></a>1. Web Scraper</h3><p> <a href="https://chrome.google.com/webstore/detail/web-scraper/jnhgnonknehpejjnehehllkliplmbmhn?hl=zh-CN" target="_blank" rel="external">Web Scraper - Chrome 网上应用店 - Google</a></p><h3 id="2-选择爬取页面"><a href="#2-选择爬取页面" class="headerlink" title="2. 选择爬取页面"></a>2. 选择爬取页面</h3><p>Chrome 打开开发者模式，快捷键：com+option+i。</p><p><img src="http://o8cju5u0y.bkt.clouddn.com/UC20180417_014520.png" alt=""></p><p>发现 Web Scraper 已经集合了进来。</p><p>点击 create new sitemap</p><p><img src="http://o8cju5u0y.bkt.clouddn.com/UC20180417_010657.png" alt=""></p><p>输入你需要爬取的页面地址，名字的话随便取即可，不过好像只能输入英文。</p><h3 id="3-选择器鼠标点选所爬元素与子元素"><a href="#3-选择器鼠标点选所爬元素与子元素" class="headerlink" title="3. 选择器鼠标点选所爬元素与子元素"></a>3. 选择器鼠标点选所爬元素与子元素</h3><p><strong>父元素</strong></p><p>如果爬取的类目只有一个的话，一个选择器就够用，不过如果需要多类目对应的话，就需要理解元素和子元素的概念。</p><p>多类目对应，一行元素对应三个属性：专辑名字、作者、分数。</p><p><img src="http://o8cju5u0y.bkt.clouddn.com/UC20180417_011511.png" alt=""></p><p>点击添加 add new selector</p><p><img src="http://o8cju5u0y.bkt.clouddn.com/UC20180417_011753.png" alt=""></p><ul><li>id 写你最外层元素的名字</li><li>勾选 mutiple</li><li>select 点中，在页面中取你需要爬取的大块内容</li><li>type 勾选 element</li><li>勾选两到三个块元素，选择时为绿色，选为红色，一般点中两个后，页面上所有同类元素基本上全被红色点选</li></ul><p><strong>子元素</strong></p><p>点你刚刚创建好的选择器，点进去再创建子元素选择器。</p><ul><li>这时命名你需要用到的属性，如专辑名，作者，分数</li><li>type 选 text</li><li><strong>不勾选 mutiple</strong></li><li>你只能在第一个元素上进行勾选</li></ul><h3 id="4-运行-Scrape"><a href="#4-运行-Scrape" class="headerlink" title="4. 运行 Scrape"></a>4. 运行 Scrape</h3><p><img src="http://o8cju5u0y.bkt.clouddn.com/UC20180417_012548.png" alt=""></p><p>此时，浏览器会自动弹出需要爬取的页面。</p><p>开始 scrape 前会让你选择时间参数</p><p><img src="http://o8cju5u0y.bkt.clouddn.com/UC20180417_014555.png" alt=""></p><p>第一个默认不管，我一般会将第二个参数调高一点，给爬虫长一点的时间。</p><p>我尝试的时候，每次自动爬取后都会出现 not data yet。</p><p>不用担心，点击旁边的refresh，数据即可显示。</p><h3 id="5-下载-csv-文件"><a href="#5-下载-csv-文件" class="headerlink" title="5. 下载 csv 文件"></a>5. 下载 csv 文件</h3><p>爬取完毕可导出 csv 文件。</p><h2 id="注意分页"><a href="#注意分页" class="headerlink" title="注意分页"></a>注意分页</h2><p>比如你需要爬的数据不会全部显示在一个页面中，这个时候就需要你观察网址后面带的参数。</p><p>比如知乎：</p><p>我关注的人：url 为 <a href="https://www.zhihu.com/people/wang-peng-50-40/following?page=2" target="_blank" rel="external">https://www.zhihu.com/people/wang-peng-50-40/following?page=2</a></p><p>如果你需要爬取 50 页，你就将最一开始设置网址的那个页面改写为</p><p><a href="https://www.zhihu.com/people/wang-peng-50-40/following?page=[0-50]" target="_blank" rel="external">https://www.zhihu.com/people/wang-peng-50-40/following?page=[0-50]</a></p><p>比如豆瓣：</p><p><a href="https://music.douban.com/top250?start=50" target="_blank" rel="external">https://music.douban.com/top250?start=50</a></p><p>改为</p><p><a href="https://music.douban.com/top250?start=[0-20]" target="_blank" rel="external">https://music.douban.com/top250?start=[0-20]</a></p><p>即爬取前20页的数据。</p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;需求&quot;&gt;&lt;a href=&quot;#需求&quot; class=&quot;headerlink&quot; title=&quot;需求&quot;&gt;&lt;/a&gt;需求&lt;/h2&gt;&lt;p&gt;寻找值得听的专辑，并排序&lt;/p&gt;
+&lt;h2 id=&quot;数据来源&quot;&gt;&lt;a href=&quot;#数据来源&quot; class=&quot;headerlink&quot; title=&quot;数据来源&quot;&gt;&lt;/a&gt;数据来源&lt;/h2&gt;&lt;p&gt;&lt;a href=&quot;https://music.douban.com/top250&quot;&gt;豆瓣音乐 250&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&quot;工具&quot;&gt;&lt;a href=&quot;#工具&quot; class=&quot;headerlink&quot; title=&quot;工具&quot;&gt;&lt;/a&gt;工具&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;Web Scraper&lt;/li&gt;
+&lt;li&gt;Excel&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;方法&quot;&gt;&lt;a href=&quot;#方法&quot; class=&quot;headerlink&quot; title=&quot;方法&quot;&gt;&lt;/a&gt;方法&lt;/h2&gt;&lt;blockquote&gt;
+&lt;ol&gt;
+&lt;li&gt;Chrome 商店安装下载 Web Scraper 插件&lt;/li&gt;
+&lt;li&gt;选择爬取页面&lt;/li&gt;
+&lt;li&gt;选择器鼠标点选所爬元素与子元素&lt;/li&gt;
+&lt;li&gt;Scrape&lt;/li&gt;
+&lt;li&gt;下载 csv 文件&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/blockquote&gt;
+    
+    </summary>
+    
+      <category term="简易实用技术" scheme="http://yoursite.com/categories/%E7%AE%80%E6%98%93%E5%AE%9E%E7%94%A8%E6%8A%80%E6%9C%AF/"/>
+    
+    
+      <category term="专辑" scheme="http://yoursite.com/tags/%E4%B8%93%E8%BE%91/"/>
+    
+      <category term="爬虫" scheme="http://yoursite.com/tags/%E7%88%AC%E8%99%AB/"/>
+    
+      <category term="Chrome" scheme="http://yoursite.com/tags/Chrome/"/>
+    
+  </entry>
   
   <entry>
     <title>微言大义第八期：从确定出发的人将以怀疑告终，而从怀疑出发的人将会得到确定的结果</title>
@@ -607,31 +647,6 @@
     
       <category term="微言大义" scheme="http://yoursite.com/categories/%E5%BE%AE%E8%A8%80%E5%A4%A7%E4%B9%89/"/>
     
-    
-  </entry>
-  
-  <entry>
-    <title>午夜咖啡因</title>
-    <link href="http://yoursite.com/2017/12/22/%E5%8D%88%E5%A4%9C%E5%92%96%E5%95%A1%E5%9B%A0/"/>
-    <id>http://yoursite.com/2017/12/22/午夜咖啡因/</id>
-    <published>2017-12-21T16:11:37.000Z</published>
-    <updated>2017-12-21T16:27:56.025Z</updated>
-    
-    <content type="html"><![CDATA[<p>我觉得自己有些习惯确实保持的不错。比如不抽烟，不喝酒，不打游戏，前两项其实还好，这个年纪接触到的人确实还没有多少人沉浸其中，但打游戏就不一样了，这个年代，男人不喜欢打游戏，就像男人不喜欢女人一样奇怪。</p><p>我初中的时候是打游戏的，而且还很凶，冲了很多钱，但是那个时候更像是对互联网的一种好奇，刚接触这个新鲜的事物，再加上身边的朋友可以有很好的互动性，很自然就沉浸进去了。</p><p>到了大学，玩的就比较少了，懂事之后才知道自己假装人民币玩家是一种非常得不偿失的做法，在网游中如果不充钱，又很容易成为付费玩家的陪练，索性就不玩了，不管你设计的多天花乱坠，我自岿然不动。就算花钱，也花在购买游戏时间的游戏上，你已经在我身上挣到钱了，也就不会再在游戏过程中恶心我了。这点很像单机游戏，设计的目的明确且单一，就是为了取悦你，并且你也不会成为那些消费能力更高玩家的消费品。</p><p>我还喜欢碳酸饮料，我喜欢里面的气，那种液体刚刚碰撞舌头的感觉，我很难形容。我需要一个品牌让我沉浸进去，就像你喜欢看足球，总要有一个喜欢的明星才行。碳酸饮料有很多，但我还是最喜欢可乐。<a id="more"></a></p><p>上大学的时候，我桌子前面的墙摆满了可乐。每次有人进来时，都会觉得很惊讶，我倒是觉得没什么，现在想想确实挺艺术的。</p><p>喝可乐也是一件需要注意很多细节的事情，我觉得这是一件稍微一些细节就会影响用户体验的事情，比如说，我会选择灌装可乐，经典款，铝的包装可以让二氧化碳的浓度保存的很高，按理说应该是玻璃瓶最好，但是现在市面上也很少可以见到，也仅存于童年回忆中了。</p><p>其次还要有吸管，我觉得大部分人都不知道吸管和可乐是标配，可乐上面的拉环就是为了固定吸管，但是大部分人都不这么喝，我只有替他们感到遗憾。</p><p>可乐碰撞舌头的感觉确实不错，但在此之前，可乐需经过牙齿，这就是一种不好的体验了，可乐会让牙齿变得发涩，上下咬合的时候不自然，长辈们经常说可乐里面的碳酸会让骨质酥松，我真的不想刚喝的时候就切身感觉到。</p><p>所以你需要一根吸管，可乐也是这么想的，他们也为你留出了这样一个设计，但是大多数人并不知晓，他们可能终身不会领略到尽善尽美喝可乐的乐趣。</p><p>而且我对可乐的甜度很敏感，我可以轻易的分辨出可口可乐和百事可乐的区别，我不知道是不是先入为主的原因，我更偏爱可口可乐。这也是我平时会更爱去麦当劳而不是肯德基的原因，毕竟麦当劳和可口可乐是合作关系。</p><p>喝可乐的瞬间和随后很短的时间，你都会感到很愉悦，我想这是由于你摄入了碳水和糖分，这是维持人生存所必不可少的元素，我不知道这是不是由于基因的元素，远古时期的人类饥寒交迫，他们不会考虑这个汉堡，那个烤串是不是高脂高热量，吃了会不会三高，恰恰相反，这些食物反而是他们的首选，因为这些食物可以帮助他们活下来，而且能挺很长一段时间。</p><p>这种愉悦不会持续太久，然后就会想去厕所，你会发现你口很干，同时也失去了大量的水分。</p><p>晚上喝的时候，经常容易失眠，尽管里面的咖啡因并不是很高，但对于我来说确实是这样，我喜欢晚上喝可乐，所以在入睡上总是很困难，在床上辗转反侧的时候我就告诫自己晚上千万不要喝可乐，但是第二天还是照旧。</p><p>可乐可以偶尔喝，经常喝确实有一些问题，这些我是清楚的，但是对于我来说，有什么其他爱好吗。我的爱好都很廉价，拿kindle看一本又一本的盗版书，从网上下载盗版电影，喝着两块五的可乐， 所以在经济上我并不认为自己这样挥霍无度的爱好会是一件过分的事情。</p><p>或许过度的判别并不是以经济为指标的，但是对我来说，可乐确实可以让我快乐，而且它又没有毒品那么强的危害，几次放纵或许并不会造成严重的后果。</p>]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;我觉得自己有些习惯确实保持的不错。比如不抽烟，不喝酒，不打游戏，前两项其实还好，这个年纪接触到的人确实还没有多少人沉浸其中，但打游戏就不一样了，这个年代，男人不喜欢打游戏，就像男人不喜欢女人一样奇怪。&lt;/p&gt;
-&lt;p&gt;我初中的时候是打游戏的，而且还很凶，冲了很多钱，但是那个时候更像是对互联网的一种好奇，刚接触这个新鲜的事物，再加上身边的朋友可以有很好的互动性，很自然就沉浸进去了。&lt;/p&gt;
-&lt;p&gt;到了大学，玩的就比较少了，懂事之后才知道自己假装人民币玩家是一种非常得不偿失的做法，在网游中如果不充钱，又很容易成为付费玩家的陪练，索性就不玩了，不管你设计的多天花乱坠，我自岿然不动。就算花钱，也花在购买游戏时间的游戏上，你已经在我身上挣到钱了，也就不会再在游戏过程中恶心我了。这点很像单机游戏，设计的目的明确且单一，就是为了取悦你，并且你也不会成为那些消费能力更高玩家的消费品。&lt;/p&gt;
-&lt;p&gt;我还喜欢碳酸饮料，我喜欢里面的气，那种液体刚刚碰撞舌头的感觉，我很难形容。我需要一个品牌让我沉浸进去，就像你喜欢看足球，总要有一个喜欢的明星才行。碳酸饮料有很多，但我还是最喜欢可乐。
-    
-    </summary>
-    
-      <category term="平淡生活" scheme="http://yoursite.com/categories/%E5%B9%B3%E6%B7%A1%E7%94%9F%E6%B4%BB/"/>
-    
-    
-      <category term="可乐" scheme="http://yoursite.com/tags/%E5%8F%AF%E4%B9%90/"/>
     
   </entry>
   
