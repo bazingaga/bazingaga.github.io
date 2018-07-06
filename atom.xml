@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2018-06-26T14:53:38.046Z</updated>
+  <updated>2018-07-06T15:40:08.963Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,35 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>重回微博</title>
+    <link href="http://yoursite.com/2018/07/06/back-to-weibo/"/>
+    <id>http://yoursite.com/2018/07/06/back-to-weibo/</id>
+    <published>2018-07-06T15:02:47.000Z</published>
+    <updated>2018-07-06T15:40:08.963Z</updated>
+    
+    <content type="html"><![CDATA[<p>重拾了<a href="https://weibo.com/3570277352/profile?rightmod=1&amp;wvr=6&amp;mod=personinfo&amp;is_all=1" target="_blank" rel="external">微博</a>。</p><p>以前总觉得微博和「明星八卦」挂钩，地铁上看人刷微博，总会有优越感，现在想想着实没必要。</p><p>人都有表达意愿，或是生活的点滴，如看过的电影，近日的心情；还有生活的感悟，如对时政、社会的看法。这些内心的表达欲望贯穿了人类整个的发展历程。</p><p>微博有八卦，有刷屏的明星，你的狗，他的猫，但也有别的。</p><p>国外有「推特治国」，我们也有「微博治国」。</p><p>你不能否认，微博一定程度上让弱势群体发声的机会更大了，尽管还有更加弱势的群体无法发声，或发声也无法让我们听见。</p><p>回顾这几年的热点事件，你不能否认，微博尽到了部分社会责任。</p><p>没有什么是没有成本的，如果有，那也是太阳在疯狂燃烧。</p><p>让明星闭嘴就能让微博更好吗，封杀营销号就能让社会风气更好吗，不一定，都是互为补充，互为养分。微博需要明星、营销号的引流，也顺手帮助了那些真正需要发声的人，这么想或许微博就没那么大原罪了。</p><p>我最近在做<a href="http://wangpeng.life/2018/06/26/%E6%88%91%E5%81%9A%E4%BA%86%E4%B8%80%E6%A1%A3%E6%B3%9B%E7%A7%91%E6%8A%80%E6%92%AD%E5%AE%A2%E2%80%94%E2%80%94WEB%20VIEW/" target="_blank" rel="external">播客</a>。我需要看业界中其他人是怎么做的，尽管在<a href="https://twitter.com/liki_wang" target="_blank" rel="external">推特</a>我也关注了很多业界前辈，但还是太少了。一些软件的使用成本在变高，而这些成本与所带来的回报也不成正比，那人们为什么要自己折腾自己呢？</p><p>业界前辈大多在微博，那微博这个平台对我就有价值。</p><p>但你说能有多少的互动吗，我觉得暂时不会。</p><p>诚意只是基础，实力才是关键。</p><p>手里有两期节目和手里有二十期节目，性质是不一样的；节目有十个人听和有一百人听也是不一样的。节目质量慢慢积攒优化之后也和原先不一样。</p><p>实力相当才能当朋友。</p><p>不过对比南方系来说，北京系要善于抱团。经常串台，互相捧场。上海的播客也很多，优秀的也很多，但是很少见到一起做节目的，都是各自为战。或许比较矜持，当然了，这和节目的性质也有很大的关系。北京系很擅长节目氛围的营造，「哈哈哈哈哈」经常能听到，就算是思辨性的话题也可以聊的很轻松。南方系很少有娱乐性的播客，技术性，严谨性或许是他们考虑的第一要素。</p><p>不管怎么说，还是要取两边之长，北京系的台风，南方系的严谨，节目质量才会有提高。</p><p>在节目质量上，考虑反馈真的很难，毕竟做播客和推广播客还是两码事。尽管不愿意和人打交道，不愿意放在第三方平台上，但还是要这么做，增加你的受众，增加你的曝光。有更多的反馈，从中吸取有价值的，播客才会越做越好。</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;重拾了&lt;a href=&quot;https://weibo.com/3570277352/profile?rightmod=1&amp;amp;wvr=6&amp;amp;mod=personinfo&amp;amp;is_all=1&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;微博&lt;
+      
+    
+    </summary>
+    
+      <category term="播客" scheme="http://yoursite.com/categories/%E6%92%AD%E5%AE%A2/"/>
+    
+    
+      <category term="微博" scheme="http://yoursite.com/tags/%E5%BE%AE%E5%8D%9A/"/>
+    
+      <category term="营销" scheme="http://yoursite.com/tags/%E8%90%A5%E9%94%80/"/>
+    
+      <category term="北京系" scheme="http://yoursite.com/tags/%E5%8C%97%E4%BA%AC%E7%B3%BB/"/>
+    
+  </entry>
   
   <entry>
     <title>我对世界杯的一些看法</title>
@@ -267,9 +296,9 @@
       <category term="简易实用技术" scheme="http://yoursite.com/categories/%E7%AE%80%E6%98%93%E5%AE%9E%E7%94%A8%E6%8A%80%E6%9C%AF/"/>
     
     
-      <category term="爬虫" scheme="http://yoursite.com/tags/%E7%88%AC%E8%99%AB/"/>
-    
       <category term="专辑" scheme="http://yoursite.com/tags/%E4%B8%93%E8%BE%91/"/>
+    
+      <category term="爬虫" scheme="http://yoursite.com/tags/%E7%88%AC%E8%99%AB/"/>
     
       <category term="Chrome" scheme="http://yoursite.com/tags/Chrome/"/>
     
@@ -354,9 +383,9 @@
       <category term="平淡生活" scheme="http://yoursite.com/categories/%E5%B9%B3%E6%B7%A1%E7%94%9F%E6%B4%BB/"/>
     
     
-      <category term="专辑" scheme="http://yoursite.com/tags/%E4%B8%93%E8%BE%91/"/>
-    
       <category term="Apple Music" scheme="http://yoursite.com/tags/Apple-Music/"/>
+    
+      <category term="专辑" scheme="http://yoursite.com/tags/%E4%B8%93%E8%BE%91/"/>
     
       <category term="交互" scheme="http://yoursite.com/tags/%E4%BA%A4%E4%BA%92/"/>
     
@@ -634,36 +663,6 @@
       <category term="写实" scheme="http://yoursite.com/tags/%E5%86%99%E5%AE%9E/"/>
     
       <category term="故事" scheme="http://yoursite.com/tags/%E6%95%85%E4%BA%8B/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>粗糙的利己主义者</title>
-    <link href="http://yoursite.com/2018/01/27/%E7%B2%97%E7%B3%99%E7%9A%84%E5%88%A9%E5%B7%B1%E4%B8%BB%E4%B9%89%E8%80%85/"/>
-    <id>http://yoursite.com/2018/01/27/粗糙的利己主义者/</id>
-    <published>2018-01-27T15:02:20.000Z</published>
-    <updated>2018-01-27T15:13:53.510Z</updated>
-    
-    <content type="html"><![CDATA[<p>我有两个最大的问题：吃不了苦，抗不了挫。</p><p>我的爱好呢，喜欢看书、看电影。</p><p>但在别人眼里呢，或许会觉得这个人很无聊，没有爱好。</p><p>爱好是需要钱的，这点我认同，所以我不敢有太花钱的爱好，比如我一直憧憬当个拳击手或赛车手，但一查赛车手需要花很多的钱，我就放下了，拳击手自己又怕吃不了苦，怕疼，训练的话想必也坚持不下去，所以只能选些不需要花钱或者不需要和身体太多互动的运动。</p><p>所以我现在也不跑步、踢球了。<a id="more"></a></p><p>拿 Kindle 看盗版书多轻松啊，看到喜欢的书，网上搜索，有就看，没有就不看。电影也是，现在网上基本什么都能找到，这对搜索能力确实有帮助。</p><p>看书也好，看电影也好，看多了总觉得自己的品位也跟着上来了，对一般的作品看不上眼，对看一般作品的人也看不上眼，觉得大众都是愚昧的，认为正是大众欣赏能力的欠缺导致当下文艺产业不尽如人意。</p><p>如果一辈子不担心生计，这种廉价的优越感想必会伴随终生，但又怎么可能呢，我有显赫的家境吗，我有过人的本领吗，我有一样可以支撑自己谋生换取饮食的技能吗。</p><p>没有。</p><p>我开始尝试自己进行文学创作，我想复制偶像走过的道路，我认为这样的道路容易走，但是呢，我的作品呢，我的故事呢，我的人物写活了吗，我有真正完成一个故事过吗。</p><p>没有。</p><p>那我都做了些什么呢，我这些日子都做了些什么呢，我在「慢就业」啊。我是不抗操的，工作只要受一点委屈就不行，毕竟自己看了这么多的书和电影，自我标榜意识领先，思想先进，怎么能开自己的倒车呢，当然是和资本家对操啊。</p><p>我的优越感其实一点都不高端。</p><p>我可能要花很多时间才能认识到自己只是一个普通人，和地铁上每一个早出晚归的上班族一样，或许抱有一些不切实际的想法，但也在努力工作，养活自己，养活家人。</p><p>那我呢，我真的比他们优越吗，真的比他们的未来要好吗，这样一个我，连养活自己都做不到，在虚妄的网络中沉浸，看着别人成功或失败的生活，认为自己就和他们一样了吗，为什么这么<strong>骄傲</strong>呢。</p><p><strong>我什么时候才能认识到优越的生活不是平白而来的呢。</strong></p><p>没有显赫的家境，只有靠自己，靠自己的双手一日又一日的努力来积累美好生活的物质资本。没有馅饼在等着我，有人会一夜暴富，但肯定不是我，我自己连彩票都不买，自己都不信的事情，因为我一直都不信啊，为什么现在反而对虚妄抱有执念，就是放不下呢。</p><p><strong>我什么时候才能认识到一个人真正的品位并不在于他消费了什么，而是他创造了什么。</strong></p><p>我创造了什么呢，我设计的故事、人物支离破碎，自己都读不下去的东西别人会喜欢吗。</p><p>我又有什么资本嘲笑别人看「院线电影」，读「畅销书」呢。</p><p>我是知识分子吗，我是想当知识分子的，但为什么又向往财富最聚集的角落呢。</p><p>口是心非不是吗，一方面对社会阴暗咬牙切齿，一方面又幻想着有朝一日能成为恶龙，成为当下最恶心的人，这就是高尚吗，这就是阅读带给我的感悟吗。</p><p>我的内心是虚妄，困惑而无助的。</p><p>我知道，早晚会有一天会承认自己的平凡，早晚有一天会认识到平凡是一种美好，仅仅是健康一项就是世界上最美好的事物了，但我现在意识不到。</p><p>我身上有太多的缺点，其中最大的两个就是<u>吃不了苦，抗不了挫</u>。</p><p>我不喜欢现在的生活，但我知道这都是我自找的。</p><p>我太自大了，包括在写这篇文章的时候，你可以按下键盘的 「command+f」，看看这篇文章中出现了多少个「我」字。</p><p>我即不利他，也不浪漫，更不自由。</p><p>我向往美好的生活，但是我太粗糙了，粗糙的无法移动一步。</p><p>我就困在原地，四周都是高高的荒草，我看不到脚下的路和远方的目标，我就困在这，害怕的像一只没见过世面的土狗，紧紧的缩着自己的爪子，一步不敢动。</p><p>我追名逐利，可又偏偏太粗糙了。</p>]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;我有两个最大的问题：吃不了苦，抗不了挫。&lt;/p&gt;
-&lt;p&gt;我的爱好呢，喜欢看书、看电影。&lt;/p&gt;
-&lt;p&gt;但在别人眼里呢，或许会觉得这个人很无聊，没有爱好。&lt;/p&gt;
-&lt;p&gt;爱好是需要钱的，这点我认同，所以我不敢有太花钱的爱好，比如我一直憧憬当个拳击手或赛车手，但一查赛车手需要花很多的钱，我就放下了，拳击手自己又怕吃不了苦，怕疼，训练的话想必也坚持不下去，所以只能选些不需要花钱或者不需要和身体太多互动的运动。&lt;/p&gt;
-&lt;p&gt;所以我现在也不跑步、踢球了。
-    
-    </summary>
-    
-      <category term="平淡生活" scheme="http://yoursite.com/categories/%E5%B9%B3%E6%B7%A1%E7%94%9F%E6%B4%BB/"/>
-    
-    
-      <category term="爱好" scheme="http://yoursite.com/tags/%E7%88%B1%E5%A5%BD/"/>
-    
-      <category term="粗糙" scheme="http://yoursite.com/tags/%E7%B2%97%E7%B3%99/"/>
-    
-      <category term="优越感" scheme="http://yoursite.com/tags/%E4%BC%98%E8%B6%8A%E6%84%9F/"/>
     
   </entry>
   
