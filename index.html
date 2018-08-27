@@ -369,7 +369,7 @@
                 
               
 
-              <time title="创建时间：2018-08-27 19:37:45 / 修改时间：19:38:33" itemprop="dateCreated datePublished" datetime="2018-08-27T19:37:45+08:00">2018-08-27</time>
+              <time title="创建时间：2018-08-27 19:37:45 / 修改时间：23:07:24" itemprop="dateCreated datePublished" datetime="2018-08-27T19:37:45+08:00">2018-08-27</time>
             
 
             
@@ -438,7 +438,7 @@
                 
                   <span class="post-meta-item-text">本文字数：</span>
                 
-                <span title="本文字数">0</span>
+                <span title="本文字数">1.6k</span>
               
 
               
@@ -452,7 +452,7 @@
                 
                   <span class="post-meta-item-text">阅读时长 &asymp;</span>
                 
-                <span title="阅读时长">1 分钟</span>
+                <span title="阅读时长">3 分钟</span>
               
             </div>
           
@@ -474,7 +474,64 @@
       
         
           
-            
+            <p>valine 确实是个颜值比较高的评论插件，但碍于我 hexo 和主题版本过低的问题，不能安装，只好先行升级博客和主题。</p>
+<h2 id="升级-hexo"><a href="#升级-hexo" class="headerlink" title="升级 hexo"></a>升级 hexo</h2><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm i hexo-cli -g</span><br></pre></td></tr></table></figure>
+<p>很顺利，next 主题并不是平滑升级。</p>
+<h2 id="升级-next"><a href="#升级-next" class="headerlink" title="升级 next"></a>升级 next</h2><p><a href="https://github.com/theme-next/hexo-theme-next/blob/master/docs/zh-CN/UPDATE-FROM-5.1.X.md" target="_blank" rel="noopener">官网教程</a></p>
+<ol>
+<li><p>克隆新的 v6.x 仓库到任一异于 <code>next</code> 的目录（如 <code>next-reloaded</code>）：</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span> git clone https://github.com/theme-next/hexo-theme-next themes/next-reloaded</span><br></pre></td></tr></table></figure>
+<p>如此，你可以在不修改原有的 NexT v5.1.x 目录的同时使用 <code>next-reloaded</code> 目录中的新版本主题。</p>
+</li>
+<li><p>在 Hexo 的主配置文件中设置主题：</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">...</span><br><span class="line">theme: next-reloaded</span><br><span class="line">...</span><br></pre></td></tr></table></figure>
+<p>如此，你的 <code>next-reloaded</code> 主题将在生成站点时被加载。如果你遇到了任何错误、或只是不喜欢这一新版本，你可以随时切换回旧的 v5.1.x 版本。</p>
+</li>
+</ol>
+<h3 id="注意"><a href="#注意" class="headerlink" title="注意"></a>注意</h3><ol>
+<li>原先自定义的 css 文件存放的地方，也记得迁移</li>
+</ol>
+<p>自定义的 CSS 配置，它们应在 <code>next/source/css/_custom/*</code> 和 <code>next/source/css/_variables/*</code> 中。</p>
+<p>自定义的排布配置，它们应在 <code>next/layout/_custom/*</code> 中。</p>
+<ol>
+<li>next 我是从 5.0升到6.0，其中不太一样的地方</li>
+</ol>
+<p>侧边栏头像需要在主题配置文件里设置：</p>
+<p><img src="http://o8cju5u0y.bkt.clouddn.com/2018-08-27-142525.png" alt=""></p>
+<p>友情链接在主题配置文件中的位置：</p>
+<p><img src="http://o8cju5u0y.bkt.clouddn.com/2018-08-27-142743.png" alt=""></p>
+<p>其他都是些小的问题，对比新旧配置文件基本上都能解决。</p>
+<h2 id="以前没做笔记的地方"><a href="#以前没做笔记的地方" class="headerlink" title="以前没做笔记的地方"></a>以前没做笔记的地方</h2><p>以前博客做的一些优化，当时没有记录下来，升级主题之后，不记得是怎么做的，也不记得在哪里改的文件，网上找了很久，才配回来。</p>
+<h3 id="文章字数，阅读时长"><a href="#文章字数，阅读时长" class="headerlink" title="文章字数，阅读时长"></a>文章字数，阅读时长</h3><p>新的 next 主题内置了 symbols_count_time 文章字数，时长的插件。</p>
+<p>安装插件 symbols_count_time</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-symbols-count-time --save</span><br></pre></td></tr></table></figure>
+<p>主题配置文件：</p>
+<p><img src="http://o8cju5u0y.bkt.clouddn.com/2018-08-27-143558.png" alt="image-20180827223551539"></p>
+<p>最后的 awl 和 wpm 是<a href="https://github.com/theme-next/hexo-symbols-count-time" target="_blank" rel="noopener">官网</a>针对中文做的取值。</p>
+<p>有意思的是，在站点配置文件下还有针对博客页脚的数值统计，像这样：</p>
+<p><img src="http://o8cju5u0y.bkt.clouddn.com/2018-08-27-143815.png" alt="image-20180827223812415"></p>
+<p>站点配置文件的位置：</p>
+<p><img src="http://o8cju5u0y.bkt.clouddn.com/2018-08-27-143903.png" alt="image-20180827223857615"></p>
+<p>最后一项是博客文章总计阅读时长，时间显示我觉得莫名其妙的不准，没有开启。</p>
+<h3 id="字体大小"><a href="#字体大小" class="headerlink" title="字体大小"></a>字体大小</h3><p><img src="http://o8cju5u0y.bkt.clouddn.com/2018-08-27-144419.png" alt="image-20180827224416883"></p>
+<p>以前记得不是再在这里改的。</p>
+<p>标题，正文 css</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">//标题大小</span><br><span class="line"><span class="selector-class">.post-title</span>&#123;</span><br><span class="line">  <span class="attribute">font-size</span>:<span class="number">60px</span></span><br><span class="line">&#125;</span><br><span class="line">正文大小</span><br><span class="line"><span class="selector-tag">body</span>&#123;</span><br><span class="line">  <span class="attribute">font-size</span>:<span class="number">18px</span></span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-tag">h2</span>&#123;</span><br><span class="line">  <span class="attribute">font-size</span>:<span class="number">30px</span></span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-tag">h3</span>&#123;</span><br><span class="line">  <span class="attribute">font-size</span>:<span class="number">22px</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>效果：</p>
+<p><img src="/Users/wangpeng/Downloads/下载 (1" alt="下载 (http://o8cju5u0y.bkt.clouddn.com/2018-08-27-145206.png)">.png)</p>
+<h3 id="评论"><a href="#评论" class="headerlink" title="评论"></a>评论</h3><p>不太顺滑的升级本就是为了加 valine 评论才做的。</p>
+<p>next 升级后内置 valine</p>
+<p>打开主题配置文件：</p>
+<p><img src="http://o8cju5u0y.bkt.clouddn.com/2018-08-27-145554.png" alt="image-20180827225551175"></p>
+<p>这里需要你先去 LeanCloud 注册账号，具体教程<a href="https://valine.js.org/quickstart.html" target="_blank" rel="noopener">官网</a>比较详细。</p>
+<p>LeanCloud 设置记得开你博客域名的白名单，所以你在本地测试的时候回报403错误，没关系，推到线上就可以看到评论了。</p>
+<p><img src="http://o8cju5u0y.bkt.clouddn.com/2018-08-27-150041.png" alt=""></p>
+<p>大概是这样，评论里支持 markdown 其实意义不大，但是 valine 确实做得很简约也很好看。</p>
+<p>评论的门槛比较低，其实你不填昵称邮箱网站也是可以评论的。</p>
+<p>评论后会显示你的浏览器和系统版本。</p>
+<p> 你可以再去LeanCloud设置邮件推送，有评论的时候通知你，评论管理需要在LeanCloud数据库界面操作，比较原始。</p>
+<h2 id="最后"><a href="#最后" class="headerlink" title="最后"></a>最后</h2><p>不开评论总是觉得自说自话，希望看到这篇文章的你，可以和我在评论中交流你的看法与观点。最近准备将写作重心迁移到我的 <a href="https://webview.tech/" target="_blank" rel="noopener">webview 播客</a>上，不仅录一些常规的节目，也会在上面发一些自己<a href="https://webview.tech/category/blog/" target="_blank" rel="noopener">编译</a>和原创的文章，欢迎移步，最近我在<a href="http://weibo.com/recwangyin" target="_blank" rel="noopener">微博</a>上也很活跃，也欢迎你在微博上找到我。</p>
+
           
         
       
@@ -4113,7 +4170,15 @@
                     
                       
                     
-                    <span class="site-state-item-count">172</span>
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">176</span>
                     <span class="site-state-item-name">标签</span>
                   </a>
                 </div>
@@ -4217,7 +4282,7 @@
     
       <span class="post-meta-item-text">站点总字数：</span>
     
-    <span title="站点总字数">120k</span>
+    <span title="站点总字数">122k</span>
   
 
   
