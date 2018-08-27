@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2018-08-23T10:38:08.388Z</updated>
+  <updated>2018-08-27T11:38:33.666Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,22 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>博客支持评论</title>
+    <link href="http://yoursite.com/2018/08/27/comment-finally/"/>
+    <id>http://yoursite.com/2018/08/27/comment-finally/</id>
+    <published>2018-08-27T11:37:45.000Z</published>
+    <updated>2018-08-27T11:38:33.666Z</updated>
+    
+    <summary type="html">
+    
+    </summary>
+    
+      <category term="博客相关" scheme="http://yoursite.com/categories/%E5%8D%9A%E5%AE%A2%E7%9B%B8%E5%85%B3/"/>
+    
+    
+  </entry>
   
   <entry>
     <title>成都——走路慢的路边摊</title>
@@ -609,32 +625,6 @@
       <category term="孤独" scheme="http://yoursite.com/tags/%E5%AD%A4%E7%8B%AC/"/>
     
       <category term="徐渭" scheme="http://yoursite.com/tags/%E5%BE%90%E6%B8%AD/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>博客显示更新时间</title>
-    <link href="http://yoursite.com/2018/03/08/%E5%8D%9A%E5%AE%A2%E5%8A%A0%E4%BA%86%E6%9B%B4%E6%96%B0%E6%97%B6%E9%97%B4/"/>
-    <id>http://yoursite.com/2018/03/08/博客加了更新时间/</id>
-    <published>2018-03-07T18:17:06.000Z</published>
-    <updated>2018-03-08T05:47:46.159Z</updated>
-    
-    <content type="html"><![CDATA[<p>正文前面加了文章的更新时间，不加前缀即为 md 修改时间。</p><h4 id="Next-主题自带更新时间："><a href="#Next-主题自带更新时间：" class="headerlink" title="Next 主题自带更新时间："></a>Next 主题自带更新时间：</h4><p><img src="http://o8cju5u0y.bkt.clouddn.com/UC20180308_134553.png" alt=""></p><p>参考链接：</p><p><a href="http://www.itfanr.cc/2017/12/06/hexo-blog-optimization/" target="_blank" rel="noopener">Hexo博客功能优化</a></p><p><del>自创建更新时间：</del></p><ol><li><del>csdn：<a href="http://blog.csdn.net/ganzhilin520/article/details/79053399" target="_blank" rel="noopener">hexo添加文章更新时间</a></del></li><li><del>博客：<a href="https://wuchenxu.com/2015/12/13/Static-Blog-hexo-github-7-display-updated-date/" target="_blank" rel="noopener">个人博客搭建hexo+github(7):显示每篇文章的更新时间</a></del></li></ol>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;正文前面加了文章的更新时间，不加前缀即为 md 修改时间。&lt;/p&gt;
-&lt;h4 id=&quot;Next-主题自带更新时间：&quot;&gt;&lt;a href=&quot;#Next-主题自带更新时间：&quot; class=&quot;headerlink&quot; title=&quot;Next 主题自带更新时间：&quot;&gt;&lt;/a&gt;Next 主题
-      
-    
-    </summary>
-    
-      <category term="博客相关" scheme="http://yoursite.com/categories/%E5%8D%9A%E5%AE%A2%E7%9B%B8%E5%85%B3/"/>
-    
-    
-      <category term="更新时间" scheme="http://yoursite.com/tags/%E6%9B%B4%E6%96%B0%E6%97%B6%E9%97%B4/"/>
     
   </entry>
   
