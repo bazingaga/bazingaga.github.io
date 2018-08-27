@@ -1,28 +1,32 @@
-<!doctype html>
+<!DOCTYPE html>
 
 
 
 
-<html class="theme-next muse" lang="zh-Hans">
+
+
+
+
+
+
+
+
+
+<html class="theme-next muse" lang="zh-CN">
 <head>
   <meta charset="UTF-8"/>
-
-<script>
-    (function(){
-        if(''){
-            if (prompt('请输入文章密码') !== ''){
-                alert('密码错误');
-                history.back();
-            }
-        }
-    })();
-</script>
-
-
-
-
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2"/>
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
 
 
 
@@ -43,11 +47,6 @@
 
 
 
-  
-  
-    
-  
-  <link href="https://cdn.staticfile.org/fancybox/2.1.5/jquery.fancybox.css" rel="stylesheet" type="text/css" />
 
 
 
@@ -55,40 +54,27 @@
 
 
 
-  
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
 
-<link href="http://cdn.staticfile.org/font-awesome/4.6.2/css/font-awesome.css" rel="stylesheet" type="text/css" />
-
-<link href="/css/main.css?v=5.1.0" rel="stylesheet" type="text/css" />
+<link href="/css/main.css?v=6.4.0" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="王尔德的德" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/favicon.ico?v=6.4.0">
 
 
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon.ico?v=6.4.0">
 
 
-
-  <link rel="alternate" href="/atom.xml" title="王尔德的德" type="application/atom+xml" />
-
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon.ico?v=6.4.0">
 
 
-
-  <link rel="shortcut icon" type="image/x-icon" href="/images/favicon.ico?v=5.1.0" />
+  <link rel="mask-icon" href="/images/favicon.ico?v=6.4.0" color="#222">
 
 
 
 
 
 
-<meta name="description" content="Apple｜RSS｜Rock&amp;Post Rock｜WEB VIEW 播客｜独立博客｜Non-Cinema Film｜Efficiency App｜反感微信｜反感政治正确 | 搜索引擎爱好者｜黄焖鸡｜远古互联网｜精神程序员｜吉他爱好者｜前端技术好奇者｜老球迷｜在南方的北方人">
-<meta property="og:type" content="website">
-<meta property="og:title" content="王尔德的德">
-<meta property="og:url" content="http://yoursite.com/archives/index.html">
-<meta property="og:site_name" content="王尔德的德">
-<meta property="og:description" content="Apple｜RSS｜Rock&amp;Post Rock｜WEB VIEW 播客｜独立博客｜Non-Cinema Film｜Efficiency App｜反感微信｜反感政治正确 | 搜索引擎爱好者｜黄焖鸡｜远古互联网｜精神程序员｜吉他爱好者｜前端技术好奇者｜老球迷｜在南方的北方人">
-<meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="王尔德的德">
-<meta name="twitter:description" content="Apple｜RSS｜Rock&amp;Post Rock｜WEB VIEW 播客｜独立博客｜Non-Cinema Film｜Efficiency App｜反感微信｜反感政治正确 | 搜索引擎爱好者｜黄焖鸡｜远古互联网｜精神程序员｜吉他爱好者｜前端技术好奇者｜老球迷｜在南方的北方人">
 
 
 
@@ -97,22 +83,44 @@
   var CONFIG = {
     root: '/',
     scheme: 'Muse',
-    sidebar: {"position":"left","display":"post","offset":12,"offset_float":0,"b2t":false,"scrollpercent":false},
-    fancybox: true,
-    motion: false,
-    duoshuo: {
-      userId: '0',
-      author: '博主'
-    },
+    version: '6.4.0',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: false,
+    fastclick: false,
+    lazyload: false,
+    tabs: true,
+    motion: {"enable":false,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
     algolia: {
       applicationID: '',
       apiKey: '',
       indexName: '',
-      hits: {"per_page":20},
+      hits: {"per_page":10},
       labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
     }
   };
 </script>
+
+
+  
+
+
+
+
+  <meta name="description" content="Apple｜RSS｜Rock&amp;Post Rock｜WEB VIEW 播客｜独立博客｜Non-Cinema Film｜Efficiency App｜反感微信｜反感政治正确 | 搜索引擎爱好者｜黄焖鸡｜远古互联网｜精神程序员｜吉他爱好者｜前端技术好奇者｜老球迷｜在南方的北方人">
+<meta property="og:type" content="website">
+<meta property="og:title" content="王尔德的德">
+<meta property="og:url" content="http://yoursite.com/archives/index.html">
+<meta property="og:site_name" content="王尔德的德">
+<meta property="og:description" content="Apple｜RSS｜Rock&amp;Post Rock｜WEB VIEW 播客｜独立博客｜Non-Cinema Film｜Efficiency App｜反感微信｜反感政治正确 | 搜索引擎爱好者｜黄焖鸡｜远古互联网｜精神程序员｜吉他爱好者｜前端技术好奇者｜老球迷｜在南方的北方人">
+<meta property="og:locale" content="zh-CN">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="王尔德的德">
+<meta name="twitter:description" content="Apple｜RSS｜Rock&amp;Post Rock｜WEB VIEW 播客｜独立博客｜Non-Cinema Film｜Efficiency App｜反感微信｜反感政治正确 | 搜索引擎爱好者｜黄焖鸡｜远古互联网｜精神程序员｜吉他爱好者｜前端技术好奇者｜老球迷｜在南方的北方人">
+
+
+
+  <link rel="alternate" href="/atom.xml" title="王尔德的德" type="application/atom+xml" />
+
 
 
 
@@ -120,14 +128,15 @@
 
 
 
+<script type="text/javascript" id="page.configurations">
+  CONFIG.page = {
+    sidebar: "",
+  };
+</script>
 
-
-  <title> 归档 | 王尔德的德 </title>
-</head>
-
-<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
-
+  <title>归档 | 王尔德的德</title>
   
+
 
 
 
@@ -146,18 +155,43 @@
 
 
 
+  <noscript>
+  <style type="text/css">
+    .use-motion .motion-element,
+    .use-motion .brand,
+    .use-motion .menu-item,
+    .sidebar-inner,
+    .use-motion .post-block,
+    .use-motion .pagination,
+    .use-motion .comments,
+    .use-motion .post-header,
+    .use-motion .post-body,
+    .use-motion .collection-title { opacity: initial; }
 
+    .use-motion .logo,
+    .use-motion .site-title,
+    .use-motion .site-subtitle {
+      opacity: initial;
+      top: initial;
+    }
 
+    .use-motion {
+      .logo-line-before i { left: initial; }
+      .logo-line-after i { right: initial; }
+    }
+  </style>
+</noscript>
 
+</head>
 
-
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-CN">
 
   
   
     
   
 
-  <div class="container one-collumn sidebar-position-left  page-archive  ">
+  <div class="container sidebar-position-left page-archive">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -166,19 +200,21 @@
     
 
     <div class="custom-logo-site-title">
-      <a href="/"  class="brand" rel="start">
+      <a href="/" class="brand" rel="start">
         <span class="logo-line-before"><i></i></span>
         <span class="site-title">王尔德的德</span>
         <span class="logo-line-after"><i></i></span>
       </a>
     </div>
+    
       
-        <p class="site-subtitle">我们一路轻歌浅唱，好像漫步在云上</p>
+        <h1 class="site-subtitle" itemprop="description">我们一路轻歌浅唱，好像漫步在云上</h1>
       
+    
   </div>
 
   <div class="site-nav-toggle">
-    <button>
+    <button aria-label="切换导航栏">
       <span class="btn-bar"></span>
       <span class="btn-bar"></span>
       <span class="btn-bar"></span>
@@ -186,55 +222,72 @@
   </div>
 </div>
 
-<nav class="site-nav">
-  
 
+
+<nav class="site-nav">
   
     <ul id="menu" class="menu">
       
         
-        <li class="menu-item menu-item-home">
-          <a href="/" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
-            
-            首页
-          </a>
-        </li>
-      
         
-        <li class="menu-item menu-item-categories">
-          <a href="/categories" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
-            
-            分类
-          </a>
-        </li>
-      
         
-        <li class="menu-item menu-item-archives">
-          <a href="/archives" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
-            
-            归档
-          </a>
-        </li>
-      
+          
+          <li class="menu-item menu-item-home">
+    <a href="/" rel="section">
+      <i class="menu-item-icon fa fa-fw fa-home"></i> <br />首页</a>
+  </li>
         
-        <li class="menu-item menu-item-tags">
-          <a href="/tags" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
-            
-            标签
-          </a>
-        </li>
-      
+        
+        
+          
+          <li class="menu-item menu-item-tags">
+    <a href="/tags/" rel="section">
+      <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />标签</a>
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-categories">
+    <a href="/categories/" rel="section">
+      <i class="menu-item-icon fa fa-fw fa-th"></i> <br />分类</a>
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-archives menu-item-active">
+    <a href="/archives/" rel="section">
+      <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />归档</a>
+  </li>
 
       
+      
     </ul>
+  
+
+  
+    
+
+    
+    
+      
+      
+    
+      
+      
+    
+      
+      
+    
+      
+      
+    
+    
+
+  
+
+
   
 
   
@@ -242,46 +295,60 @@
 
 
 
- </div>
+  
+
+
+
+</div>
     </header>
+
+    
+
 
     <main id="main" class="main">
       <div class="main-inner">
         <div class="content-wrap">
+          
           <div id="content" class="content">
             
 
-  <section id="posts" class="posts-collapse">
-    <span class="archive-move-on"></span>
+  
+  
+  
+  <div class="post-block archive">
+    <div id="posts" class="posts-collapse">
+      <span class="archive-move-on"></span>
 
-    <span class="archive-page-counter">
       
-      
-       
+      <span class="archive-page-counter">
         
-      好! 目前共计 63 篇日志。 继续努力。
-    </span>
-
-    
-
-      
-      
-      
-
-      
         
-        <div class="collection-title">
-          <h2 class="archive-year motion-element" id="archive-year-2018">2018</h2>
-        </div>
-      
+         
+          
+        不错! 目前共计 63 篇日志。 继续努力。
+      </span>
       
 
       
+
+        
+        
+        
+
+        
+          
+          <div class="collection-title">
+            <h2 class="archive-year" id="archive-year-2018">2018</h2>
+          </div>
+        
+        
+
+        
 
   <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
     <header class="post-header">
 
-      <h1 class="post-title">
+      <h3 class="post-title">
         
             <a class="post-title-link" href="/2018/08/23/walk-slow-chengdu/" itemprop="url">
               
@@ -289,7 +356,7 @@
               
             </a>
         
-      </h1>
+      </h3>
 
       <div class="post-meta">
         <time class="post-time" itemprop="dateCreated"
@@ -304,21 +371,21 @@
 
 
 
-    
-
-      
-      
       
 
-      
-      
+        
+        
+        
 
-      
+        
+        
+
+        
 
   <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
     <header class="post-header">
 
-      <h1 class="post-title">
+      <h3 class="post-title">
         
             <a class="post-title-link" href="/2018/08/08/try-podcast-for-not-boring-life/" itemprop="url">
               
@@ -326,7 +393,7 @@
               
             </a>
         
-      </h1>
+      </h3>
 
       <div class="post-meta">
         <time class="post-time" itemprop="dateCreated"
@@ -341,21 +408,21 @@
 
 
 
-    
-
-      
-      
       
 
-      
-      
+        
+        
+        
 
-      
+        
+        
+
+        
 
   <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
     <header class="post-header">
 
-      <h1 class="post-title">
+      <h3 class="post-title">
         
             <a class="post-title-link" href="/2018/08/03/blog-break-web/" itemprop="url">
               
@@ -363,7 +430,7 @@
               
             </a>
         
-      </h1>
+      </h3>
 
       <div class="post-meta">
         <time class="post-time" itemprop="dateCreated"
@@ -378,21 +445,21 @@
 
 
 
-    
-
-      
-      
       
 
-      
-      
+        
+        
+        
 
-      
+        
+        
+
+        
 
   <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
     <header class="post-header">
 
-      <h1 class="post-title">
+      <h3 class="post-title">
         
             <a class="post-title-link" href="/2018/08/02/about-yield/" itemprop="url">
               
@@ -400,7 +467,7 @@
               
             </a>
         
-      </h1>
+      </h3>
 
       <div class="post-meta">
         <time class="post-time" itemprop="dateCreated"
@@ -415,21 +482,21 @@
 
 
 
-    
-
-      
-      
       
 
-      
-      
+        
+        
+        
 
-      
+        
+        
+
+        
 
   <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
     <header class="post-header">
 
-      <h1 class="post-title">
+      <h3 class="post-title">
         
             <a class="post-title-link" href="/2018/07/26/rec-note1/" itemprop="url">
               
@@ -437,7 +504,7 @@
               
             </a>
         
-      </h1>
+      </h3>
 
       <div class="post-meta">
         <time class="post-time" itemprop="dateCreated"
@@ -452,21 +519,21 @@
 
 
 
-    
-
-      
-      
       
 
-      
-      
+        
+        
+        
 
-      
+        
+        
+
+        
 
   <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
     <header class="post-header">
 
-      <h1 class="post-title">
+      <h3 class="post-title">
         
             <a class="post-title-link" href="/2018/07/06/back-to-weibo/" itemprop="url">
               
@@ -474,7 +541,7 @@
               
             </a>
         
-      </h1>
+      </h3>
 
       <div class="post-meta">
         <time class="post-time" itemprop="dateCreated"
@@ -489,21 +556,21 @@
 
 
 
-    
-
-      
-      
       
 
-      
-      
+        
+        
+        
 
-      
+        
+        
+
+        
 
   <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
     <header class="post-header">
 
-      <h1 class="post-title">
+      <h3 class="post-title">
         
             <a class="post-title-link" href="/2018/06/26/我对世界杯的一些看法/" itemprop="url">
               
@@ -511,7 +578,7 @@
               
             </a>
         
-      </h1>
+      </h3>
 
       <div class="post-meta">
         <time class="post-time" itemprop="dateCreated"
@@ -526,21 +593,21 @@
 
 
 
-    
-
-      
-      
       
 
-      
-      
+        
+        
+        
 
-      
+        
+        
+
+        
 
   <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
     <header class="post-header">
 
-      <h1 class="post-title">
+      <h3 class="post-title">
         
             <a class="post-title-link" href="/2018/06/26/我做了一档泛科技播客——WEB VIEW/" itemprop="url">
               
@@ -548,7 +615,7 @@
               
             </a>
         
-      </h1>
+      </h3>
 
       <div class="post-meta">
         <time class="post-time" itemprop="dateCreated"
@@ -563,21 +630,21 @@
 
 
 
-    
-
-      
-      
       
 
-      
-      
+        
+        
+        
 
-      
+        
+        
+
+        
 
   <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
     <header class="post-header">
 
-      <h1 class="post-title">
+      <h3 class="post-title">
         
             <a class="post-title-link" href="/2018/05/24/谈天津落户/" itemprop="url">
               
@@ -585,7 +652,7 @@
               
             </a>
         
-      </h1>
+      </h3>
 
       <div class="post-meta">
         <time class="post-time" itemprop="dateCreated"
@@ -600,21 +667,21 @@
 
 
 
-    
-
-      
-      
       
 
-      
-      
+        
+        
+        
 
-      
+        
+        
+
+        
 
   <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
     <header class="post-header">
 
-      <h1 class="post-title">
+      <h3 class="post-title">
         
             <a class="post-title-link" href="/2018/05/04/接受互联网世界的不完美/" itemprop="url">
               
@@ -622,7 +689,7 @@
               
             </a>
         
-      </h1>
+      </h3>
 
       <div class="post-meta">
         <time class="post-time" itemprop="dateCreated"
@@ -637,21 +704,21 @@
 
 
 
-    
-
-      
-      
       
 
-      
-      
+        
+        
+        
 
-      
+        
+        
+
+        
 
   <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
     <header class="post-header">
 
-      <h1 class="post-title">
+      <h3 class="post-title">
         
             <a class="post-title-link" href="/2018/05/03/「辞职」和「买房」的问题是共通的/" itemprop="url">
               
@@ -659,7 +726,7 @@
               
             </a>
         
-      </h1>
+      </h3>
 
       <div class="post-meta">
         <time class="post-time" itemprop="dateCreated"
@@ -674,21 +741,21 @@
 
 
 
-    
-
-      
-      
       
 
-      
-      
+        
+        
+        
 
-      
+        
+        
+
+        
 
   <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
     <header class="post-header">
 
-      <h1 class="post-title">
+      <h3 class="post-title">
         
             <a class="post-title-link" href="/2018/04/25/那些曾经挺身而出的年轻人都去哪了/" itemprop="url">
               
@@ -696,7 +763,7 @@
               
             </a>
         
-      </h1>
+      </h3>
 
       <div class="post-meta">
         <time class="post-time" itemprop="dateCreated"
@@ -711,21 +778,21 @@
 
 
 
-    
-
-      
-      
       
 
-      
-      
+        
+        
+        
 
-      
+        
+        
+
+        
 
   <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
     <header class="post-header">
 
-      <h1 class="post-title">
+      <h3 class="post-title">
         
             <a class="post-title-link" href="/2018/04/24/我开始逐渐理解以前不理解的东西/" itemprop="url">
               
@@ -733,7 +800,7 @@
               
             </a>
         
-      </h1>
+      </h3>
 
       <div class="post-meta">
         <time class="post-time" itemprop="dateCreated"
@@ -748,21 +815,21 @@
 
 
 
-    
-
-      
-      
       
 
-      
-      
+        
+        
+        
 
-      
+        
+        
+
+        
 
   <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
     <header class="post-header">
 
-      <h1 class="post-title">
+      <h3 class="post-title">
         
             <a class="post-title-link" href="/2018/04/17/Web-Scraper——简单爬取豆瓣音乐250/" itemprop="url">
               
@@ -770,7 +837,7 @@
               
             </a>
         
-      </h1>
+      </h3>
 
       <div class="post-meta">
         <time class="post-time" itemprop="dateCreated"
@@ -785,21 +852,21 @@
 
 
 
-    
-
-      
-      
       
 
-      
-      
+        
+        
+        
 
-      
+        
+        
+
+        
 
   <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
     <header class="post-header">
 
-      <h1 class="post-title">
+      <h3 class="post-title">
         
             <a class="post-title-link" href="/2018/04/15/微言大义第八期：从确定出发的人将以怀疑告终，而从怀疑出发的人将会得到确定的结果/" itemprop="url">
               
@@ -807,7 +874,7 @@
               
             </a>
         
-      </h1>
+      </h3>
 
       <div class="post-meta">
         <time class="post-time" itemprop="dateCreated"
@@ -822,21 +889,21 @@
 
 
 
-    
-
-      
-      
       
 
-      
-      
+        
+        
+        
 
-      
+        
+        
+
+        
 
   <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
     <header class="post-header">
 
-      <h1 class="post-title">
+      <h3 class="post-title">
         
             <a class="post-title-link" href="/2018/04/11/How-did-I-ruin-my-life/" itemprop="url">
               
@@ -844,7 +911,7 @@
               
             </a>
         
-      </h1>
+      </h3>
 
       <div class="post-meta">
         <time class="post-time" itemprop="dateCreated"
@@ -859,21 +926,21 @@
 
 
 
-    
-
-      
-      
       
 
-      
-      
+        
+        
+        
 
-      
+        
+        
+
+        
 
   <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
     <header class="post-header">
 
-      <h1 class="post-title">
+      <h3 class="post-title">
         
             <a class="post-title-link" href="/2018/04/09/Apple-Music——back-to-album/" itemprop="url">
               
@@ -881,7 +948,7 @@
               
             </a>
         
-      </h1>
+      </h3>
 
       <div class="post-meta">
         <time class="post-time" itemprop="dateCreated"
@@ -896,21 +963,21 @@
 
 
 
-    
-
-      
-      
       
 
-      
-      
+        
+        
+        
 
-      
+        
+        
+
+        
 
   <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
     <header class="post-header">
 
-      <h1 class="post-title">
+      <h3 class="post-title">
         
             <a class="post-title-link" href="/2018/03/27/你会正确的打字吗/" itemprop="url">
               
@@ -918,7 +985,7 @@
               
             </a>
         
-      </h1>
+      </h3>
 
       <div class="post-meta">
         <time class="post-time" itemprop="dateCreated"
@@ -933,21 +1000,21 @@
 
 
 
-    
-
-      
-      
       
 
-      
-      
+        
+        
+        
 
-      
+        
+        
+
+        
 
   <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
     <header class="post-header">
 
-      <h1 class="post-title">
+      <h3 class="post-title">
         
             <a class="post-title-link" href="/2018/03/13/微言大义第七期：尊重从来不是相互的，别人只会因顾及你的实力而不敢欺辱你/" itemprop="url">
               
@@ -955,7 +1022,7 @@
               
             </a>
         
-      </h1>
+      </h3>
 
       <div class="post-meta">
         <time class="post-time" itemprop="dateCreated"
@@ -970,21 +1037,21 @@
 
 
 
-    
-
-      
-      
       
 
-      
-      
+        
+        
+        
 
-      
+        
+        
+
+        
 
   <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
     <header class="post-header">
 
-      <h1 class="post-title">
+      <h3 class="post-title">
         
             <a class="post-title-link" href="/2018/03/08/博客加了更新时间/" itemprop="url">
               
@@ -992,7 +1059,7 @@
               
             </a>
         
-      </h1>
+      </h3>
 
       <div class="post-meta">
         <time class="post-time" itemprop="dateCreated"
@@ -1007,21 +1074,21 @@
 
 
 
-    
-
-      
-      
       
 
-      
-      
+        
+        
+        
 
-      
+        
+        
+
+        
 
   <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
     <header class="post-header">
 
-      <h1 class="post-title">
+      <h3 class="post-title">
         
             <a class="post-title-link" href="/2018/03/06/传承/" itemprop="url">
               
@@ -1029,7 +1096,7 @@
               
             </a>
         
-      </h1>
+      </h3>
 
       <div class="post-meta">
         <time class="post-time" itemprop="dateCreated"
@@ -1044,21 +1111,21 @@
 
 
 
-    
-
-      
-      
       
 
-      
-      
+        
+        
+        
 
-      
+        
+        
+
+        
 
   <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
     <header class="post-header">
 
-      <h1 class="post-title">
+      <h3 class="post-title">
         
             <a class="post-title-link" href="/2018/02/17/域名从Godday迁移到Namesilo/" itemprop="url">
               
@@ -1066,7 +1133,7 @@
               
             </a>
         
-      </h1>
+      </h3>
 
       <div class="post-meta">
         <time class="post-time" itemprop="dateCreated"
@@ -1081,21 +1148,21 @@
 
 
 
-    
-
-      
-      
       
 
-      
-      
+        
+        
+        
 
-      
+        
+        
+
+        
 
   <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
     <header class="post-header">
 
-      <h1 class="post-title">
+      <h3 class="post-title">
         
             <a class="post-title-link" href="/2018/02/05/抖动着思考/" itemprop="url">
               
@@ -1103,7 +1170,7 @@
               
             </a>
         
-      </h1>
+      </h3>
 
       <div class="post-meta">
         <time class="post-time" itemprop="dateCreated"
@@ -1118,21 +1185,21 @@
 
 
 
-    
-
-      
-      
       
 
-      
-      
+        
+        
+        
 
-      
+        
+        
+
+        
 
   <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
     <header class="post-header">
 
-      <h1 class="post-title">
+      <h3 class="post-title">
         
             <a class="post-title-link" href="/2018/01/30/半夜报时的狗/" itemprop="url">
               
@@ -1140,7 +1207,7 @@
               
             </a>
         
-      </h1>
+      </h3>
 
       <div class="post-meta">
         <time class="post-time" itemprop="dateCreated"
@@ -1155,21 +1222,21 @@
 
 
 
-    
-
-      
-      
       
 
-      
-      
+        
+        
+        
 
-      
+        
+        
+
+        
 
   <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
     <header class="post-header">
 
-      <h1 class="post-title">
+      <h3 class="post-title">
         
             <a class="post-title-link" href="/2018/01/29/微谈《17岁的单车》——写实的生活/" itemprop="url">
               
@@ -1177,7 +1244,7 @@
               
             </a>
         
-      </h1>
+      </h3>
 
       <div class="post-meta">
         <time class="post-time" itemprop="dateCreated"
@@ -1192,21 +1259,21 @@
 
 
 
-    
-
-      
-      
       
 
-      
-      
+        
+        
+        
 
-      
+        
+        
+
+        
 
   <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
     <header class="post-header">
 
-      <h1 class="post-title">
+      <h3 class="post-title">
         
             <a class="post-title-link" href="/2018/01/27/粗糙的利己主义者/" itemprop="url">
               
@@ -1214,7 +1281,7 @@
               
             </a>
         
-      </h1>
+      </h3>
 
       <div class="post-meta">
         <time class="post-time" itemprop="dateCreated"
@@ -1229,21 +1296,21 @@
 
 
 
-    
-
-      
-      
       
 
-      
-      
+        
+        
+        
 
-      
+        
+        
+
+        
 
   <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
     <header class="post-header">
 
-      <h1 class="post-title">
+      <h3 class="post-title">
         
             <a class="post-title-link" href="/2018/01/25/微言大义第六期：人生的艰难与挑战，并不会被新年的时间分割线切断，去年没解决的烦恼，今年一定还存在/" itemprop="url">
               
@@ -1251,7 +1318,7 @@
               
             </a>
         
-      </h1>
+      </h3>
 
       <div class="post-meta">
         <time class="post-time" itemprop="dateCreated"
@@ -1266,21 +1333,21 @@
 
 
 
-    
-
-      
-      
       
 
-      
-      
+        
+        
+        
 
-      
+        
+        
+
+        
 
   <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
     <header class="post-header">
 
-      <h1 class="post-title">
+      <h3 class="post-title">
         
             <a class="post-title-link" href="/2018/01/23/The-child-is-grown-The-dream-is-gone/" itemprop="url">
               
@@ -1288,7 +1355,7 @@
               
             </a>
         
-      </h1>
+      </h3>
 
       <div class="post-meta">
         <time class="post-time" itemprop="dateCreated"
@@ -1303,21 +1370,21 @@
 
 
 
-    
-
-      
-      
       
 
-      
-      
+        
+        
+        
 
-      
+        
+        
+
+        
 
   <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
     <header class="post-header">
 
-      <h1 class="post-title">
+      <h3 class="post-title">
         
             <a class="post-title-link" href="/2018/01/18/现在的生活哪里让我不满意/" itemprop="url">
               
@@ -1325,7 +1392,7 @@
               
             </a>
         
-      </h1>
+      </h3>
 
       <div class="post-meta">
         <time class="post-time" itemprop="dateCreated"
@@ -1340,21 +1407,21 @@
 
 
 
-    
-
-      
-      
       
 
-      
-      
+        
+        
+        
 
-      
+        
+        
+
+        
 
   <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
     <header class="post-header">
 
-      <h1 class="post-title">
+      <h3 class="post-title">
         
             <a class="post-title-link" href="/2018/01/09/观『三个广告牌』后感——微谈电影的张力/" itemprop="url">
               
@@ -1362,7 +1429,7 @@
               
             </a>
         
-      </h1>
+      </h3>
 
       <div class="post-meta">
         <time class="post-time" itemprop="dateCreated"
@@ -1377,21 +1444,21 @@
 
 
 
-    
-
-      
-      
       
 
-      
-      
+        
+        
+        
 
-      
+        
+        
+
+        
 
   <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
     <header class="post-header">
 
-      <h1 class="post-title">
+      <h3 class="post-title">
         
             <a class="post-title-link" href="/2018/01/04/读『废都』有感/" itemprop="url">
               
@@ -1399,7 +1466,7 @@
               
             </a>
         
-      </h1>
+      </h3>
 
       <div class="post-meta">
         <time class="post-time" itemprop="dateCreated"
@@ -1414,26 +1481,26 @@
 
 
 
-    
-
-      
-      
       
 
-      
         
-        <div class="collection-title">
-          <h2 class="archive-year motion-element" id="archive-year-2017">2017</h2>
-        </div>
-      
-      
+        
+        
 
-      
+        
+          
+          <div class="collection-title">
+            <h2 class="archive-year" id="archive-year-2017">2017</h2>
+          </div>
+        
+        
+
+        
 
   <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
     <header class="post-header">
 
-      <h1 class="post-title">
+      <h3 class="post-title">
         
             <a class="post-title-link" href="/2017/12/30/2017——拔剑四顾心茫然/" itemprop="url">
               
@@ -1441,7 +1508,7 @@
               
             </a>
         
-      </h1>
+      </h3>
 
       <div class="post-meta">
         <time class="post-time" itemprop="dateCreated"
@@ -1456,21 +1523,21 @@
 
 
 
-    
-
-      
-      
       
 
-      
-      
+        
+        
+        
 
-      
+        
+        
+
+        
 
   <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
     <header class="post-header">
 
-      <h1 class="post-title">
+      <h3 class="post-title">
         
             <a class="post-title-link" href="/2017/12/24/读书如果是逃避工作，是混:寄生，那么读书就是一个人掩盖自己无能与邪恶的幌子/" itemprop="url">
               
@@ -1478,7 +1545,7 @@
               
             </a>
         
-      </h1>
+      </h3>
 
       <div class="post-meta">
         <time class="post-time" itemprop="dateCreated"
@@ -1493,21 +1560,21 @@
 
 
 
-    
-
-      
-      
       
 
-      
-      
+        
+        
+        
 
-      
+        
+        
+
+        
 
   <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
     <header class="post-header">
 
-      <h1 class="post-title">
+      <h3 class="post-title">
         
             <a class="post-title-link" href="/2017/12/22/午夜咖啡因/" itemprop="url">
               
@@ -1515,7 +1582,7 @@
               
             </a>
         
-      </h1>
+      </h3>
 
       <div class="post-meta">
         <time class="post-time" itemprop="dateCreated"
@@ -1530,21 +1597,21 @@
 
 
 
-    
-
-      
-      
       
 
-      
-      
+        
+        
+        
 
-      
+        
+        
+
+        
 
   <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
     <header class="post-header">
 
-      <h1 class="post-title">
+      <h3 class="post-title">
         
             <a class="post-title-link" href="/2017/12/16/2017年的日子就这么过掉了/" itemprop="url">
               
@@ -1552,7 +1619,7 @@
               
             </a>
         
-      </h1>
+      </h3>
 
       <div class="post-meta">
         <time class="post-time" itemprop="dateCreated"
@@ -1567,21 +1634,21 @@
 
 
 
-    
-
-      
-      
       
 
-      
-      
+        
+        
+        
 
-      
+        
+        
+
+        
 
   <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
     <header class="post-header">
 
-      <h1 class="post-title">
+      <h3 class="post-title">
         
             <a class="post-title-link" href="/2017/12/05/家里的清汤挂面是怎么做的来着/" itemprop="url">
               
@@ -1589,7 +1656,7 @@
               
             </a>
         
-      </h1>
+      </h3>
 
       <div class="post-meta">
         <time class="post-time" itemprop="dateCreated"
@@ -1604,21 +1671,21 @@
 
 
 
-    
-
-      
-      
       
 
-      
-      
+        
+        
+        
 
-      
+        
+        
+
+        
 
   <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
     <header class="post-header">
 
-      <h1 class="post-title">
+      <h3 class="post-title">
         
             <a class="post-title-link" href="/2017/12/01/过不下去确实也很难离婚——『谁说我不在乎』观后感/" itemprop="url">
               
@@ -1626,7 +1693,7 @@
               
             </a>
         
-      </h1>
+      </h3>
 
       <div class="post-meta">
         <time class="post-time" itemprop="dateCreated"
@@ -1641,21 +1708,21 @@
 
 
 
-    
-
-      
-      
       
 
-      
-      
+        
+        
+        
 
-      
+        
+        
+
+        
 
   <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
     <header class="post-header">
 
-      <h1 class="post-title">
+      <h3 class="post-title">
         
             <a class="post-title-link" href="/2017/11/21/日本林志颖的相声求学之旅——『红鳉鱼』观后感/" itemprop="url">
               
@@ -1663,7 +1730,7 @@
               
             </a>
         
-      </h1>
+      </h3>
 
       <div class="post-meta">
         <time class="post-time" itemprop="dateCreated"
@@ -1678,21 +1745,21 @@
 
 
 
-    
-
-      
-      
       
 
-      
-      
+        
+        
+        
 
-      
+        
+        
+
+        
 
   <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
     <header class="post-header">
 
-      <h1 class="post-title">
+      <h3 class="post-title">
         
             <a class="post-title-link" href="/2017/11/18/生活的常态——『百元之恋』观后感/" itemprop="url">
               
@@ -1700,7 +1767,7 @@
               
             </a>
         
-      </h1>
+      </h3>
 
       <div class="post-meta">
         <time class="post-time" itemprop="dateCreated"
@@ -1715,21 +1782,21 @@
 
 
 
-    
-
-      
-      
       
 
-      
-      
+        
+        
+        
 
-      
+        
+        
+
+        
 
   <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
     <header class="post-header">
 
-      <h1 class="post-title">
+      <h3 class="post-title">
         
             <a class="post-title-link" href="/2017/11/10/看见树，看见花，想的却是地下的那具骸骨。/" itemprop="url">
               
@@ -1737,7 +1804,7 @@
               
             </a>
         
-      </h1>
+      </h3>
 
       <div class="post-meta">
         <time class="post-time" itemprop="dateCreated"
@@ -1752,21 +1819,21 @@
 
 
 
-    
-
-      
-      
       
 
-      
-      
+        
+        
+        
 
-      
+        
+        
+
+        
 
   <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
     <header class="post-header">
 
-      <h1 class="post-title">
+      <h3 class="post-title">
         
             <a class="post-title-link" href="/2017/11/10/被中国互联网用坏的词（持续统计中）/" itemprop="url">
               
@@ -1774,7 +1841,7 @@
               
             </a>
         
-      </h1>
+      </h3>
 
       <div class="post-meta">
         <time class="post-time" itemprop="dateCreated"
@@ -1789,21 +1856,21 @@
 
 
 
-    
-
-      
-      
       
 
-      
-      
+        
+        
+        
 
-      
+        
+        
+
+        
 
   <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
     <header class="post-header">
 
-      <h1 class="post-title">
+      <h3 class="post-title">
         
             <a class="post-title-link" href="/2017/10/28/爱一个人要像恶鬼索命，倒钩入肉，这一生喋喋不休，说到天花乱坠，非如此不是顺理成章/" itemprop="url">
               
@@ -1811,7 +1878,7 @@
               
             </a>
         
-      </h1>
+      </h3>
 
       <div class="post-meta">
         <time class="post-time" itemprop="dateCreated"
@@ -1826,21 +1893,21 @@
 
 
 
-    
-
-      
-      
       
 
-      
-      
+        
+        
+        
 
-      
+        
+        
+
+        
 
   <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
     <header class="post-header">
 
-      <h1 class="post-title">
+      <h3 class="post-title">
         
             <a class="post-title-link" href="/2017/10/26/记一次不成功的转正/" itemprop="url">
               
@@ -1848,7 +1915,7 @@
               
             </a>
         
-      </h1>
+      </h3>
 
       <div class="post-meta">
         <time class="post-time" itemprop="dateCreated"
@@ -1863,21 +1930,21 @@
 
 
 
-    
-
-      
-      
       
 
-      
-      
+        
+        
+        
 
-      
+        
+        
+
+        
 
   <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
     <header class="post-header">
 
-      <h1 class="post-title">
+      <h3 class="post-title">
         
             <a class="post-title-link" href="/2017/10/15/新闻媒体的真正的价值，绝对不是吸引眼球，抢流量，真正的新闻人是历史学家，他们以透明的观点记录这个世界。/" itemprop="url">
               
@@ -1885,7 +1952,7 @@
               
             </a>
         
-      </h1>
+      </h3>
 
       <div class="post-meta">
         <time class="post-time" itemprop="dateCreated"
@@ -1900,21 +1967,21 @@
 
 
 
-    
-
-      
-      
       
 
-      
-      
+        
+        
+        
 
-      
+        
+        
+
+        
 
   <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
     <header class="post-header">
 
-      <h1 class="post-title">
+      <h3 class="post-title">
         
             <a class="post-title-link" href="/2017/10/09/所谓的世间，不就是你吗？/" itemprop="url">
               
@@ -1922,7 +1989,7 @@
               
             </a>
         
-      </h1>
+      </h3>
 
       <div class="post-meta">
         <time class="post-time" itemprop="dateCreated"
@@ -1937,21 +2004,21 @@
 
 
 
-    
-
-      
-      
       
 
-      
-      
+        
+        
+        
 
-      
+        
+        
+
+        
 
   <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
     <header class="post-header">
 
-      <h1 class="post-title">
+      <h3 class="post-title">
         
             <a class="post-title-link" href="/2017/10/08/所谓故乡，不过是祖先流浪的上一站/" itemprop="url">
               
@@ -1959,7 +2026,7 @@
               
             </a>
         
-      </h1>
+      </h3>
 
       <div class="post-meta">
         <time class="post-time" itemprop="dateCreated"
@@ -1974,21 +2041,21 @@
 
 
 
-    
-
-      
-      
       
 
-      
-      
+        
+        
+        
 
-      
+        
+        
+
+        
 
   <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
     <header class="post-header">
 
-      <h1 class="post-title">
+      <h3 class="post-title">
         
             <a class="post-title-link" href="/2017/09/27/年前需要完成的一些事情/" itemprop="url">
               
@@ -1996,7 +2063,7 @@
               
             </a>
         
-      </h1>
+      </h3>
 
       <div class="post-meta">
         <time class="post-time" itemprop="dateCreated"
@@ -2011,21 +2078,21 @@
 
 
 
-    
-
-      
-      
       
 
-      
-      
+        
+        
+        
 
-      
+        
+        
+
+        
 
   <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
     <header class="post-header">
 
-      <h1 class="post-title">
+      <h3 class="post-title">
         
             <a class="post-title-link" href="/2017/09/25/押尾光太郎/" itemprop="url">
               
@@ -2033,7 +2100,7 @@
               
             </a>
         
-      </h1>
+      </h3>
 
       <div class="post-meta">
         <time class="post-time" itemprop="dateCreated"
@@ -2048,21 +2115,21 @@
 
 
 
-    
-
-      
-      
       
 
-      
-      
+        
+        
+        
 
-      
+        
+        
+
+        
 
   <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
     <header class="post-header">
 
-      <h1 class="post-title">
+      <h3 class="post-title">
         
             <a class="post-title-link" href="/2017/09/02/近期的生活：工作逐渐稳定，焦虑逐渐浮现/" itemprop="url">
               
@@ -2070,7 +2137,7 @@
               
             </a>
         
-      </h1>
+      </h3>
 
       <div class="post-meta">
         <time class="post-time" itemprop="dateCreated"
@@ -2085,21 +2152,21 @@
 
 
 
-    
-
-      
-      
       
 
-      
-      
+        
+        
+        
 
-      
+        
+        
+
+        
 
   <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
     <header class="post-header">
 
-      <h1 class="post-title">
+      <h3 class="post-title">
         
             <a class="post-title-link" href="/2017/07/09/All-in的贾跃亭，All-out的乐视？/" itemprop="url">
               
@@ -2107,7 +2174,7 @@
               
             </a>
         
-      </h1>
+      </h3>
 
       <div class="post-meta">
         <time class="post-time" itemprop="dateCreated"
@@ -2122,21 +2189,21 @@
 
 
 
-    
-
-      
-      
       
 
-      
-      
+        
+        
+        
 
-      
+        
+        
+
+        
 
   <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
     <header class="post-header">
 
-      <h1 class="post-title">
+      <h3 class="post-title">
         
             <a class="post-title-link" href="/2017/06/26/杰出，优秀，一般的前端开发者之间的区别/" itemprop="url">
               
@@ -2144,7 +2211,7 @@
               
             </a>
         
-      </h1>
+      </h3>
 
       <div class="post-meta">
         <time class="post-time" itemprop="dateCreated"
@@ -2159,21 +2226,21 @@
 
 
 
-    
-
-      
-      
       
 
-      
-      
+        
+        
+        
 
-      
+        
+        
+
+        
 
   <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
     <header class="post-header">
 
-      <h1 class="post-title">
+      <h3 class="post-title">
         
             <a class="post-title-link" href="/2017/05/27/哭泣的古人/" itemprop="url">
               
@@ -2181,7 +2248,7 @@
               
             </a>
         
-      </h1>
+      </h3>
 
       <div class="post-meta">
         <time class="post-time" itemprop="dateCreated"
@@ -2196,21 +2263,21 @@
 
 
 
-    
-
-      
-      
       
 
-      
-      
+        
+        
+        
 
-      
+        
+        
+
+        
 
   <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
     <header class="post-header">
 
-      <h1 class="post-title">
+      <h3 class="post-title">
         
             <a class="post-title-link" href="/2017/05/04/如果网易云免流失效了，你会下载哪些歌/" itemprop="url">
               
@@ -2218,7 +2285,7 @@
               
             </a>
         
-      </h1>
+      </h3>
 
       <div class="post-meta">
         <time class="post-time" itemprop="dateCreated"
@@ -2233,21 +2300,21 @@
 
 
 
-    
-
-      
-      
       
 
-      
-      
+        
+        
+        
 
-      
+        
+        
+
+        
 
   <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
     <header class="post-header">
 
-      <h1 class="post-title">
+      <h3 class="post-title">
         
             <a class="post-title-link" href="/2017/04/22/2017上海车展，不仅仅是豪车盛宴/" itemprop="url">
               
@@ -2255,7 +2322,7 @@
               
             </a>
         
-      </h1>
+      </h3>
 
       <div class="post-meta">
         <time class="post-time" itemprop="dateCreated"
@@ -2270,21 +2337,21 @@
 
 
 
-    
-
-      
-      
       
 
-      
-      
+        
+        
+        
 
-      
+        
+        
+
+        
 
   <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
     <header class="post-header">
 
-      <h1 class="post-title">
+      <h3 class="post-title">
         
             <a class="post-title-link" href="/2017/04/11/酒店预订demo设计/" itemprop="url">
               
@@ -2292,7 +2359,7 @@
               
             </a>
         
-      </h1>
+      </h3>
 
       <div class="post-meta">
         <time class="post-time" itemprop="dateCreated"
@@ -2307,21 +2374,21 @@
 
 
 
-    
-
-      
-      
       
 
-      
-      
+        
+        
+        
 
-      
+        
+        
+
+        
 
   <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
     <header class="post-header">
 
-      <h1 class="post-title">
+      <h3 class="post-title">
         
             <a class="post-title-link" href="/2017/03/23/开始学习vue了，遇到了一些问题/" itemprop="url">
               
@@ -2329,7 +2396,7 @@
               
             </a>
         
-      </h1>
+      </h3>
 
       <div class="post-meta">
         <time class="post-time" itemprop="dateCreated"
@@ -2344,21 +2411,21 @@
 
 
 
-    
-
-      
-      
       
 
-      
-      
+        
+        
+        
 
-      
+        
+        
+
+        
 
   <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
     <header class="post-header">
 
-      <h1 class="post-title">
+      <h3 class="post-title">
         
             <a class="post-title-link" href="/2017/03/18/租房在舒适，也要有自己的一席之地/" itemprop="url">
               
@@ -2366,7 +2433,7 @@
               
             </a>
         
-      </h1>
+      </h3>
 
       <div class="post-meta">
         <time class="post-time" itemprop="dateCreated"
@@ -2381,26 +2448,26 @@
 
 
 
-    
-
-      
-      
       
 
-      
         
-        <div class="collection-title">
-          <h2 class="archive-year motion-element" id="archive-year-2016">2016</h2>
-        </div>
-      
-      
+        
+        
 
-      
+        
+          
+          <div class="collection-title">
+            <h2 class="archive-year" id="archive-year-2016">2016</h2>
+          </div>
+        
+        
+
+        
 
   <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
     <header class="post-header">
 
-      <h1 class="post-title">
+      <h3 class="post-title">
         
             <a class="post-title-link" href="/2016/06/05/关于毕业/" itemprop="url">
               
@@ -2408,7 +2475,7 @@
               
             </a>
         
-      </h1>
+      </h3>
 
       <div class="post-meta">
         <time class="post-time" itemprop="dateCreated"
@@ -2423,21 +2490,21 @@
 
 
 
-    
-
-      
-      
       
 
-      
-      
+        
+        
+        
 
-      
+        
+        
+
+        
 
   <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
     <header class="post-header">
 
-      <h1 class="post-title">
+      <h3 class="post-title">
         
             <a class="post-title-link" href="/2016/03/30/要怎样努力，才能成为很有意思的人/" itemprop="url">
               
@@ -2445,7 +2512,7 @@
               
             </a>
         
-      </h1>
+      </h3>
 
       <div class="post-meta">
         <time class="post-time" itemprop="dateCreated"
@@ -2460,21 +2527,21 @@
 
 
 
-    
-
-      
-      
       
 
-      
-      
+        
+        
+        
 
-      
+        
+        
+
+        
 
   <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
     <header class="post-header">
 
-      <h1 class="post-title">
+      <h3 class="post-title">
         
             <a class="post-title-link" href="/2016/02/20/阅读2015年度总结/" itemprop="url">
               
@@ -2482,7 +2549,7 @@
               
             </a>
         
-      </h1>
+      </h3>
 
       <div class="post-meta">
         <time class="post-time" itemprop="dateCreated"
@@ -2497,21 +2564,21 @@
 
 
 
-    
-
-      
-      
       
 
-      
-      
+        
+        
+        
 
-      
+        
+        
+
+        
 
   <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
     <header class="post-header">
 
-      <h1 class="post-title">
+      <h3 class="post-title">
         
             <a class="post-title-link" href="/2016/01/27/人类简史/" itemprop="url">
               
@@ -2519,7 +2586,7 @@
               
             </a>
         
-      </h1>
+      </h3>
 
       <div class="post-meta">
         <time class="post-time" itemprop="dateCreated"
@@ -2534,21 +2601,21 @@
 
 
 
-    
-
-      
-      
       
 
-      
-      
+        
+        
+        
 
-      
+        
+        
+
+        
 
   <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
     <header class="post-header">
 
-      <h1 class="post-title">
+      <h3 class="post-title">
         
             <a class="post-title-link" href="/2016/01/11/quora年度精选（CS）/" itemprop="url">
               
@@ -2556,7 +2623,7 @@
               
             </a>
         
-      </h1>
+      </h3>
 
       <div class="post-meta">
         <time class="post-time" itemprop="dateCreated"
@@ -2571,26 +2638,26 @@
 
 
 
-    
-
-      
-      
       
 
-      
         
-        <div class="collection-title">
-          <h2 class="archive-year motion-element" id="archive-year-2015">2015</h2>
-        </div>
-      
-      
+        
+        
 
-      
+        
+          
+          <div class="collection-title">
+            <h2 class="archive-year" id="archive-year-2015">2015</h2>
+          </div>
+        
+        
+
+        
 
   <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
     <header class="post-header">
 
-      <h1 class="post-title">
+      <h3 class="post-title">
         
             <a class="post-title-link" href="/2015/12/25/为什么要写独立博客/" itemprop="url">
               
@@ -2598,7 +2665,7 @@
               
             </a>
         
-      </h1>
+      </h3>
 
       <div class="post-meta">
         <time class="post-time" itemprop="dateCreated"
@@ -2613,18 +2680,19 @@
 
 
 
-    
+      
 
-  </section>
+    </div>
+  </div>
+  
+  
+  
 
   
 
 
-          
+
           </div>
-          
-
-
           
 
         </div>
@@ -2640,136 +2708,498 @@
   </div>
 
   <aside id="sidebar" class="sidebar">
+    
     <div class="sidebar-inner">
 
       
 
       
 
-      <section class="site-overview sidebar-panel sidebar-panel-active">
-        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
-          <img class="site-author-image" itemprop="image"
-               src="http://o8cju5u0y.bkt.clouddn.com/dm-3.jpg"
-               alt="王隐在录音" />
-          <p class="site-author-name" itemprop="name">王隐在录音</p>
-           
+      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <p class="site-author-name" itemprop="name">王隐在录音</p>
               <p class="site-description motion-element" itemprop="description">Apple｜RSS｜Rock&Post Rock｜WEB VIEW 播客｜独立博客｜Non-Cinema Film｜Efficiency App｜反感微信｜反感政治正确 | 搜索引擎爱好者｜黄焖鸡｜远古互联网｜精神程序员｜吉他爱好者｜前端技术好奇者｜老球迷｜在南方的北方人</p>
-          
-        </div>
-        <nav class="site-state motion-element">
-        
-          
-            <div class="site-state-item site-state-posts">
-              <a href="/archives">
-                <span class="site-state-item-count">63</span>
-                <span class="site-state-item-name">日志</span>
-              </a>
-            </div>
-          
-
-          
-            <div class="site-state-item site-state-categories">
-              <a href="/categories">
-                <span class="site-state-item-count">13</span>
-                <span class="site-state-item-name">分类</span>
-              </a>
-            </div>
-          
-
-          
-            <div class="site-state-item site-state-tags">
-              <a href="/tags">
-                <span class="site-state-item-count">172</span>
-                <span class="site-state-item-name">标签</span>
-              </a>
-            </div>
-          
-
-        </nav>
-
-        
-          <div class="feed-link motion-element">
-            <a href="/atom.xml" rel="alternate">
-              <i class="fa fa-rss"></i>
-              RSS
-            </a>
           </div>
-        
 
-        <div class="links-of-author motion-element">
           
-            
-              <span class="links-of-author-item">
-                <a href="https://twitter.com/liki_wang" target="_blank" title="Twitter">
-                  
-                    <i class="fa fa-fw fa-twitter"></i>
-                  
-                  Twitter
-                </a>
-              </span>
-            
-              <span class="links-of-author-item">
-                <a href="http://weibo.com/recwangyin" target="_blank" title="Weibo">
-                  
-                    <i class="fa fa-fw fa-weibo"></i>
-                  
-                  Weibo
-                </a>
-              </span>
-            
-              <span class="links-of-author-item">
-                <a href="https://www.zhihu.com/people/wang-peng-50-40" target="_blank" title="Zhihu">
-                  
-                    <i class="fa fa-fw fa-globe"></i>
-                  
-                  Zhihu
-                </a>
-              </span>
-            
-              <span class="links-of-author-item">
-                <a href="http://webview.tech" target="_blank" title="播客">
-                  
-                    <i class="fa fa-fw fa-headphones"></i>
-                  
-                  播客
-                </a>
-              </span>
-            
-              <span class="links-of-author-item">
-                <a href="mailto:liki_wang@foxmail.com" target="_blank" title="邮件">
-                  
-                    <i class="fa fa-fw fa-envelope"></i>
-                  
-                  邮件
-                </a>
-              </span>
-            
+            <nav class="site-state motion-element">
+              
+                <div class="site-state-item site-state-posts">
+                
+                  <a href="/archives/">
+                
+                    <span class="site-state-item-count">63</span>
+                    <span class="site-state-item-name">日志</span>
+                  </a>
+                </div>
+              
+
+              
+                
+                
+                <div class="site-state-item site-state-categories">
+                  <a href="/categories/index.html">
+                    
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">13</span>
+                    <span class="site-state-item-name">分类</span>
+                  </a>
+                </div>
+              
+
+              
+                
+                
+                <div class="site-state-item site-state-tags">
+                  <a href="/tags/index.html">
+                    
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">172</span>
+                    <span class="site-state-item-name">标签</span>
+                  </a>
+                </div>
+              
+            </nav>
           
-        </div>
 
-        
-        
-
-        
-        
-          <div class="links-of-blogroll motion-element links-of-blogroll-inline">
-            <div class="links-of-blogroll-title">
-              <i class="fa  fa-fw fa-globe"></i>
-              敬礼也有自己写字的地方，欢迎移步
+          
+            <div class="feed-link motion-element">
+              <a href="/atom.xml" rel="alternate">
+                <i class="fa fa-rss"></i>
+                RSS
+              </a>
             </div>
-            <ul class="links-of-blogroll-list">
+          
+
+          
+            <div class="links-of-author motion-element">
               
-                <li class="links-of-blogroll-item">
-                  <a href="http://lolilukia.com/" title="lolilukia" target="_blank">lolilukia</a>
-                </li>
+                <span class="links-of-author-item">
+                  <a href="https://twitter.com/liki_wang" target="_blank" title="Twitter" rel="external nofollow"><i class="fa fa-fw fa-twitter"></i>Twitter</a>
+                  
+                </span>
               
-            </ul>
-          </div>
-        
+                <span class="links-of-author-item">
+                  <a href="http://weibo.com/recwangyin" target="_blank" title="Weibo" rel="external nofollow"><i class="fa fa-fw fa-weibo"></i>Weibo</a>
+                  
+                </span>
+              
+                <span class="links-of-author-item">
+                  <a href="https://www.zhihu.com/people/wang-peng-50-40" target="_blank" title="Zhihu" rel="external nofollow"><i class="fa fa-fw fa-globe"></i>Zhihu</a>
+                  
+                </span>
+              
+                <span class="links-of-author-item">
+                  <a href="https://webview.tech" target="_blank" title="播客" rel="external nofollow"><i class="fa fa-fw fa-headphones"></i>播客</a>
+                  
+                </span>
+              
+                <span class="links-of-author-item">
+                  <a href="mailto:liki_wang@foxmail.com" target="_blank" title="邮件" rel="external nofollow"><i class="fa fa-fw fa-envelope"></i>邮件</a>
+                  
+                </span>
+              
+            </div>
+          
 
-        
+          
+          
 
+          
+          
+            <div class="links-of-blogroll motion-element links-of-blogroll-block">
+              <div class="links-of-blogroll-title">
+                <i class="fa  fa-fw fa-link"></i>
+                敬礼也有自己写字的地方，欢迎移步
+              </div>
+              <ul class="links-of-blogroll-list">
+                
+                  <li class="links-of-blogroll-item">
+                    <a href="http://lolilukia.com/" title="lolilukia" target="_blank">lolilukia</a>
+                  </li>
+                
+              </ul>
+            </div>
+          
 
+          
+            
+          
+          
+
+        </div>
       </section>
 
       
@@ -2786,19 +3216,55 @@
 
     <footer id="footer" class="footer">
       <div class="footer-inner">
-        <div class="copyright" >
-  
-  &copy;  2015 - 
-  <span itemprop="copyrightYear">2018</span>
-  <span class="with-love">
+        <div class="copyright">&copy; 2015 – <span itemprop="copyrightYear">2018</span>
+  <span class="with-love" id="animate">
     <i class="fa fa-heart"></i>
   </span>
   <span class="author" itemprop="copyrightHolder">王隐在录音</span>
+
+  
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item-icon">
+      <i class="fa fa-area-chart"></i>
+    </span>
+    
+      <span class="post-meta-item-text">站点总字数：</span>
+    
+    <span title="站点总字数">120k</span>
+  
+
+  
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item-icon">
+      <i class="fa fa-coffee"></i>
+    </span>
+    
+      <span class="post-meta-item-text">站点阅读时长 &asymp;</span>
+    
+    <span title="站点阅读时长">1:49</span>
+  
 </div>
+
+
+  
+
+
+
+
+
+
+
 
 
 
         
+
+
+
+
+
+
+
 
         
       </div>
@@ -2810,6 +3276,11 @@
         
       </div>
     
+
+    
+	
+    
+
     
   </div>
 
@@ -2829,81 +3300,45 @@
 
 
 
-  
 
 
 
 
-  
-  <script type="text/javascript" src="http://cdn.bootcss.com/jquery/2.1.3/jquery.min.js"></script>
-
-  
-  <script type="text/javascript" src="http://cdn.bootcss.com/fastclick/1.0.6/fastclick.js"></script>
-
-  
-  <script type="text/javascript" src="http://cdn.bootcss.com/jquery_lazyload/1.9.7/jquery.lazyload.js"></script>
-
-  
-  <script type="text/javascript" src="http://cdn.bootcss.com/velocity/1.2.1/velocity.js"></script>
-
-  
-  <script type="text/javascript" src="http://cdn.bootcss.com/velocity/1.2.1/velocity.ui.js"></script>
-
-  
-  <script type="text/javascript" src="https://cdn.staticfile.org/fancybox/2.1.5/jquery.fancybox.js"></script>
-
-
-  
-
-
-  <script type="text/javascript" src="/js/src/utils.js?v=5.1.0"></script>
-
-  <script type="text/javascript" src="/js/src/motion.js?v=5.1.0"></script>
-
-
-
-  
-  
-
-  
-  
-
-
-  
-
-
-  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.0"></script>
-
-
-
-  
-
-
-
-  
 
 
 
 
-	
+
+
+
+
 
 
 
 
 
   
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
 
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
 
-
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
 
 
   
 
 
+  <script type="text/javascript" src="/js/src/utils.js?v=6.4.0"></script>
 
-
-
-  
+  <script type="text/javascript" src="/js/src/motion.js?v=6.4.0"></script>
 
 
 
@@ -2914,10 +3349,75 @@
 
   
 
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=6.4.0"></script>
+
+
+
+  
+
+
+
+  
+
+
+
+
+
+
+
+
+  <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+  
+  
+  <script src="//unpkg.com/valine/dist/Valine.min.js"></script>
+  
+  <script type="text/javascript">
+    var GUEST = ['nick','mail','link'];
+    var guest = 'nick,mail,link';
+    guest = guest.split(',').filter(function (item) {
+      return GUEST.indexOf(item)>-1;
+    });
+    new Valine({
+        el: '#comments' ,
+        verify: false,
+        notify: false,
+        appId: 'wt4e7Uow9CGBV0ABuIoWFjLb-gzGzoHsz',
+        appKey: 'F980d82qtlWJP3pHwYss6uI6',
+        placeholder: '说点什么',
+        avatar:'mm',
+        meta:guest,
+        pageSize:'10' || 10,
+        visitor: false
+    });
+  </script>
+
+
+
+  
+
+
+
+
+
+  
+
   
 
   
 
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+  
 
   
 

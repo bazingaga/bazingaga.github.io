@@ -1,28 +1,32 @@
-<!doctype html>
+<!DOCTYPE html>
 
 
 
 
-<html class="theme-next muse" lang="zh-Hans">
+
+
+
+
+
+
+
+
+
+<html class="theme-next muse" lang="zh-CN">
 <head>
   <meta charset="UTF-8"/>
-
-<script>
-    (function(){
-        if('wodemima'){
-            if (prompt('请输入文章密码') !== 'wodemima'){
-                alert('密码错误');
-                history.back();
-            }
-        }
-    })();
-</script>
-
-
-
-
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2"/>
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
 
 
 
@@ -43,11 +47,6 @@
 
 
 
-  
-  
-    
-  
-  <link href="https://cdn.staticfile.org/fancybox/2.1.5/jquery.fancybox.css" rel="stylesheet" type="text/css" />
 
 
 
@@ -55,38 +54,27 @@
 
 
 
-  
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
 
-<link href="http://cdn.staticfile.org/font-awesome/4.6.2/css/font-awesome.css" rel="stylesheet" type="text/css" />
-
-<link href="/css/main.css?v=5.1.0" rel="stylesheet" type="text/css" />
+<link href="/css/main.css?v=6.4.0" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="焦虑,职位,考研," />
+  <link rel="apple-touch-icon" sizes="180x180" href="/favicon.ico?v=6.4.0">
 
 
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon.ico?v=6.4.0">
 
 
-
-  <link rel="alternate" href="/atom.xml" title="王尔德的德" type="application/atom+xml" />
-
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon.ico?v=6.4.0">
 
 
-
-  <link rel="shortcut icon" type="image/x-icon" href="/images/favicon.ico?v=5.1.0" />
+  <link rel="mask-icon" href="/images/favicon.ico?v=6.4.0" color="#222">
 
 
 
 
 
 
-<meta property="og:type" content="article">
-<meta property="og:title" content="近期的生活：工作逐渐稳定，焦虑感也开始出现">
-<meta property="og:url" content="http://yoursite.com/2017/09/02/近期的生活：工作逐渐稳定，焦虑逐渐浮现/index.html">
-<meta property="og:site_name" content="王尔德的德">
-<meta property="og:updated_time" content="2018-07-16T07:43:50.706Z">
-<meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="近期的生活：工作逐渐稳定，焦虑感也开始出现">
 
 
 
@@ -95,22 +83,43 @@
   var CONFIG = {
     root: '/',
     scheme: 'Muse',
-    sidebar: {"position":"left","display":"post","offset":12,"offset_float":0,"b2t":false,"scrollpercent":false},
-    fancybox: true,
-    motion: false,
-    duoshuo: {
-      userId: '0',
-      author: '博主'
-    },
+    version: '6.4.0',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: false,
+    fastclick: false,
+    lazyload: false,
+    tabs: true,
+    motion: {"enable":false,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
     algolia: {
       applicationID: '',
       apiKey: '',
       indexName: '',
-      hits: {"per_page":20},
+      hits: {"per_page":10},
       labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
     }
   };
 </script>
+
+
+  
+
+
+
+
+  <meta name="keywords" content="焦虑,职位,考研">
+<meta property="og:type" content="article">
+<meta property="og:title" content="近期的生活：工作逐渐稳定，焦虑感也开始出现">
+<meta property="og:url" content="http://yoursite.com/2017/09/02/近期的生活：工作逐渐稳定，焦虑逐渐浮现/index.html">
+<meta property="og:site_name" content="王尔德的德">
+<meta property="og:locale" content="zh-CN">
+<meta property="og:updated_time" content="2018-07-16T07:43:50.706Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="近期的生活：工作逐渐稳定，焦虑感也开始出现">
+
+
+
+  <link rel="alternate" href="/atom.xml" title="王尔德的德" type="application/atom+xml" />
+
 
 
 
@@ -118,14 +127,15 @@
 
 
 
+<script type="text/javascript" id="page.configurations">
+  CONFIG.page = {
+    sidebar: "",
+  };
+</script>
 
-
-  <title> 近期的生活：工作逐渐稳定，焦虑感也开始出现 | 王尔德的德 </title>
-</head>
-
-<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
-
+  <title>近期的生活：工作逐渐稳定，焦虑感也开始出现 | 王尔德的德</title>
   
+
 
 
 
@@ -144,18 +154,43 @@
 
 
 
+  <noscript>
+  <style type="text/css">
+    .use-motion .motion-element,
+    .use-motion .brand,
+    .use-motion .menu-item,
+    .sidebar-inner,
+    .use-motion .post-block,
+    .use-motion .pagination,
+    .use-motion .comments,
+    .use-motion .post-header,
+    .use-motion .post-body,
+    .use-motion .collection-title { opacity: initial; }
 
+    .use-motion .logo,
+    .use-motion .site-title,
+    .use-motion .site-subtitle {
+      opacity: initial;
+      top: initial;
+    }
 
+    .use-motion {
+      .logo-line-before i { left: initial; }
+      .logo-line-after i { right: initial; }
+    }
+  </style>
+</noscript>
 
+</head>
 
-
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-CN">
 
   
   
     
   
 
-  <div class="container one-collumn sidebar-position-left page-post-detail ">
+  <div class="container sidebar-position-left page-post-detail">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -164,19 +199,21 @@
     
 
     <div class="custom-logo-site-title">
-      <a href="/"  class="brand" rel="start">
+      <a href="/" class="brand" rel="start">
         <span class="logo-line-before"><i></i></span>
         <span class="site-title">王尔德的德</span>
         <span class="logo-line-after"><i></i></span>
       </a>
     </div>
+    
       
-        <p class="site-subtitle">我们一路轻歌浅唱，好像漫步在云上</p>
+        <h1 class="site-subtitle" itemprop="description">我们一路轻歌浅唱，好像漫步在云上</h1>
       
+    
   </div>
 
   <div class="site-nav-toggle">
-    <button>
+    <button aria-label="切换导航栏">
       <span class="btn-bar"></span>
       <span class="btn-bar"></span>
       <span class="btn-bar"></span>
@@ -184,55 +221,53 @@
   </div>
 </div>
 
-<nav class="site-nav">
-  
 
+
+<nav class="site-nav">
   
     <ul id="menu" class="menu">
       
         
-        <li class="menu-item menu-item-home">
-          <a href="/" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
-            
-            首页
-          </a>
-        </li>
-      
         
-        <li class="menu-item menu-item-categories">
-          <a href="/categories" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
-            
-            分类
-          </a>
-        </li>
-      
         
-        <li class="menu-item menu-item-archives">
-          <a href="/archives" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
-            
-            归档
-          </a>
-        </li>
-      
+          
+          <li class="menu-item menu-item-home">
+    <a href="/" rel="section">
+      <i class="menu-item-icon fa fa-fw fa-home"></i> <br />首页</a>
+  </li>
         
-        <li class="menu-item menu-item-tags">
-          <a href="/tags" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
-            
-            标签
-          </a>
-        </li>
-      
+        
+        
+          
+          <li class="menu-item menu-item-tags">
+    <a href="/tags/" rel="section">
+      <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />标签</a>
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-categories">
+    <a href="/categories/" rel="section">
+      <i class="menu-item-icon fa fa-fw fa-th"></i> <br />分类</a>
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-archives">
+    <a href="/archives/" rel="section">
+      <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />归档</a>
+  </li>
 
       
+      
     </ul>
+  
+
+  
+    
+
   
 
   
@@ -240,12 +275,20 @@
 
 
 
- </div>
+  
+
+
+
+</div>
     </header>
+
+    
+
 
     <main id="main" class="main">
       <div class="main-inner">
         <div class="content-wrap">
+          
           <div id="content" class="content">
             
 
@@ -258,13 +301,19 @@
   
   
 
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/09/02/近期的生活：工作逐渐稳定，焦虑逐渐浮现/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="王隐在录音">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="http://o8cju5u0y.bkt.clouddn.com/dm-3.jpg">
+      <meta itemprop="description" content="Apple｜RSS｜Rock&Post Rock｜WEB VIEW 播客｜独立博客｜Non-Cinema Film｜Efficiency App｜反感微信｜反感政治正确 | 搜索引擎爱好者｜黄焖鸡｜远古互联网｜精神程序员｜吉他爱好者｜前端技术好奇者｜老球迷｜在南方的北方人">
+      <meta itemprop="image" content="/images/avatar.gif">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
@@ -276,21 +325,38 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">
-            
-            
-              
-                近期的生活：工作逐渐稳定，焦虑感也开始出现
+          <h2 class="post-title" itemprop="name headline">近期的生活：工作逐渐稳定，焦虑感也开始出现
               
             
-          </h1>
+          </h2>
         
 
         <div class="post-meta">
           <span class="post-time">
 
-   
-           
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            
+            
+            
+
             
               <span class="post-meta-item-icon">
                 <i class="fa fa-calendar-o"></i>
@@ -298,32 +364,32 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-09-02T15:55:15+08:00">
-                2017-09-02
-              </time>
+
+              
+                
+              
+
+              <time title="创建时间：2017-09-02 15:55:15" itemprop="dateCreated datePublished" datetime="2017-09-02T15:55:15+08:00">2017-09-02</time>
             
 
             
-              <span class="post-meta-divider">|</span>
-            
+              
 
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-check-o"></i>
-              </span>
               
-                <span class="post-meta-item-text">更新于</span>
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">更新于</span>
+                
+                <time title="修改时间：2018-07-16 15:43:50" itemprop="dateModified" datetime="2018-07-16T15:43:50+08:00">2018-07-16</time>
               
-              <time title="更新于" itemprop="dateModified" datetime="2018-07-16T15:43:50+08:00">
-                2018-07-16
-              </time>
             
           </span>
-
-
- 
-
-
 
           
             <span class="post-category" >
@@ -337,11 +403,7 @@
                 <span class="post-meta-item-text">分类于</span>
               
               
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/上海事/" itemprop="url" rel="index">
-                    <span itemprop="name">上海事</span>
-                  </a>
-                </span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/上海事/" itemprop="url" rel="index"><span itemprop="name">上海事</span></a></span>
 
                 
                 
@@ -351,25 +413,53 @@
 
           
             
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2017/09/02/近期的生活：工作逐渐稳定，焦虑逐渐浮现/#comments" itemprop="discussionUrl">
+                  <span class="post-meta-item-text">评论数：</span> <span class="post-comments-count valine-comment-count" data-xid="/2017/09/02/近期的生活：工作逐渐稳定，焦虑逐渐浮现/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
           
 
           
           
 
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
           
 
           
-            <div class="post-wordcount">
+            <div class="post-symbolscount">
+              
+
               
                 <span class="post-meta-item-icon">
                   <i class="fa fa-file-word-o"></i>
                 </span>
-                  
-                    <span class="post-meta-item-text">字数统计</span>
-                  
-                    <span title="字数统计" }}">
-                      1,411 字
-                    </span>
+                
+                  <span class="post-meta-item-text">本文字数：</span>
+                
+                <span title="本文字数">1.6k</span>
               
 
               
@@ -380,12 +470,10 @@
                 <span class="post-meta-item-icon">
                   <i class="fa fa-clock-o"></i>
                 </span>
-                  
-                    <span class="post-meta-item-text">阅读时长</span>
-                  
-                    <span title="阅读时长" }}">
-                      5 分钟
-                    </span>
+                
+                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
+                
+                <span title="阅读时长">1 分钟</span>
               
             </div>
           
@@ -396,7 +484,9 @@
       </header>
     
 
-
+    
+    
+    
     <div class="post-body" itemprop="articleBody">
 
       
@@ -404,12 +494,12 @@
 
       
         <p><a id="more"></a>来上海将近4个月，终于找到了工作。是一家安全媒体的科技编辑职位，也是在一家互联网公司里。</p>
-<p>在<a href="http://wangpeng.life/2017/05/27/%E5%93%AD%E6%B3%A3%E7%9A%84%E5%8F%A4%E4%BA%BA/" target="_blank" rel="external">上一篇博客</a>中，我谈到过关于自己考研，工作的事情。毕业的这段时间，我好像不断地在寻找自己应该适合做什么。当然，我也面试了很多的工作。有毕业之前的前端的职位，还有全新的产品岗，还有写写字，编译外文的职位，我最终选择了后者。</p>
+<p>在<a href="http://wangpeng.life/2017/05/27/%E5%93%AD%E6%B3%A3%E7%9A%84%E5%8F%A4%E4%BA%BA/" target="_blank" rel="noopener">上一篇博客</a>中，我谈到过关于自己考研，工作的事情。毕业的这段时间，我好像不断地在寻找自己应该适合做什么。当然，我也面试了很多的工作。有毕业之前的前端的职位，还有全新的产品岗，还有写写字，编译外文的职位，我最终选择了后者。</p>
 <p>我入职现在的这家公司已经一个月了，基本上对自己要做的事情领会的差不多了。</p>
 <ol>
 <li>早上上班，先要扫描一遍外媒的信息源文章，从中整理出相应的安全素材，发到工作群里面，然后会有专人对素材进行评估，从而分配一篇文章到个人。基本上一周要编译3到4篇的样子。</li>
 <li>空隙时间会做一些稿件审核的的工作。其实说到这还是挺惭愧的，作为网站的编辑，进来的稿件对于我来说专业性还是过强了，所以我们做的工作也很简单，只是对其文章简单的做规定格式上的处理。然后提交给更高级的编辑进行文章编译质量的把关。</li>
-<li>每个月还会有三篇专题文章的任务，如果编译文章看起来还是比较乏味的话，这个任务就显得有些原创性了。我也在同事的指导下完成了我的<a href="http://www.freebuf.com/special/144157.html" target="_blank" rel="external">第一篇专题文章</a>，当然了，同事洋葱还是非常负责的，在内容上帮我把关，一遍一遍的修改，定稿为现在呈现出来的样子。和我最想写的那些东西还是差别很大的，毕竟我入职的是一家安全媒体，在安全上面要花的笔墨还是要多一些的。</li>
+<li>每个月还会有三篇专题文章的任务，如果编译文章看起来还是比较乏味的话，这个任务就显得有些原创性了。我也在同事的指导下完成了我的<a href="http://www.freebuf.com/special/144157.html" target="_blank" rel="noopener">第一篇专题文章</a>，当然了，同事洋葱还是非常负责的，在内容上帮我把关，一遍一遍的修改，定稿为现在呈现出来的样子。和我最想写的那些东西还是差别很大的，毕竟我入职的是一家安全媒体，在安全上面要花的笔墨还是要多一些的。</li>
 </ol>
 <p>工作内容呢就是上面我谈到的这些，由于最近生活逐渐进入了正规，我和敬礼之间的争吵也明显少了很多，我们也开始规划自己未来的生活，准备在上海置办一个自己的小家，所以也会利用周末的时间去看房子，不过由于预算的原因，还是并没有比较满意的房子，可能像我们这样没有什么背景的年轻人，在北上广这样的一线城市，首套房很难买到市区里面。</p>
 <p>看起来一切都步入正轨，而我却没有感到十分轻松，反而变得比没找到工作时焦虑很多，没找到工作时可以自己告诉自己：<strong>我本可以过得很好，只是不想努力罢了</strong>，所以就算过的再不好也没有关系，只要努力了，也就可以好起来。好像说的<strong>努力</strong>在这个世界上是最终极的武器一样，可以解决所有问题。</p>
@@ -424,20 +514,17 @@
       
     </div>
 
-    <div>
-      
-        
+    
 
-      
-    </div>
+    
+    
+    
 
-    <div>
-      
-        
+    
 
-      
-    </div>
+    
 
+    
 
     <footer class="post-footer">
       
@@ -453,7 +540,7 @@
       
 
       
-        
+      
       
 
       
@@ -481,24 +568,24 @@
       
       
     </footer>
+  </div>
+  
+  
+  
   </article>
 
 
-
-    <div class="post-spread">
-      
-    </div>
   </div>
 
-          
+
           </div>
           
 
+  
+    <div class="comments" id="comments">
+    </div>
+  
 
-          
-  <div class="comments" id="comments">
-    
-  </div>
 
 
         </div>
@@ -514,136 +601,498 @@
   </div>
 
   <aside id="sidebar" class="sidebar">
+    
     <div class="sidebar-inner">
 
       
 
       
 
-      <section class="site-overview sidebar-panel sidebar-panel-active">
-        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
-          <img class="site-author-image" itemprop="image"
-               src="http://o8cju5u0y.bkt.clouddn.com/dm-3.jpg"
-               alt="王隐在录音" />
-          <p class="site-author-name" itemprop="name">王隐在录音</p>
-           
+      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <p class="site-author-name" itemprop="name">王隐在录音</p>
               <p class="site-description motion-element" itemprop="description">Apple｜RSS｜Rock&Post Rock｜WEB VIEW 播客｜独立博客｜Non-Cinema Film｜Efficiency App｜反感微信｜反感政治正确 | 搜索引擎爱好者｜黄焖鸡｜远古互联网｜精神程序员｜吉他爱好者｜前端技术好奇者｜老球迷｜在南方的北方人</p>
-          
-        </div>
-        <nav class="site-state motion-element">
-        
-          
-            <div class="site-state-item site-state-posts">
-              <a href="/archives">
-                <span class="site-state-item-count">63</span>
-                <span class="site-state-item-name">日志</span>
-              </a>
-            </div>
-          
-
-          
-            <div class="site-state-item site-state-categories">
-              <a href="/categories">
-                <span class="site-state-item-count">13</span>
-                <span class="site-state-item-name">分类</span>
-              </a>
-            </div>
-          
-
-          
-            <div class="site-state-item site-state-tags">
-              <a href="/tags">
-                <span class="site-state-item-count">172</span>
-                <span class="site-state-item-name">标签</span>
-              </a>
-            </div>
-          
-
-        </nav>
-
-        
-          <div class="feed-link motion-element">
-            <a href="/atom.xml" rel="alternate">
-              <i class="fa fa-rss"></i>
-              RSS
-            </a>
           </div>
-        
 
-        <div class="links-of-author motion-element">
           
-            
-              <span class="links-of-author-item">
-                <a href="https://twitter.com/liki_wang" target="_blank" title="Twitter">
-                  
-                    <i class="fa fa-fw fa-twitter"></i>
-                  
-                  Twitter
-                </a>
-              </span>
-            
-              <span class="links-of-author-item">
-                <a href="http://weibo.com/recwangyin" target="_blank" title="Weibo">
-                  
-                    <i class="fa fa-fw fa-weibo"></i>
-                  
-                  Weibo
-                </a>
-              </span>
-            
-              <span class="links-of-author-item">
-                <a href="https://www.zhihu.com/people/wang-peng-50-40" target="_blank" title="Zhihu">
-                  
-                    <i class="fa fa-fw fa-globe"></i>
-                  
-                  Zhihu
-                </a>
-              </span>
-            
-              <span class="links-of-author-item">
-                <a href="http://webview.tech" target="_blank" title="播客">
-                  
-                    <i class="fa fa-fw fa-headphones"></i>
-                  
-                  播客
-                </a>
-              </span>
-            
-              <span class="links-of-author-item">
-                <a href="mailto:liki_wang@foxmail.com" target="_blank" title="邮件">
-                  
-                    <i class="fa fa-fw fa-envelope"></i>
-                  
-                  邮件
-                </a>
-              </span>
-            
+            <nav class="site-state motion-element">
+              
+                <div class="site-state-item site-state-posts">
+                
+                  <a href="/archives/">
+                
+                    <span class="site-state-item-count">63</span>
+                    <span class="site-state-item-name">日志</span>
+                  </a>
+                </div>
+              
+
+              
+                
+                
+                <div class="site-state-item site-state-categories">
+                  <a href="/categories/index.html">
+                    
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">13</span>
+                    <span class="site-state-item-name">分类</span>
+                  </a>
+                </div>
+              
+
+              
+                
+                
+                <div class="site-state-item site-state-tags">
+                  <a href="/tags/index.html">
+                    
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">172</span>
+                    <span class="site-state-item-name">标签</span>
+                  </a>
+                </div>
+              
+            </nav>
           
-        </div>
 
-        
-        
-
-        
-        
-          <div class="links-of-blogroll motion-element links-of-blogroll-inline">
-            <div class="links-of-blogroll-title">
-              <i class="fa  fa-fw fa-globe"></i>
-              敬礼也有自己写字的地方，欢迎移步
+          
+            <div class="feed-link motion-element">
+              <a href="/atom.xml" rel="alternate">
+                <i class="fa fa-rss"></i>
+                RSS
+              </a>
             </div>
-            <ul class="links-of-blogroll-list">
+          
+
+          
+            <div class="links-of-author motion-element">
               
-                <li class="links-of-blogroll-item">
-                  <a href="http://lolilukia.com/" title="lolilukia" target="_blank">lolilukia</a>
-                </li>
+                <span class="links-of-author-item">
+                  <a href="https://twitter.com/liki_wang" target="_blank" title="Twitter" rel="external nofollow"><i class="fa fa-fw fa-twitter"></i>Twitter</a>
+                  
+                </span>
               
-            </ul>
-          </div>
-        
+                <span class="links-of-author-item">
+                  <a href="http://weibo.com/recwangyin" target="_blank" title="Weibo" rel="external nofollow"><i class="fa fa-fw fa-weibo"></i>Weibo</a>
+                  
+                </span>
+              
+                <span class="links-of-author-item">
+                  <a href="https://www.zhihu.com/people/wang-peng-50-40" target="_blank" title="Zhihu" rel="external nofollow"><i class="fa fa-fw fa-globe"></i>Zhihu</a>
+                  
+                </span>
+              
+                <span class="links-of-author-item">
+                  <a href="https://webview.tech" target="_blank" title="播客" rel="external nofollow"><i class="fa fa-fw fa-headphones"></i>播客</a>
+                  
+                </span>
+              
+                <span class="links-of-author-item">
+                  <a href="mailto:liki_wang@foxmail.com" target="_blank" title="邮件" rel="external nofollow"><i class="fa fa-fw fa-envelope"></i>邮件</a>
+                  
+                </span>
+              
+            </div>
+          
 
-        
+          
+          
 
+          
+          
+            <div class="links-of-blogroll motion-element links-of-blogroll-block">
+              <div class="links-of-blogroll-title">
+                <i class="fa  fa-fw fa-link"></i>
+                敬礼也有自己写字的地方，欢迎移步
+              </div>
+              <ul class="links-of-blogroll-list">
+                
+                  <li class="links-of-blogroll-item">
+                    <a href="http://lolilukia.com/" title="lolilukia" target="_blank">lolilukia</a>
+                  </li>
+                
+              </ul>
+            </div>
+          
 
+          
+            
+          
+          
+
+        </div>
       </section>
 
       
@@ -660,19 +1109,55 @@
 
     <footer id="footer" class="footer">
       <div class="footer-inner">
-        <div class="copyright" >
-  
-  &copy;  2015 - 
-  <span itemprop="copyrightYear">2018</span>
-  <span class="with-love">
+        <div class="copyright">&copy; 2015 – <span itemprop="copyrightYear">2018</span>
+  <span class="with-love" id="animate">
     <i class="fa fa-heart"></i>
   </span>
   <span class="author" itemprop="copyrightHolder">王隐在录音</span>
+
+  
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item-icon">
+      <i class="fa fa-area-chart"></i>
+    </span>
+    
+      <span class="post-meta-item-text">站点总字数：</span>
+    
+    <span title="站点总字数">120k</span>
+  
+
+  
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item-icon">
+      <i class="fa fa-coffee"></i>
+    </span>
+    
+      <span class="post-meta-item-text">站点阅读时长 &asymp;</span>
+    
+    <span title="站点阅读时长">1:49</span>
+  
 </div>
+
+
+  
+
+
+
+
+
+
+
 
 
 
         
+
+
+
+
+
+
+
 
         
       </div>
@@ -684,6 +1169,11 @@
         
       </div>
     
+
+    
+	
+    
+
     
   </div>
 
@@ -703,79 +1193,61 @@
 
 
 
-  
 
 
 
 
-  
-  <script type="text/javascript" src="http://cdn.bootcss.com/jquery/2.1.3/jquery.min.js"></script>
-
-  
-  <script type="text/javascript" src="http://cdn.bootcss.com/fastclick/1.0.6/fastclick.js"></script>
-
-  
-  <script type="text/javascript" src="http://cdn.bootcss.com/jquery_lazyload/1.9.7/jquery.lazyload.js"></script>
-
-  
-  <script type="text/javascript" src="http://cdn.bootcss.com/velocity/1.2.1/velocity.js"></script>
-
-  
-  <script type="text/javascript" src="http://cdn.bootcss.com/velocity/1.2.1/velocity.ui.js"></script>
-
-  
-  <script type="text/javascript" src="https://cdn.staticfile.org/fancybox/2.1.5/jquery.fancybox.js"></script>
-
-
-  
-
-
-  <script type="text/javascript" src="/js/src/utils.js?v=5.1.0"></script>
-
-  <script type="text/javascript" src="/js/src/motion.js?v=5.1.0"></script>
-
-
-
-  
-  
-
-  
-  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.0"></script>
-<script type="text/javascript" src="/js/src/post-details.js?v=5.1.0"></script>
-
-
-
-  
-
-
-  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.0"></script>
-
-
-
-  
-
-
-
-  
 
 
 
 
-	
+
+
+
+
 
 
 
 
 
   
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
 
 
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=6.4.0"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=6.4.0"></script>
+
+
+
+  
+  
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=6.4.0"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=6.4.0"></script>
 
 
 
   
 
 
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=6.4.0"></script>
 
 
 
@@ -784,7 +1256,46 @@
 
 
   
+
+
+
+
+
+
+
+
+  <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
   
+  
+  <script src="//unpkg.com/valine/dist/Valine.min.js"></script>
+  
+  <script type="text/javascript">
+    var GUEST = ['nick','mail','link'];
+    var guest = 'nick,mail,link';
+    guest = guest.split(',').filter(function (item) {
+      return GUEST.indexOf(item)>-1;
+    });
+    new Valine({
+        el: '#comments' ,
+        verify: false,
+        notify: false,
+        appId: 'wt4e7Uow9CGBV0ABuIoWFjLb-gzGzoHsz',
+        appKey: 'F980d82qtlWJP3pHwYss6uI6',
+        placeholder: '说点什么',
+        avatar:'mm',
+        meta:guest,
+        pageSize:'10' || 10,
+        visitor: false
+    });
+  </script>
+
+
+
+  
+
+
+
+
 
   
 
@@ -794,6 +1305,16 @@
 
   
 
+  
+  
+
+  
+
+  
+
+  
+
+  
 
   
 

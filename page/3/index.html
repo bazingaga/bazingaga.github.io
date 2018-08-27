@@ -1,28 +1,32 @@
-<!doctype html>
+<!DOCTYPE html>
 
 
 
 
-<html class="theme-next muse" lang="zh-Hans">
+
+
+
+
+
+
+
+
+
+<html class="theme-next muse" lang="zh-CN">
 <head>
   <meta charset="UTF-8"/>
-
-<script>
-    (function(){
-        if(''){
-            if (prompt('请输入文章密码') !== ''){
-                alert('密码错误');
-                history.back();
-            }
-        }
-    })();
-</script>
-
-
-
-
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2"/>
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
 
 
 
@@ -43,11 +47,6 @@
 
 
 
-  
-  
-    
-  
-  <link href="https://cdn.staticfile.org/fancybox/2.1.5/jquery.fancybox.css" rel="stylesheet" type="text/css" />
 
 
 
@@ -55,40 +54,27 @@
 
 
 
-  
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
 
-<link href="http://cdn.staticfile.org/font-awesome/4.6.2/css/font-awesome.css" rel="stylesheet" type="text/css" />
-
-<link href="/css/main.css?v=5.1.0" rel="stylesheet" type="text/css" />
+<link href="/css/main.css?v=6.4.0" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="王尔德的德" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/favicon.ico?v=6.4.0">
 
 
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon.ico?v=6.4.0">
 
 
-
-  <link rel="alternate" href="/atom.xml" title="王尔德的德" type="application/atom+xml" />
-
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon.ico?v=6.4.0">
 
 
-
-  <link rel="shortcut icon" type="image/x-icon" href="/images/favicon.ico?v=5.1.0" />
+  <link rel="mask-icon" href="/images/favicon.ico?v=6.4.0" color="#222">
 
 
 
 
 
 
-<meta name="description" content="Apple｜RSS｜Rock&amp;Post Rock｜WEB VIEW 播客｜独立博客｜Non-Cinema Film｜Efficiency App｜反感微信｜反感政治正确 | 搜索引擎爱好者｜黄焖鸡｜远古互联网｜精神程序员｜吉他爱好者｜前端技术好奇者｜老球迷｜在南方的北方人">
-<meta property="og:type" content="website">
-<meta property="og:title" content="王尔德的德">
-<meta property="og:url" content="http://yoursite.com/page/3/index.html">
-<meta property="og:site_name" content="王尔德的德">
-<meta property="og:description" content="Apple｜RSS｜Rock&amp;Post Rock｜WEB VIEW 播客｜独立博客｜Non-Cinema Film｜Efficiency App｜反感微信｜反感政治正确 | 搜索引擎爱好者｜黄焖鸡｜远古互联网｜精神程序员｜吉他爱好者｜前端技术好奇者｜老球迷｜在南方的北方人">
-<meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="王尔德的德">
-<meta name="twitter:description" content="Apple｜RSS｜Rock&amp;Post Rock｜WEB VIEW 播客｜独立博客｜Non-Cinema Film｜Efficiency App｜反感微信｜反感政治正确 | 搜索引擎爱好者｜黄焖鸡｜远古互联网｜精神程序员｜吉他爱好者｜前端技术好奇者｜老球迷｜在南方的北方人">
 
 
 
@@ -97,22 +83,44 @@
   var CONFIG = {
     root: '/',
     scheme: 'Muse',
-    sidebar: {"position":"left","display":"post","offset":12,"offset_float":0,"b2t":false,"scrollpercent":false},
-    fancybox: true,
-    motion: false,
-    duoshuo: {
-      userId: '0',
-      author: '博主'
-    },
+    version: '6.4.0',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: false,
+    fastclick: false,
+    lazyload: false,
+    tabs: true,
+    motion: {"enable":false,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
     algolia: {
       applicationID: '',
       apiKey: '',
       indexName: '',
-      hits: {"per_page":20},
+      hits: {"per_page":10},
       labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
     }
   };
 </script>
+
+
+  
+
+
+
+
+  <meta name="description" content="Apple｜RSS｜Rock&amp;Post Rock｜WEB VIEW 播客｜独立博客｜Non-Cinema Film｜Efficiency App｜反感微信｜反感政治正确 | 搜索引擎爱好者｜黄焖鸡｜远古互联网｜精神程序员｜吉他爱好者｜前端技术好奇者｜老球迷｜在南方的北方人">
+<meta property="og:type" content="website">
+<meta property="og:title" content="王尔德的德">
+<meta property="og:url" content="http://yoursite.com/page/3/index.html">
+<meta property="og:site_name" content="王尔德的德">
+<meta property="og:description" content="Apple｜RSS｜Rock&amp;Post Rock｜WEB VIEW 播客｜独立博客｜Non-Cinema Film｜Efficiency App｜反感微信｜反感政治正确 | 搜索引擎爱好者｜黄焖鸡｜远古互联网｜精神程序员｜吉他爱好者｜前端技术好奇者｜老球迷｜在南方的北方人">
+<meta property="og:locale" content="zh-CN">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="王尔德的德">
+<meta name="twitter:description" content="Apple｜RSS｜Rock&amp;Post Rock｜WEB VIEW 播客｜独立博客｜Non-Cinema Film｜Efficiency App｜反感微信｜反感政治正确 | 搜索引擎爱好者｜黄焖鸡｜远古互联网｜精神程序员｜吉他爱好者｜前端技术好奇者｜老球迷｜在南方的北方人">
+
+
+
+  <link rel="alternate" href="/atom.xml" title="王尔德的德" type="application/atom+xml" />
+
 
 
 
@@ -120,14 +128,15 @@
 
 
 
+<script type="text/javascript" id="page.configurations">
+  CONFIG.page = {
+    sidebar: "",
+  };
+</script>
 
-
-  <title> 王尔德的德 </title>
-</head>
-
-<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
-
+  <title>王尔德的德</title>
   
+
 
 
 
@@ -146,20 +155,44 @@
 
 
 
+  <noscript>
+  <style type="text/css">
+    .use-motion .motion-element,
+    .use-motion .brand,
+    .use-motion .menu-item,
+    .sidebar-inner,
+    .use-motion .post-block,
+    .use-motion .pagination,
+    .use-motion .comments,
+    .use-motion .post-header,
+    .use-motion .post-body,
+    .use-motion .collection-title { opacity: initial; }
 
+    .use-motion .logo,
+    .use-motion .site-title,
+    .use-motion .site-subtitle {
+      opacity: initial;
+      top: initial;
+    }
 
+    .use-motion {
+      .logo-line-before i { left: initial; }
+      .logo-line-after i { right: initial; }
+    }
+  </style>
+</noscript>
 
+</head>
 
-
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-CN">
 
   
   
     
   
 
-  <div class="container one-collumn sidebar-position-left 
-   page-home 
- ">
+  <div class="container sidebar-position-left 
+  page-home">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -168,19 +201,21 @@
     
 
     <div class="custom-logo-site-title">
-      <a href="/"  class="brand" rel="start">
+      <a href="/" class="brand" rel="start">
         <span class="logo-line-before"><i></i></span>
         <span class="site-title">王尔德的德</span>
         <span class="logo-line-after"><i></i></span>
       </a>
     </div>
+    
       
-        <p class="site-subtitle">我们一路轻歌浅唱，好像漫步在云上</p>
+        <h1 class="site-subtitle" itemprop="description">我们一路轻歌浅唱，好像漫步在云上</h1>
       
+    
   </div>
 
   <div class="site-nav-toggle">
-    <button>
+    <button aria-label="切换导航栏">
       <span class="btn-bar"></span>
       <span class="btn-bar"></span>
       <span class="btn-bar"></span>
@@ -188,55 +223,53 @@
   </div>
 </div>
 
-<nav class="site-nav">
-  
 
+
+<nav class="site-nav">
   
     <ul id="menu" class="menu">
       
         
-        <li class="menu-item menu-item-home">
-          <a href="/" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
-            
-            首页
-          </a>
-        </li>
-      
         
-        <li class="menu-item menu-item-categories">
-          <a href="/categories" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
-            
-            分类
-          </a>
-        </li>
-      
         
-        <li class="menu-item menu-item-archives">
-          <a href="/archives" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
-            
-            归档
-          </a>
-        </li>
-      
+          
+          <li class="menu-item menu-item-home">
+    <a href="/" rel="section">
+      <i class="menu-item-icon fa fa-fw fa-home"></i> <br />首页</a>
+  </li>
         
-        <li class="menu-item menu-item-tags">
-          <a href="/tags" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
-            
-            标签
-          </a>
-        </li>
-      
+        
+        
+          
+          <li class="menu-item menu-item-tags">
+    <a href="/tags/" rel="section">
+      <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />标签</a>
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-categories">
+    <a href="/categories/" rel="section">
+      <i class="menu-item-icon fa fa-fw fa-th"></i> <br />分类</a>
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-archives">
+    <a href="/archives/" rel="section">
+      <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />归档</a>
+  </li>
 
       
+      
     </ul>
+  
+
+  
+    
+
   
 
   
@@ -244,12 +277,20 @@
 
 
 
- </div>
+  
+
+
+
+</div>
     </header>
+
+    
+
 
     <main id="main" class="main">
       <div class="main-inner">
         <div class="content-wrap">
+          
           <div id="content" class="content">
             
   <section id="posts" class="posts-expand">
@@ -262,13 +303,19 @@
   
   
 
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/01/04/读『废都』有感/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="王隐在录音">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="http://o8cju5u0y.bkt.clouddn.com/dm-3.jpg">
+      <meta itemprop="description" content="Apple｜RSS｜Rock&Post Rock｜WEB VIEW 播客｜独立博客｜Non-Cinema Film｜Efficiency App｜反感微信｜反感政治正确 | 搜索引擎爱好者｜黄焖鸡｜远古互联网｜精神程序员｜吉他爱好者｜前端技术好奇者｜老球迷｜在南方的北方人">
+      <meta itemprop="image" content="/images/avatar.gif">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
@@ -280,24 +327,42 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">
-            
-            
-              
+          <h2 class="post-title" itemprop="name headline">
                 
                 <a class="post-title-link" href="/2018/01/04/读『废都』有感/" itemprop="url">
                   读『废都』有感
                 </a>
               
             
-          </h1>
+          </h2>
         
 
         <div class="post-meta">
           <span class="post-time">
 
-   
-           
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            
+            
+            
+
             
               <span class="post-meta-item-icon">
                 <i class="fa fa-calendar-o"></i>
@@ -305,32 +370,32 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-01-04T23:00:14+08:00">
-                2018-01-04
-              </time>
+
+              
+                
+              
+
+              <time title="创建时间：2018-01-04 23:00:14" itemprop="dateCreated datePublished" datetime="2018-01-04T23:00:14+08:00">2018-01-04</time>
             
 
             
-              <span class="post-meta-divider">|</span>
-            
+              
 
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-check-o"></i>
-              </span>
               
-                <span class="post-meta-item-text">更新于</span>
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">更新于</span>
+                
+                <time title="修改时间：2018-01-05 23:31:11" itemprop="dateModified" datetime="2018-01-05T23:31:11+08:00">2018-01-05</time>
               
-              <time title="更新于" itemprop="dateModified" datetime="2018-01-05T23:31:11+08:00">
-                2018-01-05
-              </time>
             
           </span>
-
-
- 
-
-
 
           
             <span class="post-category" >
@@ -344,11 +409,7 @@
                 <span class="post-meta-item-text">分类于</span>
               
               
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/读后感/" itemprop="url" rel="index">
-                    <span itemprop="name">读后感</span>
-                  </a>
-                </span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/读后感/" itemprop="url" rel="index"><span itemprop="name">读后感</span></a></span>
 
                 
                 
@@ -358,25 +419,53 @@
 
           
             
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2018/01/04/读『废都』有感/#comments" itemprop="discussionUrl">
+                  <span class="post-meta-item-text">评论数：</span> <span class="post-comments-count valine-comment-count" data-xid="/2018/01/04/读『废都』有感/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
           
 
           
           
 
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
           
 
           
-            <div class="post-wordcount">
+            <div class="post-symbolscount">
+              
+
               
                 <span class="post-meta-item-icon">
                   <i class="fa fa-file-word-o"></i>
                 </span>
-                  
-                    <span class="post-meta-item-text">字数统计</span>
-                  
-                    <span title="字数统计" }}">
-                      1,753 字
-                    </span>
+                
+                  <span class="post-meta-item-text">本文字数：</span>
+                
+                <span title="本文字数">2k</span>
               
 
               
@@ -387,12 +476,10 @@
                 <span class="post-meta-item-icon">
                   <i class="fa fa-clock-o"></i>
                 </span>
-                  
-                    <span class="post-meta-item-text">阅读时长</span>
-                  
-                    <span title="阅读时长" }}">
-                      6 分钟
-                    </span>
+                
+                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
+                
+                <span title="阅读时长">2 分钟</span>
               
             </div>
           
@@ -403,7 +490,9 @@
       </header>
     
 
-
+    
+    
+    
     <div class="post-body" itemprop="articleBody">
 
       
@@ -425,14 +514,17 @@
       
     </div>
 
-    <div>
-      
-    </div>
+    
 
-    <div>
-      
-    </div>
+    
+    
+    
 
+    
+
+    
+
+    
 
     <footer class="post-footer">
       
@@ -446,6 +538,10 @@
         <div class="post-eof"></div>
       
     </footer>
+  </div>
+  
+  
+  
   </article>
 
 
@@ -458,13 +554,19 @@
   
   
 
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/12/30/2017——拔剑四顾心茫然/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="王隐在录音">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="http://o8cju5u0y.bkt.clouddn.com/dm-3.jpg">
+      <meta itemprop="description" content="Apple｜RSS｜Rock&Post Rock｜WEB VIEW 播客｜独立博客｜Non-Cinema Film｜Efficiency App｜反感微信｜反感政治正确 | 搜索引擎爱好者｜黄焖鸡｜远古互联网｜精神程序员｜吉他爱好者｜前端技术好奇者｜老球迷｜在南方的北方人">
+      <meta itemprop="image" content="/images/avatar.gif">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
@@ -476,24 +578,42 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">
-            
-            
-              
+          <h2 class="post-title" itemprop="name headline">
                 
                 <a class="post-title-link" href="/2017/12/30/2017——拔剑四顾心茫然/" itemprop="url">
                   2017——拔剑四顾心茫然
                 </a>
               
             
-          </h1>
+          </h2>
         
 
         <div class="post-meta">
           <span class="post-time">
 
-   
-           
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            
+            
+            
+
             
               <span class="post-meta-item-icon">
                 <i class="fa fa-calendar-o"></i>
@@ -501,32 +621,32 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-12-30T17:29:44+08:00">
-                2017-12-30
-              </time>
+
+              
+                
+              
+
+              <time title="创建时间：2017-12-30 17:29:44" itemprop="dateCreated datePublished" datetime="2017-12-30T17:29:44+08:00">2017-12-30</time>
             
 
             
-              <span class="post-meta-divider">|</span>
-            
+              
 
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-check-o"></i>
-              </span>
               
-                <span class="post-meta-item-text">更新于</span>
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">更新于</span>
+                
+                <time title="修改时间：2018-07-16 15:47:07" itemprop="dateModified" datetime="2018-07-16T15:47:07+08:00">2018-07-16</time>
               
-              <time title="更新于" itemprop="dateModified" datetime="2018-07-16T15:47:07+08:00">
-                2018-07-16
-              </time>
             
           </span>
-
-
- 
-
-
 
           
             <span class="post-category" >
@@ -540,11 +660,7 @@
                 <span class="post-meta-item-text">分类于</span>
               
               
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/时常回顾/" itemprop="url" rel="index">
-                    <span itemprop="name">时常回顾</span>
-                  </a>
-                </span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/时常回顾/" itemprop="url" rel="index"><span itemprop="name">时常回顾</span></a></span>
 
                 
                 
@@ -554,25 +670,53 @@
 
           
             
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2017/12/30/2017——拔剑四顾心茫然/#comments" itemprop="discussionUrl">
+                  <span class="post-meta-item-text">评论数：</span> <span class="post-comments-count valine-comment-count" data-xid="/2017/12/30/2017——拔剑四顾心茫然/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
           
 
           
           
 
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
           
 
           
-            <div class="post-wordcount">
+            <div class="post-symbolscount">
+              
+
               
                 <span class="post-meta-item-icon">
                   <i class="fa fa-file-word-o"></i>
                 </span>
-                  
-                    <span class="post-meta-item-text">字数统计</span>
-                  
-                    <span title="字数统计" }}">
-                      2,378 字
-                    </span>
+                
+                  <span class="post-meta-item-text">本文字数：</span>
+                
+                <span title="本文字数">2.7k</span>
               
 
               
@@ -583,12 +727,10 @@
                 <span class="post-meta-item-icon">
                   <i class="fa fa-clock-o"></i>
                 </span>
-                  
-                    <span class="post-meta-item-text">阅读时长</span>
-                  
-                    <span title="阅读时长" }}">
-                      8 分钟
-                    </span>
+                
+                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
+                
+                <span title="阅读时长">2 分钟</span>
               
             </div>
           
@@ -599,7 +741,9 @@
       </header>
     
 
-
+    
+    
+    
     <div class="post-body" itemprop="articleBody">
 
       
@@ -607,7 +751,7 @@
 
       
         
-          <p>我写过一篇关于今年的<a href="http://wangpeng.life/2017/12/16/2017%E5%B9%B4%E7%9A%84%E6%97%A5%E5%AD%90%E5%B0%B1%E8%BF%99%E4%B9%88%E8%BF%87%E6%8E%89%E4%BA%86/">文章</a>，不过更像是情绪的宣泄。尽管 2017 对我来说并没有收获许多 ，但日子过去了，总要有痕迹，我需要将这些痕迹记录下来，看看自己究竟走了多远，正路和歧路哪个占了多数，走错的路对自己的意义又在哪里。
+          <p>我写过一篇关于今年的<a href="http://wangpeng.life/2017/12/16/2017%E5%B9%B4%E7%9A%84%E6%97%A5%E5%AD%90%E5%B0%B1%E8%BF%99%E4%B9%88%E8%BF%87%E6%8E%89%E4%BA%86/" target="_blank" rel="noopener">文章</a>，不过更像是情绪的宣泄。尽管 2017 对我来说并没有收获许多 ，但日子过去了，总要有痕迹，我需要将这些痕迹记录下来，看看自己究竟走了多远，正路和歧路哪个占了多数，走错的路对自己的意义又在哪里。
           <!--noindex-->
           <div class="post-button text-center">
             <a class="btn" href="/2017/12/30/2017——拔剑四顾心茫然/#more" rel="contents">
@@ -619,14 +763,17 @@
       
     </div>
 
-    <div>
-      
-    </div>
+    
 
-    <div>
-      
-    </div>
+    
+    
+    
 
+    
+
+    
+
+    
 
     <footer class="post-footer">
       
@@ -640,6 +787,10 @@
         <div class="post-eof"></div>
       
     </footer>
+  </div>
+  
+  
+  
   </article>
 
 
@@ -652,13 +803,19 @@
   
   
 
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/12/24/读书如果是逃避工作，是混:寄生，那么读书就是一个人掩盖自己无能与邪恶的幌子/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="王隐在录音">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="http://o8cju5u0y.bkt.clouddn.com/dm-3.jpg">
+      <meta itemprop="description" content="Apple｜RSS｜Rock&Post Rock｜WEB VIEW 播客｜独立博客｜Non-Cinema Film｜Efficiency App｜反感微信｜反感政治正确 | 搜索引擎爱好者｜黄焖鸡｜远古互联网｜精神程序员｜吉他爱好者｜前端技术好奇者｜老球迷｜在南方的北方人">
+      <meta itemprop="image" content="/images/avatar.gif">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
@@ -670,24 +827,42 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">
-            
-            
-              
+          <h2 class="post-title" itemprop="name headline">
                 
                 <a class="post-title-link" href="/2017/12/24/读书如果是逃避工作，是混:寄生，那么读书就是一个人掩盖自己无能与邪恶的幌子/" itemprop="url">
                   微言大义第五期：读书如果是逃避工作，是混/寄生，那么读书就是一个人掩盖自己无能与邪恶的幌子
                 </a>
               
             
-          </h1>
+          </h2>
         
 
         <div class="post-meta">
           <span class="post-time">
 
-   
-           
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            
+            
+            
+
             
               <span class="post-meta-item-icon">
                 <i class="fa fa-calendar-o"></i>
@@ -695,32 +870,32 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-12-24T00:14:00+08:00">
-                2017-12-24
-              </time>
+
+              
+                
+              
+
+              <time title="创建时间：2017-12-24 00:14:00" itemprop="dateCreated datePublished" datetime="2017-12-24T00:14:00+08:00">2017-12-24</time>
             
 
             
-              <span class="post-meta-divider">|</span>
-            
+              
 
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-check-o"></i>
-              </span>
               
-                <span class="post-meta-item-text">更新于</span>
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">更新于</span>
+                
+                <time title="修改时间：2018-01-25 23:40:15" itemprop="dateModified" datetime="2018-01-25T23:40:15+08:00">2018-01-25</time>
               
-              <time title="更新于" itemprop="dateModified" datetime="2018-01-25T23:40:15+08:00">
-                2018-01-25
-              </time>
             
           </span>
-
-
- 
-
-
 
           
             <span class="post-category" >
@@ -734,11 +909,7 @@
                 <span class="post-meta-item-text">分类于</span>
               
               
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/微言大义/" itemprop="url" rel="index">
-                    <span itemprop="name">微言大义</span>
-                  </a>
-                </span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/微言大义/" itemprop="url" rel="index"><span itemprop="name">微言大义</span></a></span>
 
                 
                 
@@ -748,25 +919,53 @@
 
           
             
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2017/12/24/读书如果是逃避工作，是混:寄生，那么读书就是一个人掩盖自己无能与邪恶的幌子/#comments" itemprop="discussionUrl">
+                  <span class="post-meta-item-text">评论数：</span> <span class="post-comments-count valine-comment-count" data-xid="/2017/12/24/读书如果是逃避工作，是混:寄生，那么读书就是一个人掩盖自己无能与邪恶的幌子/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
           
 
           
           
 
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
           
 
           
-            <div class="post-wordcount">
+            <div class="post-symbolscount">
+              
+
               
                 <span class="post-meta-item-icon">
                   <i class="fa fa-file-word-o"></i>
                 </span>
-                  
-                    <span class="post-meta-item-text">字数统计</span>
-                  
-                    <span title="字数统计" }}">
-                      1,857 字
-                    </span>
+                
+                  <span class="post-meta-item-text">本文字数：</span>
+                
+                <span title="本文字数">2.2k</span>
               
 
               
@@ -777,12 +976,10 @@
                 <span class="post-meta-item-icon">
                   <i class="fa fa-clock-o"></i>
                 </span>
-                  
-                    <span class="post-meta-item-text">阅读时长</span>
-                  
-                    <span title="阅读时长" }}">
-                      6 分钟
-                    </span>
+                
+                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
+                
+                <span title="阅读时长">2 分钟</span>
               
             </div>
           
@@ -793,7 +990,9 @@
       </header>
     
 
-
+    
+    
+    
     <div class="post-body" itemprop="articleBody">
 
       
@@ -822,14 +1021,17 @@
       
     </div>
 
-    <div>
-      
-    </div>
+    
 
-    <div>
-      
-    </div>
+    
+    
+    
 
+    
+
+    
+
+    
 
     <footer class="post-footer">
       
@@ -843,6 +1045,10 @@
         <div class="post-eof"></div>
       
     </footer>
+  </div>
+  
+  
+  
   </article>
 
 
@@ -855,13 +1061,19 @@
   
   
 
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/12/22/午夜咖啡因/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="王隐在录音">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="http://o8cju5u0y.bkt.clouddn.com/dm-3.jpg">
+      <meta itemprop="description" content="Apple｜RSS｜Rock&Post Rock｜WEB VIEW 播客｜独立博客｜Non-Cinema Film｜Efficiency App｜反感微信｜反感政治正确 | 搜索引擎爱好者｜黄焖鸡｜远古互联网｜精神程序员｜吉他爱好者｜前端技术好奇者｜老球迷｜在南方的北方人">
+      <meta itemprop="image" content="/images/avatar.gif">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
@@ -873,24 +1085,42 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">
-            
-            
-              
+          <h2 class="post-title" itemprop="name headline">
                 
                 <a class="post-title-link" href="/2017/12/22/午夜咖啡因/" itemprop="url">
                   午夜咖啡因
                 </a>
               
             
-          </h1>
+          </h2>
         
 
         <div class="post-meta">
           <span class="post-time">
 
-   
-           
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            
+            
+            
+
             
               <span class="post-meta-item-icon">
                 <i class="fa fa-calendar-o"></i>
@@ -898,32 +1128,20 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-12-22T00:11:37+08:00">
-                2017-12-22
-              </time>
+
+              
+                
+              
+
+              <time title="创建时间：2017-12-22 00:11:37 / 修改时间：00:27:56" itemprop="dateCreated datePublished" datetime="2017-12-22T00:11:37+08:00">2017-12-22</time>
             
 
             
-              <span class="post-meta-divider">|</span>
-            
+              
 
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-check-o"></i>
-              </span>
               
-                <span class="post-meta-item-text">更新于</span>
-              
-              <time title="更新于" itemprop="dateModified" datetime="2017-12-22T00:27:56+08:00">
-                2017-12-22
-              </time>
             
           </span>
-
-
- 
-
-
 
           
             <span class="post-category" >
@@ -937,11 +1155,7 @@
                 <span class="post-meta-item-text">分类于</span>
               
               
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/平淡生活/" itemprop="url" rel="index">
-                    <span itemprop="name">平淡生活</span>
-                  </a>
-                </span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/平淡生活/" itemprop="url" rel="index"><span itemprop="name">平淡生活</span></a></span>
 
                 
                 
@@ -951,25 +1165,53 @@
 
           
             
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2017/12/22/午夜咖啡因/#comments" itemprop="discussionUrl">
+                  <span class="post-meta-item-text">评论数：</span> <span class="post-comments-count valine-comment-count" data-xid="/2017/12/22/午夜咖啡因/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
           
 
           
           
 
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
           
 
           
-            <div class="post-wordcount">
+            <div class="post-symbolscount">
+              
+
               
                 <span class="post-meta-item-icon">
                   <i class="fa fa-file-word-o"></i>
                 </span>
-                  
-                    <span class="post-meta-item-text">字数统计</span>
-                  
-                    <span title="字数统计" }}">
-                      1,332 字
-                    </span>
+                
+                  <span class="post-meta-item-text">本文字数：</span>
+                
+                <span title="本文字数">1.5k</span>
               
 
               
@@ -980,12 +1222,10 @@
                 <span class="post-meta-item-icon">
                   <i class="fa fa-clock-o"></i>
                 </span>
-                  
-                    <span class="post-meta-item-text">阅读时长</span>
-                  
-                    <span title="阅读时长" }}">
-                      4 分钟
-                    </span>
+                
+                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
+                
+                <span title="阅读时长">1 分钟</span>
               
             </div>
           
@@ -996,7 +1236,9 @@
       </header>
     
 
-
+    
+    
+    
     <div class="post-body" itemprop="articleBody">
 
       
@@ -1019,14 +1261,17 @@
       
     </div>
 
-    <div>
-      
-    </div>
+    
 
-    <div>
-      
-    </div>
+    
+    
+    
 
+    
+
+    
+
+    
 
     <footer class="post-footer">
       
@@ -1040,6 +1285,10 @@
         <div class="post-eof"></div>
       
     </footer>
+  </div>
+  
+  
+  
   </article>
 
 
@@ -1052,13 +1301,19 @@
   
   
 
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/12/16/2017年的日子就这么过掉了/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="王隐在录音">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="http://o8cju5u0y.bkt.clouddn.com/dm-3.jpg">
+      <meta itemprop="description" content="Apple｜RSS｜Rock&Post Rock｜WEB VIEW 播客｜独立博客｜Non-Cinema Film｜Efficiency App｜反感微信｜反感政治正确 | 搜索引擎爱好者｜黄焖鸡｜远古互联网｜精神程序员｜吉他爱好者｜前端技术好奇者｜老球迷｜在南方的北方人">
+      <meta itemprop="image" content="/images/avatar.gif">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
@@ -1070,24 +1325,42 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">
-            
-            
-              
+          <h2 class="post-title" itemprop="name headline">
                 
                 <a class="post-title-link" href="/2017/12/16/2017年的日子就这么过掉了/" itemprop="url">
                   2017年的日子就这么过掉了
                 </a>
               
             
-          </h1>
+          </h2>
         
 
         <div class="post-meta">
           <span class="post-time">
 
-   
-           
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            
+            
+            
+
             
               <span class="post-meta-item-icon">
                 <i class="fa fa-calendar-o"></i>
@@ -1095,32 +1368,32 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-12-16T00:21:18+08:00">
-                2017-12-16
-              </time>
+
+              
+                
+              
+
+              <time title="创建时间：2017-12-16 00:21:18" itemprop="dateCreated datePublished" datetime="2017-12-16T00:21:18+08:00">2017-12-16</time>
             
 
             
-              <span class="post-meta-divider">|</span>
-            
+              
 
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-check-o"></i>
-              </span>
               
-                <span class="post-meta-item-text">更新于</span>
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">更新于</span>
+                
+                <time title="修改时间：2018-07-16 15:41:19" itemprop="dateModified" datetime="2018-07-16T15:41:19+08:00">2018-07-16</time>
               
-              <time title="更新于" itemprop="dateModified" datetime="2018-07-16T15:41:19+08:00">
-                2018-07-16
-              </time>
             
           </span>
-
-
- 
-
-
 
           
             <span class="post-category" >
@@ -1134,11 +1407,7 @@
                 <span class="post-meta-item-text">分类于</span>
               
               
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/平淡生活/" itemprop="url" rel="index">
-                    <span itemprop="name">平淡生活</span>
-                  </a>
-                </span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/平淡生活/" itemprop="url" rel="index"><span itemprop="name">平淡生活</span></a></span>
 
                 
                 
@@ -1148,25 +1417,53 @@
 
           
             
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2017/12/16/2017年的日子就这么过掉了/#comments" itemprop="discussionUrl">
+                  <span class="post-meta-item-text">评论数：</span> <span class="post-comments-count valine-comment-count" data-xid="/2017/12/16/2017年的日子就这么过掉了/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
           
 
           
           
 
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
           
 
           
-            <div class="post-wordcount">
+            <div class="post-symbolscount">
+              
+
               
                 <span class="post-meta-item-icon">
                   <i class="fa fa-file-word-o"></i>
                 </span>
-                  
-                    <span class="post-meta-item-text">字数统计</span>
-                  
-                    <span title="字数统计" }}">
-                      1,695 字
-                    </span>
+                
+                  <span class="post-meta-item-text">本文字数：</span>
+                
+                <span title="本文字数">1.9k</span>
               
 
               
@@ -1177,12 +1474,10 @@
                 <span class="post-meta-item-icon">
                   <i class="fa fa-clock-o"></i>
                 </span>
-                  
-                    <span class="post-meta-item-text">阅读时长</span>
-                  
-                    <span title="阅读时长" }}">
-                      6 分钟
-                    </span>
+                
+                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
+                
+                <span title="阅读时长">2 分钟</span>
               
             </div>
           
@@ -1193,7 +1488,9 @@
       </header>
     
 
-
+    
+    
+    
     <div class="post-body" itemprop="articleBody">
 
       
@@ -1217,14 +1514,17 @@
       
     </div>
 
-    <div>
-      
-    </div>
+    
 
-    <div>
-      
-    </div>
+    
+    
+    
 
+    
+
+    
+
+    
 
     <footer class="post-footer">
       
@@ -1238,6 +1538,10 @@
         <div class="post-eof"></div>
       
     </footer>
+  </div>
+  
+  
+  
   </article>
 
 
@@ -1250,13 +1554,19 @@
   
   
 
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/12/05/家里的清汤挂面是怎么做的来着/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="王隐在录音">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="http://o8cju5u0y.bkt.clouddn.com/dm-3.jpg">
+      <meta itemprop="description" content="Apple｜RSS｜Rock&Post Rock｜WEB VIEW 播客｜独立博客｜Non-Cinema Film｜Efficiency App｜反感微信｜反感政治正确 | 搜索引擎爱好者｜黄焖鸡｜远古互联网｜精神程序员｜吉他爱好者｜前端技术好奇者｜老球迷｜在南方的北方人">
+      <meta itemprop="image" content="/images/avatar.gif">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
@@ -1268,24 +1578,42 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">
-            
-            
-              
+          <h2 class="post-title" itemprop="name headline">
                 
                 <a class="post-title-link" href="/2017/12/05/家里的清汤挂面是怎么做的来着/" itemprop="url">
                   家里的清汤挂面是怎么做的来着
                 </a>
               
             
-          </h1>
+          </h2>
         
 
         <div class="post-meta">
           <span class="post-time">
 
-   
-           
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            
+            
+            
+
             
               <span class="post-meta-item-icon">
                 <i class="fa fa-calendar-o"></i>
@@ -1293,32 +1621,32 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-12-05T16:20:47+08:00">
-                2017-12-05
-              </time>
+
+              
+                
+              
+
+              <time title="创建时间：2017-12-05 16:20:47" itemprop="dateCreated datePublished" datetime="2017-12-05T16:20:47+08:00">2017-12-05</time>
             
 
             
-              <span class="post-meta-divider">|</span>
-            
+              
 
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-check-o"></i>
-              </span>
               
-                <span class="post-meta-item-text">更新于</span>
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">更新于</span>
+                
+                <time title="修改时间：2018-01-27 23:56:29" itemprop="dateModified" datetime="2018-01-27T23:56:29+08:00">2018-01-27</time>
               
-              <time title="更新于" itemprop="dateModified" datetime="2018-01-27T23:56:29+08:00">
-                2018-01-27
-              </time>
             
           </span>
-
-
- 
-
-
 
           
             <span class="post-category" >
@@ -1332,11 +1660,7 @@
                 <span class="post-meta-item-text">分类于</span>
               
               
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/平淡生活/" itemprop="url" rel="index">
-                    <span itemprop="name">平淡生活</span>
-                  </a>
-                </span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/平淡生活/" itemprop="url" rel="index"><span itemprop="name">平淡生活</span></a></span>
 
                 
                 
@@ -1346,25 +1670,53 @@
 
           
             
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2017/12/05/家里的清汤挂面是怎么做的来着/#comments" itemprop="discussionUrl">
+                  <span class="post-meta-item-text">评论数：</span> <span class="post-comments-count valine-comment-count" data-xid="/2017/12/05/家里的清汤挂面是怎么做的来着/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
           
 
           
           
 
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
           
 
           
-            <div class="post-wordcount">
+            <div class="post-symbolscount">
+              
+
               
                 <span class="post-meta-item-icon">
                   <i class="fa fa-file-word-o"></i>
                 </span>
-                  
-                    <span class="post-meta-item-text">字数统计</span>
-                  
-                    <span title="字数统计" }}">
-                      1,916 字
-                    </span>
+                
+                  <span class="post-meta-item-text">本文字数：</span>
+                
+                <span title="本文字数">2.2k</span>
               
 
               
@@ -1375,12 +1727,10 @@
                 <span class="post-meta-item-icon">
                   <i class="fa fa-clock-o"></i>
                 </span>
-                  
-                    <span class="post-meta-item-text">阅读时长</span>
-                  
-                    <span title="阅读时长" }}">
-                      6 分钟
-                    </span>
+                
+                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
+                
+                <span title="阅读时长">2 分钟</span>
               
             </div>
           
@@ -1391,7 +1741,9 @@
       </header>
     
 
-
+    
+    
+    
     <div class="post-body" itemprop="articleBody">
 
       
@@ -1413,14 +1765,17 @@
       
     </div>
 
-    <div>
-      
-    </div>
+    
 
-    <div>
-      
-    </div>
+    
+    
+    
 
+    
+
+    
+
+    
 
     <footer class="post-footer">
       
@@ -1434,6 +1789,10 @@
         <div class="post-eof"></div>
       
     </footer>
+  </div>
+  
+  
+  
   </article>
 
 
@@ -1446,13 +1805,19 @@
   
   
 
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/12/01/过不下去确实也很难离婚——『谁说我不在乎』观后感/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="王隐在录音">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="http://o8cju5u0y.bkt.clouddn.com/dm-3.jpg">
+      <meta itemprop="description" content="Apple｜RSS｜Rock&Post Rock｜WEB VIEW 播客｜独立博客｜Non-Cinema Film｜Efficiency App｜反感微信｜反感政治正确 | 搜索引擎爱好者｜黄焖鸡｜远古互联网｜精神程序员｜吉他爱好者｜前端技术好奇者｜老球迷｜在南方的北方人">
+      <meta itemprop="image" content="/images/avatar.gif">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
@@ -1464,24 +1829,42 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">
-            
-            
-              
+          <h2 class="post-title" itemprop="name headline">
                 
                 <a class="post-title-link" href="/2017/12/01/过不下去确实也很难离婚——『谁说我不在乎』观后感/" itemprop="url">
                   过不下去确实也很难离婚——『谁说我不在乎』观后感
                 </a>
               
             
-          </h1>
+          </h2>
         
 
         <div class="post-meta">
           <span class="post-time">
 
-   
-           
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            
+            
+            
+
             
               <span class="post-meta-item-icon">
                 <i class="fa fa-calendar-o"></i>
@@ -1489,32 +1872,32 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-12-01T00:54:32+08:00">
-                2017-12-01
-              </time>
+
+              
+                
+              
+
+              <time title="创建时间：2017-12-01 00:54:32" itemprop="dateCreated datePublished" datetime="2017-12-01T00:54:32+08:00">2017-12-01</time>
             
 
             
-              <span class="post-meta-divider">|</span>
-            
+              
 
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-check-o"></i>
-              </span>
               
-                <span class="post-meta-item-text">更新于</span>
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">更新于</span>
+                
+                <time title="修改时间：2018-01-27 23:57:51" itemprop="dateModified" datetime="2018-01-27T23:57:51+08:00">2018-01-27</time>
               
-              <time title="更新于" itemprop="dateModified" datetime="2018-01-27T23:57:51+08:00">
-                2018-01-27
-              </time>
             
           </span>
-
-
- 
-
-
 
           
             <span class="post-category" >
@@ -1528,11 +1911,7 @@
                 <span class="post-meta-item-text">分类于</span>
               
               
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/观后感/" itemprop="url" rel="index">
-                    <span itemprop="name">观后感</span>
-                  </a>
-                </span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/观后感/" itemprop="url" rel="index"><span itemprop="name">观后感</span></a></span>
 
                 
                 
@@ -1542,25 +1921,53 @@
 
           
             
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2017/12/01/过不下去确实也很难离婚——『谁说我不在乎』观后感/#comments" itemprop="discussionUrl">
+                  <span class="post-meta-item-text">评论数：</span> <span class="post-comments-count valine-comment-count" data-xid="/2017/12/01/过不下去确实也很难离婚——『谁说我不在乎』观后感/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
           
 
           
           
 
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
           
 
           
-            <div class="post-wordcount">
+            <div class="post-symbolscount">
+              
+
               
                 <span class="post-meta-item-icon">
                   <i class="fa fa-file-word-o"></i>
                 </span>
-                  
-                    <span class="post-meta-item-text">字数统计</span>
-                  
-                    <span title="字数统计" }}">
-                      1,873 字
-                    </span>
+                
+                  <span class="post-meta-item-text">本文字数：</span>
+                
+                <span title="本文字数">2.2k</span>
               
 
               
@@ -1571,12 +1978,10 @@
                 <span class="post-meta-item-icon">
                   <i class="fa fa-clock-o"></i>
                 </span>
-                  
-                    <span class="post-meta-item-text">阅读时长</span>
-                  
-                    <span title="阅读时长" }}">
-                      6 分钟
-                    </span>
+                
+                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
+                
+                <span title="阅读时长">2 分钟</span>
               
             </div>
           
@@ -1587,7 +1992,9 @@
       </header>
     
 
-
+    
+    
+    
     <div class="post-body" itemprop="articleBody">
 
       
@@ -1620,14 +2027,17 @@
       
     </div>
 
-    <div>
-      
-    </div>
+    
 
-    <div>
-      
-    </div>
+    
+    
+    
 
+    
+
+    
+
+    
 
     <footer class="post-footer">
       
@@ -1641,6 +2051,10 @@
         <div class="post-eof"></div>
       
     </footer>
+  </div>
+  
+  
+  
   </article>
 
 
@@ -1653,13 +2067,19 @@
   
   
 
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/11/21/日本林志颖的相声求学之旅——『红鳉鱼』观后感/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="王隐在录音">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="http://o8cju5u0y.bkt.clouddn.com/dm-3.jpg">
+      <meta itemprop="description" content="Apple｜RSS｜Rock&Post Rock｜WEB VIEW 播客｜独立博客｜Non-Cinema Film｜Efficiency App｜反感微信｜反感政治正确 | 搜索引擎爱好者｜黄焖鸡｜远古互联网｜精神程序员｜吉他爱好者｜前端技术好奇者｜老球迷｜在南方的北方人">
+      <meta itemprop="image" content="/images/avatar.gif">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
@@ -1671,24 +2091,42 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">
-            
-            
-              
+          <h2 class="post-title" itemprop="name headline">
                 
                 <a class="post-title-link" href="/2017/11/21/日本林志颖的相声求学之旅——『红鳉鱼』观后感/" itemprop="url">
                   日本林志颖的相声求学之旅——『红鳉鱼』观后感
                 </a>
               
             
-          </h1>
+          </h2>
         
 
         <div class="post-meta">
           <span class="post-time">
 
-   
-           
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            
+            
+            
+
             
               <span class="post-meta-item-icon">
                 <i class="fa fa-calendar-o"></i>
@@ -1696,32 +2134,32 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-11-21T19:39:09+08:00">
-                2017-11-21
-              </time>
+
+              
+                
+              
+
+              <time title="创建时间：2017-11-21 19:39:09" itemprop="dateCreated datePublished" datetime="2017-11-21T19:39:09+08:00">2017-11-21</time>
             
 
             
-              <span class="post-meta-divider">|</span>
-            
+              
 
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-check-o"></i>
-              </span>
               
-                <span class="post-meta-item-text">更新于</span>
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">更新于</span>
+                
+                <time title="修改时间：2018-01-27 23:59:43" itemprop="dateModified" datetime="2018-01-27T23:59:43+08:00">2018-01-27</time>
               
-              <time title="更新于" itemprop="dateModified" datetime="2018-01-27T23:59:43+08:00">
-                2018-01-27
-              </time>
             
           </span>
-
-
- 
-
-
 
           
             <span class="post-category" >
@@ -1735,11 +2173,7 @@
                 <span class="post-meta-item-text">分类于</span>
               
               
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/观后感/" itemprop="url" rel="index">
-                    <span itemprop="name">观后感</span>
-                  </a>
-                </span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/观后感/" itemprop="url" rel="index"><span itemprop="name">观后感</span></a></span>
 
                 
                 
@@ -1749,25 +2183,53 @@
 
           
             
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2017/11/21/日本林志颖的相声求学之旅——『红鳉鱼』观后感/#comments" itemprop="discussionUrl">
+                  <span class="post-meta-item-text">评论数：</span> <span class="post-comments-count valine-comment-count" data-xid="/2017/11/21/日本林志颖的相声求学之旅——『红鳉鱼』观后感/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
           
 
           
           
 
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
           
 
           
-            <div class="post-wordcount">
+            <div class="post-symbolscount">
+              
+
               
                 <span class="post-meta-item-icon">
                   <i class="fa fa-file-word-o"></i>
                 </span>
-                  
-                    <span class="post-meta-item-text">字数统计</span>
-                  
-                    <span title="字数统计" }}">
-                      2,932 字
-                    </span>
+                
+                  <span class="post-meta-item-text">本文字数：</span>
+                
+                <span title="本文字数">3.4k</span>
               
 
               
@@ -1778,12 +2240,10 @@
                 <span class="post-meta-item-icon">
                   <i class="fa fa-clock-o"></i>
                 </span>
-                  
-                    <span class="post-meta-item-text">阅读时长</span>
-                  
-                    <span title="阅读时长" }}">
-                      10 分钟
-                    </span>
+                
+                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
+                
+                <span title="阅读时长">3 分钟</span>
               
             </div>
           
@@ -1794,7 +2254,9 @@
       </header>
     
 
-
+    
+    
+    
     <div class="post-body" itemprop="articleBody">
 
       
@@ -1806,7 +2268,7 @@
 <blockquote>
 <p>听好了，自己不去努力，不去付诸行动，反而去数落对方的缺点，妄图拉低对方身份，让对方站在和自己同样的高度，就是嫉妒。本来只要采取行动，赶上并超越对方就行，但是人啊，往往做不到这一点，因为嫉妒是毫不费力的啊。</p>
 </blockquote>
-<p>开始我以为这是一部积极向上的励志电影，看完之后猜对了一半，这部能让你笑让你哭的电影在<a href="https://movie.douban.com/subject/26266892/">豆瓣</a>上的评分竟有 9.0 之高。
+<p>开始我以为这是一部积极向上的励志电影，看完之后猜对了一半，这部能让你笑让你哭的电影在<a href="https://movie.douban.com/subject/26266892/" target="_blank" rel="noopener">豆瓣</a>上的评分竟有 9.0 之高。
           <!--noindex-->
           <div class="post-button text-center">
             <a class="btn" href="/2017/11/21/日本林志颖的相声求学之旅——『红鳉鱼』观后感/#more" rel="contents">
@@ -1818,14 +2280,17 @@
       
     </div>
 
-    <div>
-      
-    </div>
+    
 
-    <div>
-      
-    </div>
+    
+    
+    
 
+    
+
+    
+
+    
 
     <footer class="post-footer">
       
@@ -1839,6 +2304,10 @@
         <div class="post-eof"></div>
       
     </footer>
+  </div>
+  
+  
+  
   </article>
 
 
@@ -1851,13 +2320,19 @@
   
   
 
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/11/18/生活的常态——『百元之恋』观后感/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="王隐在录音">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="http://o8cju5u0y.bkt.clouddn.com/dm-3.jpg">
+      <meta itemprop="description" content="Apple｜RSS｜Rock&Post Rock｜WEB VIEW 播客｜独立博客｜Non-Cinema Film｜Efficiency App｜反感微信｜反感政治正确 | 搜索引擎爱好者｜黄焖鸡｜远古互联网｜精神程序员｜吉他爱好者｜前端技术好奇者｜老球迷｜在南方的北方人">
+      <meta itemprop="image" content="/images/avatar.gif">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
@@ -1869,24 +2344,42 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">
-            
-            
-              
+          <h2 class="post-title" itemprop="name headline">
                 
                 <a class="post-title-link" href="/2017/11/18/生活的常态——『百元之恋』观后感/" itemprop="url">
                   生活的常态——『百元之恋』观后感
                 </a>
               
             
-          </h1>
+          </h2>
         
 
         <div class="post-meta">
           <span class="post-time">
 
-   
-           
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            
+            
+            
+
             
               <span class="post-meta-item-icon">
                 <i class="fa fa-calendar-o"></i>
@@ -1894,32 +2387,32 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-11-18T00:44:29+08:00">
-                2017-11-18
-              </time>
+
+              
+                
+              
+
+              <time title="创建时间：2017-11-18 00:44:29" itemprop="dateCreated datePublished" datetime="2017-11-18T00:44:29+08:00">2017-11-18</time>
             
 
             
-              <span class="post-meta-divider">|</span>
-            
+              
 
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-check-o"></i>
-              </span>
               
-                <span class="post-meta-item-text">更新于</span>
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">更新于</span>
+                
+                <time title="修改时间：2018-01-28 00:01:20" itemprop="dateModified" datetime="2018-01-28T00:01:20+08:00">2018-01-28</time>
               
-              <time title="更新于" itemprop="dateModified" datetime="2018-01-28T00:01:20+08:00">
-                2018-01-28
-              </time>
             
           </span>
-
-
- 
-
-
 
           
             <span class="post-category" >
@@ -1933,11 +2426,7 @@
                 <span class="post-meta-item-text">分类于</span>
               
               
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/观后感/" itemprop="url" rel="index">
-                    <span itemprop="name">观后感</span>
-                  </a>
-                </span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/观后感/" itemprop="url" rel="index"><span itemprop="name">观后感</span></a></span>
 
                 
                 
@@ -1947,25 +2436,53 @@
 
           
             
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2017/11/18/生活的常态——『百元之恋』观后感/#comments" itemprop="discussionUrl">
+                  <span class="post-meta-item-text">评论数：</span> <span class="post-comments-count valine-comment-count" data-xid="/2017/11/18/生活的常态——『百元之恋』观后感/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
           
 
           
           
 
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
           
 
           
-            <div class="post-wordcount">
+            <div class="post-symbolscount">
+              
+
               
                 <span class="post-meta-item-icon">
                   <i class="fa fa-file-word-o"></i>
                 </span>
-                  
-                    <span class="post-meta-item-text">字数统计</span>
-                  
-                    <span title="字数统计" }}">
-                      2,849 字
-                    </span>
+                
+                  <span class="post-meta-item-text">本文字数：</span>
+                
+                <span title="本文字数">3.6k</span>
               
 
               
@@ -1976,12 +2493,10 @@
                 <span class="post-meta-item-icon">
                   <i class="fa fa-clock-o"></i>
                 </span>
-                  
-                    <span class="post-meta-item-text">阅读时长</span>
-                  
-                    <span title="阅读时长" }}">
-                      10 分钟
-                    </span>
+                
+                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
+                
+                <span title="阅读时长">3 分钟</span>
               
             </div>
           
@@ -1992,7 +2507,9 @@
       </header>
     
 
-
+    
+    
+    
     <div class="post-body" itemprop="articleBody">
 
       
@@ -2014,14 +2531,17 @@
       
     </div>
 
-    <div>
-      
-    </div>
+    
 
-    <div>
-      
-    </div>
+    
+    
+    
 
+    
+
+    
+
+    
 
     <footer class="post-footer">
       
@@ -2035,6 +2555,10 @@
         <div class="post-eof"></div>
       
     </footer>
+  </div>
+  
+  
+  
   </article>
 
 
@@ -2047,13 +2571,19 @@
   
   
 
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/11/10/看见树，看见花，想的却是地下的那具骸骨。/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="王隐在录音">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="http://o8cju5u0y.bkt.clouddn.com/dm-3.jpg">
+      <meta itemprop="description" content="Apple｜RSS｜Rock&Post Rock｜WEB VIEW 播客｜独立博客｜Non-Cinema Film｜Efficiency App｜反感微信｜反感政治正确 | 搜索引擎爱好者｜黄焖鸡｜远古互联网｜精神程序员｜吉他爱好者｜前端技术好奇者｜老球迷｜在南方的北方人">
+      <meta itemprop="image" content="/images/avatar.gif">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
@@ -2065,24 +2595,42 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">
-            
-            
-              
+          <h2 class="post-title" itemprop="name headline">
                 
                 <a class="post-title-link" href="/2017/11/10/看见树，看见花，想的却是地下的那具骸骨。/" itemprop="url">
                   微言大义第四期：看见树，看见花，想的却是地下的那具骸骨。
                 </a>
               
             
-          </h1>
+          </h2>
         
 
         <div class="post-meta">
           <span class="post-time">
 
-   
-           
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            
+            
+            
+
             
               <span class="post-meta-item-icon">
                 <i class="fa fa-calendar-o"></i>
@@ -2090,32 +2638,32 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-11-10T20:38:04+08:00">
-                2017-11-10
-              </time>
+
+              
+                
+              
+
+              <time title="创建时间：2017-11-10 20:38:04" itemprop="dateCreated datePublished" datetime="2017-11-10T20:38:04+08:00">2017-11-10</time>
             
 
             
-              <span class="post-meta-divider">|</span>
-            
+              
 
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-check-o"></i>
-              </span>
               
-                <span class="post-meta-item-text">更新于</span>
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">更新于</span>
+                
+                <time title="修改时间：2018-01-28 00:11:54" itemprop="dateModified" datetime="2018-01-28T00:11:54+08:00">2018-01-28</time>
               
-              <time title="更新于" itemprop="dateModified" datetime="2018-01-28T00:11:54+08:00">
-                2018-01-28
-              </time>
             
           </span>
-
-
- 
-
-
 
           
             <span class="post-category" >
@@ -2129,11 +2677,7 @@
                 <span class="post-meta-item-text">分类于</span>
               
               
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/微言大义/" itemprop="url" rel="index">
-                    <span itemprop="name">微言大义</span>
-                  </a>
-                </span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/微言大义/" itemprop="url" rel="index"><span itemprop="name">微言大义</span></a></span>
 
                 
                 
@@ -2143,25 +2687,53 @@
 
           
             
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2017/11/10/看见树，看见花，想的却是地下的那具骸骨。/#comments" itemprop="discussionUrl">
+                  <span class="post-meta-item-text">评论数：</span> <span class="post-comments-count valine-comment-count" data-xid="/2017/11/10/看见树，看见花，想的却是地下的那具骸骨。/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
           
 
           
           
 
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
           
 
           
-            <div class="post-wordcount">
+            <div class="post-symbolscount">
+              
+
               
                 <span class="post-meta-item-icon">
                   <i class="fa fa-file-word-o"></i>
                 </span>
-                  
-                    <span class="post-meta-item-text">字数统计</span>
-                  
-                    <span title="字数统计" }}">
-                      2,811 字
-                    </span>
+                
+                  <span class="post-meta-item-text">本文字数：</span>
+                
+                <span title="本文字数">3.3k</span>
               
 
               
@@ -2172,12 +2744,10 @@
                 <span class="post-meta-item-icon">
                   <i class="fa fa-clock-o"></i>
                 </span>
-                  
-                    <span class="post-meta-item-text">阅读时长</span>
-                  
-                    <span title="阅读时长" }}">
-                      9 分钟
-                    </span>
+                
+                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
+                
+                <span title="阅读时长">3 分钟</span>
               
             </div>
           
@@ -2188,7 +2758,9 @@
       </header>
     
 
-
+    
+    
+    
     <div class="post-body" itemprop="articleBody">
 
       
@@ -2212,14 +2784,17 @@
       
     </div>
 
-    <div>
-      
-    </div>
+    
 
-    <div>
-      
-    </div>
+    
+    
+    
 
+    
+
+    
+
+    
 
     <footer class="post-footer">
       
@@ -2233,6 +2808,10 @@
         <div class="post-eof"></div>
       
     </footer>
+  </div>
+  
+  
+  
   </article>
 
 
@@ -2245,13 +2824,19 @@
   
   
 
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/11/10/被中国互联网用坏的词（持续统计中）/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="王隐在录音">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="http://o8cju5u0y.bkt.clouddn.com/dm-3.jpg">
+      <meta itemprop="description" content="Apple｜RSS｜Rock&Post Rock｜WEB VIEW 播客｜独立博客｜Non-Cinema Film｜Efficiency App｜反感微信｜反感政治正确 | 搜索引擎爱好者｜黄焖鸡｜远古互联网｜精神程序员｜吉他爱好者｜前端技术好奇者｜老球迷｜在南方的北方人">
+      <meta itemprop="image" content="/images/avatar.gif">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
@@ -2263,24 +2848,42 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">
-            
-            
-              
+          <h2 class="post-title" itemprop="name headline">
                 
                 <a class="post-title-link" href="/2017/11/10/被中国互联网用坏的词（持续统计中）/" itemprop="url">
                   被中国互联网用坏的词（持续统计中）
                 </a>
               
             
-          </h1>
+          </h2>
         
 
         <div class="post-meta">
           <span class="post-time">
 
-   
-           
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            
+            
+            
+
             
               <span class="post-meta-item-icon">
                 <i class="fa fa-calendar-o"></i>
@@ -2288,56 +2891,84 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-11-10T00:47:49+08:00">
-                2017-11-10
-              </time>
+
+              
+                
+              
+
+              <time title="创建时间：2017-11-10 00:47:49" itemprop="dateCreated datePublished" datetime="2017-11-10T00:47:49+08:00">2017-11-10</time>
             
 
             
-              <span class="post-meta-divider">|</span>
-            
+              
 
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-check-o"></i>
-              </span>
               
-                <span class="post-meta-item-text">更新于</span>
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">更新于</span>
+                
+                <time title="修改时间：2018-01-28 00:13:12" itemprop="dateModified" datetime="2018-01-28T00:13:12+08:00">2018-01-28</time>
               
-              <time title="更新于" itemprop="dateModified" datetime="2018-01-28T00:13:12+08:00">
-                2018-01-28
-              </time>
             
           </span>
+
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2017/11/10/被中国互联网用坏的词（持续统计中）/#comments" itemprop="discussionUrl">
+                  <span class="post-meta-item-text">评论数：</span> <span class="post-comments-count valine-comment-count" data-xid="/2017/11/10/被中国互联网用坏的词（持续统计中）/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+
+
+
+
+
 
 
  
 
 
 
+
+
+
+
+
+
+
+
           
 
           
-            
-          
+            <div class="post-symbolscount">
+              
 
-          
-          
-
-          
-
-          
-            <div class="post-wordcount">
               
                 <span class="post-meta-item-icon">
                   <i class="fa fa-file-word-o"></i>
                 </span>
-                  
-                    <span class="post-meta-item-text">字数统计</span>
-                  
-                    <span title="字数统计" }}">
-                      237 字
-                    </span>
+                
+                  <span class="post-meta-item-text">本文字数：</span>
+                
+                <span title="本文字数">315</span>
               
 
               
@@ -2348,12 +2979,10 @@
                 <span class="post-meta-item-icon">
                   <i class="fa fa-clock-o"></i>
                 </span>
-                  
-                    <span class="post-meta-item-text">阅读时长</span>
-                  
-                    <span title="阅读时长" }}">
-                      1 分钟
-                    </span>
+                
+                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
+                
+                <span title="阅读时长">1 分钟</span>
               
             </div>
           
@@ -2364,7 +2993,9 @@
       </header>
     
 
-
+    
+    
+    
     <div class="post-body" itemprop="articleBody">
 
       
@@ -2385,14 +3016,17 @@
       
     </div>
 
-    <div>
-      
-    </div>
+    
 
-    <div>
-      
-    </div>
+    
+    
+    
 
+    
+
+    
+
+    
 
     <footer class="post-footer">
       
@@ -2406,6 +3040,10 @@
         <div class="post-eof"></div>
       
     </footer>
+  </div>
+  
+  
+  
   </article>
 
 
@@ -2418,13 +3056,19 @@
   
   
 
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/10/28/爱一个人要像恶鬼索命，倒钩入肉，这一生喋喋不休，说到天花乱坠，非如此不是顺理成章/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="王隐在录音">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="http://o8cju5u0y.bkt.clouddn.com/dm-3.jpg">
+      <meta itemprop="description" content="Apple｜RSS｜Rock&Post Rock｜WEB VIEW 播客｜独立博客｜Non-Cinema Film｜Efficiency App｜反感微信｜反感政治正确 | 搜索引擎爱好者｜黄焖鸡｜远古互联网｜精神程序员｜吉他爱好者｜前端技术好奇者｜老球迷｜在南方的北方人">
+      <meta itemprop="image" content="/images/avatar.gif">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
@@ -2436,24 +3080,42 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">
-            
-            
-              
+          <h2 class="post-title" itemprop="name headline">
                 
                 <a class="post-title-link" href="/2017/10/28/爱一个人要像恶鬼索命，倒钩入肉，这一生喋喋不休，说到天花乱坠，非如此不是顺理成章/" itemprop="url">
                   微言大义第三期：爱一个人要像恶鬼索命，倒钩入肉，这一生喋喋不休，说到天花乱坠，非如此不是顺理成章
                 </a>
               
             
-          </h1>
+          </h2>
         
 
         <div class="post-meta">
           <span class="post-time">
 
-   
-           
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            
+            
+            
+
             
               <span class="post-meta-item-icon">
                 <i class="fa fa-calendar-o"></i>
@@ -2461,32 +3123,32 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-10-28T16:47:14+08:00">
-                2017-10-28
-              </time>
+
+              
+                
+              
+
+              <time title="创建时间：2017-10-28 16:47:14" itemprop="dateCreated datePublished" datetime="2017-10-28T16:47:14+08:00">2017-10-28</time>
             
 
             
-              <span class="post-meta-divider">|</span>
-            
+              
 
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-check-o"></i>
-              </span>
               
-                <span class="post-meta-item-text">更新于</span>
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">更新于</span>
+                
+                <time title="修改时间：2018-01-28 00:14:20" itemprop="dateModified" datetime="2018-01-28T00:14:20+08:00">2018-01-28</time>
               
-              <time title="更新于" itemprop="dateModified" datetime="2018-01-28T00:14:20+08:00">
-                2018-01-28
-              </time>
             
           </span>
-
-
- 
-
-
 
           
             <span class="post-category" >
@@ -2500,11 +3162,7 @@
                 <span class="post-meta-item-text">分类于</span>
               
               
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/微言大义/" itemprop="url" rel="index">
-                    <span itemprop="name">微言大义</span>
-                  </a>
-                </span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/微言大义/" itemprop="url" rel="index"><span itemprop="name">微言大义</span></a></span>
 
                 
                 
@@ -2514,25 +3172,53 @@
 
           
             
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2017/10/28/爱一个人要像恶鬼索命，倒钩入肉，这一生喋喋不休，说到天花乱坠，非如此不是顺理成章/#comments" itemprop="discussionUrl">
+                  <span class="post-meta-item-text">评论数：</span> <span class="post-comments-count valine-comment-count" data-xid="/2017/10/28/爱一个人要像恶鬼索命，倒钩入肉，这一生喋喋不休，说到天花乱坠，非如此不是顺理成章/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
           
 
           
           
 
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
           
 
           
-            <div class="post-wordcount">
+            <div class="post-symbolscount">
+              
+
               
                 <span class="post-meta-item-icon">
                   <i class="fa fa-file-word-o"></i>
                 </span>
-                  
-                    <span class="post-meta-item-text">字数统计</span>
-                  
-                    <span title="字数统计" }}">
-                      2,489 字
-                    </span>
+                
+                  <span class="post-meta-item-text">本文字数：</span>
+                
+                <span title="本文字数">2.9k</span>
               
 
               
@@ -2543,12 +3229,10 @@
                 <span class="post-meta-item-icon">
                   <i class="fa fa-clock-o"></i>
                 </span>
-                  
-                    <span class="post-meta-item-text">阅读时长</span>
-                  
-                    <span title="阅读时长" }}">
-                      8 分钟
-                    </span>
+                
+                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
+                
+                <span title="阅读时长">3 分钟</span>
               
             </div>
           
@@ -2559,7 +3243,9 @@
       </header>
     
 
-
+    
+    
+    
     <div class="post-body" itemprop="articleBody">
 
       
@@ -2583,14 +3269,17 @@
       
     </div>
 
-    <div>
-      
-    </div>
+    
 
-    <div>
-      
-    </div>
+    
+    
+    
 
+    
+
+    
+
+    
 
     <footer class="post-footer">
       
@@ -2604,6 +3293,10 @@
         <div class="post-eof"></div>
       
     </footer>
+  </div>
+  
+  
+  
   </article>
 
 
@@ -2616,13 +3309,19 @@
   
   
 
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/10/26/记一次不成功的转正/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="王隐在录音">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="http://o8cju5u0y.bkt.clouddn.com/dm-3.jpg">
+      <meta itemprop="description" content="Apple｜RSS｜Rock&Post Rock｜WEB VIEW 播客｜独立博客｜Non-Cinema Film｜Efficiency App｜反感微信｜反感政治正确 | 搜索引擎爱好者｜黄焖鸡｜远古互联网｜精神程序员｜吉他爱好者｜前端技术好奇者｜老球迷｜在南方的北方人">
+      <meta itemprop="image" content="/images/avatar.gif">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
@@ -2634,24 +3333,42 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">
-            
-            
-              
+          <h2 class="post-title" itemprop="name headline">
                 
                 <a class="post-title-link" href="/2017/10/26/记一次不成功的转正/" itemprop="url">
                   记一次风波
                 </a>
               
             
-          </h1>
+          </h2>
         
 
         <div class="post-meta">
           <span class="post-time">
 
-   
-           
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            
+            
+            
+
             
               <span class="post-meta-item-icon">
                 <i class="fa fa-calendar-o"></i>
@@ -2659,32 +3376,32 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-10-26T00:29:29+08:00">
-                2017-10-26
-              </time>
+
+              
+                
+              
+
+              <time title="创建时间：2017-10-26 00:29:29" itemprop="dateCreated datePublished" datetime="2017-10-26T00:29:29+08:00">2017-10-26</time>
             
 
             
-              <span class="post-meta-divider">|</span>
-            
+              
 
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-check-o"></i>
-              </span>
               
-                <span class="post-meta-item-text">更新于</span>
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">更新于</span>
+                
+                <time title="修改时间：2018-07-16 15:54:02" itemprop="dateModified" datetime="2018-07-16T15:54:02+08:00">2018-07-16</time>
               
-              <time title="更新于" itemprop="dateModified" datetime="2018-07-16T15:54:02+08:00">
-                2018-07-16
-              </time>
             
           </span>
-
-
- 
-
-
 
           
             <span class="post-category" >
@@ -2698,11 +3415,7 @@
                 <span class="post-meta-item-text">分类于</span>
               
               
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/平淡生活/" itemprop="url" rel="index">
-                    <span itemprop="name">平淡生活</span>
-                  </a>
-                </span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/平淡生活/" itemprop="url" rel="index"><span itemprop="name">平淡生活</span></a></span>
 
                 
                 
@@ -2712,25 +3425,53 @@
 
           
             
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2017/10/26/记一次不成功的转正/#comments" itemprop="discussionUrl">
+                  <span class="post-meta-item-text">评论数：</span> <span class="post-comments-count valine-comment-count" data-xid="/2017/10/26/记一次不成功的转正/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
           
 
           
           
 
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
           
 
           
-            <div class="post-wordcount">
+            <div class="post-symbolscount">
+              
+
               
                 <span class="post-meta-item-icon">
                   <i class="fa fa-file-word-o"></i>
                 </span>
-                  
-                    <span class="post-meta-item-text">字数统计</span>
-                  
-                    <span title="字数统计" }}">
-                      1,818 字
-                    </span>
+                
+                  <span class="post-meta-item-text">本文字数：</span>
+                
+                <span title="本文字数">2.1k</span>
               
 
               
@@ -2741,12 +3482,10 @@
                 <span class="post-meta-item-icon">
                   <i class="fa fa-clock-o"></i>
                 </span>
-                  
-                    <span class="post-meta-item-text">阅读时长</span>
-                  
-                    <span title="阅读时长" }}">
-                      6 分钟
-                    </span>
+                
+                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
+                
+                <span title="阅读时长">2 分钟</span>
               
             </div>
           
@@ -2757,7 +3496,9 @@
       </header>
     
 
-
+    
+    
+    
     <div class="post-body" itemprop="articleBody">
 
       
@@ -2777,14 +3518,17 @@
       
     </div>
 
-    <div>
-      
-    </div>
+    
 
-    <div>
-      
-    </div>
+    
+    
+    
 
+    
+
+    
+
+    
 
     <footer class="post-footer">
       
@@ -2798,6 +3542,10 @@
         <div class="post-eof"></div>
       
     </footer>
+  </div>
+  
+  
+  
   </article>
 
 
@@ -2810,13 +3558,19 @@
   
   
 
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/10/15/新闻媒体的真正的价值，绝对不是吸引眼球，抢流量，真正的新闻人是历史学家，他们以透明的观点记录这个世界。/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="王隐在录音">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="http://o8cju5u0y.bkt.clouddn.com/dm-3.jpg">
+      <meta itemprop="description" content="Apple｜RSS｜Rock&Post Rock｜WEB VIEW 播客｜独立博客｜Non-Cinema Film｜Efficiency App｜反感微信｜反感政治正确 | 搜索引擎爱好者｜黄焖鸡｜远古互联网｜精神程序员｜吉他爱好者｜前端技术好奇者｜老球迷｜在南方的北方人">
+      <meta itemprop="image" content="/images/avatar.gif">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
@@ -2828,24 +3582,42 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">
-            
-            
-              
+          <h2 class="post-title" itemprop="name headline">
                 
                 <a class="post-title-link" href="/2017/10/15/新闻媒体的真正的价值，绝对不是吸引眼球，抢流量，真正的新闻人是历史学家，他们以透明的观点记录这个世界。/" itemprop="url">
                   微言大义第二期：真正的新闻人其实是历史学家，他们以透明的观点记录这个世界
                 </a>
               
             
-          </h1>
+          </h2>
         
 
         <div class="post-meta">
           <span class="post-time">
 
-   
-           
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            
+            
+            
+
             
               <span class="post-meta-item-icon">
                 <i class="fa fa-calendar-o"></i>
@@ -2853,32 +3625,32 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-10-15T12:54:33+08:00">
-                2017-10-15
-              </time>
+
+              
+                
+              
+
+              <time title="创建时间：2017-10-15 12:54:33" itemprop="dateCreated datePublished" datetime="2017-10-15T12:54:33+08:00">2017-10-15</time>
             
 
             
-              <span class="post-meta-divider">|</span>
-            
+              
 
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-check-o"></i>
-              </span>
               
-                <span class="post-meta-item-text">更新于</span>
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">更新于</span>
+                
+                <time title="修改时间：2018-01-28 00:16:34" itemprop="dateModified" datetime="2018-01-28T00:16:34+08:00">2018-01-28</time>
               
-              <time title="更新于" itemprop="dateModified" datetime="2018-01-28T00:16:34+08:00">
-                2018-01-28
-              </time>
             
           </span>
-
-
- 
-
-
 
           
             <span class="post-category" >
@@ -2892,11 +3664,7 @@
                 <span class="post-meta-item-text">分类于</span>
               
               
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/微言大义/" itemprop="url" rel="index">
-                    <span itemprop="name">微言大义</span>
-                  </a>
-                </span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/微言大义/" itemprop="url" rel="index"><span itemprop="name">微言大义</span></a></span>
 
                 
                 
@@ -2906,25 +3674,53 @@
 
           
             
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2017/10/15/新闻媒体的真正的价值，绝对不是吸引眼球，抢流量，真正的新闻人是历史学家，他们以透明的观点记录这个世界。/#comments" itemprop="discussionUrl">
+                  <span class="post-meta-item-text">评论数：</span> <span class="post-comments-count valine-comment-count" data-xid="/2017/10/15/新闻媒体的真正的价值，绝对不是吸引眼球，抢流量，真正的新闻人是历史学家，他们以透明的观点记录这个世界。/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
           
 
           
           
 
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
           
 
           
-            <div class="post-wordcount">
+            <div class="post-symbolscount">
+              
+
               
                 <span class="post-meta-item-icon">
                   <i class="fa fa-file-word-o"></i>
                 </span>
-                  
-                    <span class="post-meta-item-text">字数统计</span>
-                  
-                    <span title="字数统计" }}">
-                      1,282 字
-                    </span>
+                
+                  <span class="post-meta-item-text">本文字数：</span>
+                
+                <span title="本文字数">1.5k</span>
               
 
               
@@ -2935,12 +3731,10 @@
                 <span class="post-meta-item-icon">
                   <i class="fa fa-clock-o"></i>
                 </span>
-                  
-                    <span class="post-meta-item-text">阅读时长</span>
-                  
-                    <span title="阅读时长" }}">
-                      4 分钟
-                    </span>
+                
+                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
+                
+                <span title="阅读时长">1 分钟</span>
               
             </div>
           
@@ -2951,7 +3745,9 @@
       </header>
     
 
-
+    
+    
+    
     <div class="post-body" itemprop="articleBody">
 
       
@@ -2980,14 +3776,17 @@
       
     </div>
 
-    <div>
-      
-    </div>
+    
 
-    <div>
-      
-    </div>
+    
+    
+    
 
+    
+
+    
+
+    
 
     <footer class="post-footer">
       
@@ -3001,6 +3800,10 @@
         <div class="post-eof"></div>
       
     </footer>
+  </div>
+  
+  
+  
   </article>
 
 
@@ -3013,13 +3816,19 @@
   
   
 
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/10/09/所谓的世间，不就是你吗？/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="王隐在录音">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="http://o8cju5u0y.bkt.clouddn.com/dm-3.jpg">
+      <meta itemprop="description" content="Apple｜RSS｜Rock&Post Rock｜WEB VIEW 播客｜独立博客｜Non-Cinema Film｜Efficiency App｜反感微信｜反感政治正确 | 搜索引擎爱好者｜黄焖鸡｜远古互联网｜精神程序员｜吉他爱好者｜前端技术好奇者｜老球迷｜在南方的北方人">
+      <meta itemprop="image" content="/images/avatar.gif">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
@@ -3031,24 +3840,42 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">
-            
-            
-              
+          <h2 class="post-title" itemprop="name headline">
                 
                 <a class="post-title-link" href="/2017/10/09/所谓的世间，不就是你吗？/" itemprop="url">
                   微言大义第一期：所谓的世间，不就是你吗？
                 </a>
               
             
-          </h1>
+          </h2>
         
 
         <div class="post-meta">
           <span class="post-time">
 
-   
-           
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            
+            
+            
+
             
               <span class="post-meta-item-icon">
                 <i class="fa fa-calendar-o"></i>
@@ -3056,32 +3883,32 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-10-09T23:09:19+08:00">
-                2017-10-09
-              </time>
+
+              
+                
+              
+
+              <time title="创建时间：2017-10-09 23:09:19" itemprop="dateCreated datePublished" datetime="2017-10-09T23:09:19+08:00">2017-10-09</time>
             
 
             
-              <span class="post-meta-divider">|</span>
-            
+              
 
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-check-o"></i>
-              </span>
               
-                <span class="post-meta-item-text">更新于</span>
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">更新于</span>
+                
+                <time title="修改时间：2018-01-28 00:17:43" itemprop="dateModified" datetime="2018-01-28T00:17:43+08:00">2018-01-28</time>
               
-              <time title="更新于" itemprop="dateModified" datetime="2018-01-28T00:17:43+08:00">
-                2018-01-28
-              </time>
             
           </span>
-
-
- 
-
-
 
           
             <span class="post-category" >
@@ -3095,11 +3922,7 @@
                 <span class="post-meta-item-text">分类于</span>
               
               
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/微言大义/" itemprop="url" rel="index">
-                    <span itemprop="name">微言大义</span>
-                  </a>
-                </span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/微言大义/" itemprop="url" rel="index"><span itemprop="name">微言大义</span></a></span>
 
                 
                 
@@ -3109,25 +3932,53 @@
 
           
             
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2017/10/09/所谓的世间，不就是你吗？/#comments" itemprop="discussionUrl">
+                  <span class="post-meta-item-text">评论数：</span> <span class="post-comments-count valine-comment-count" data-xid="/2017/10/09/所谓的世间，不就是你吗？/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
           
 
           
           
 
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
           
 
           
-            <div class="post-wordcount">
+            <div class="post-symbolscount">
+              
+
               
                 <span class="post-meta-item-icon">
                   <i class="fa fa-file-word-o"></i>
                 </span>
-                  
-                    <span class="post-meta-item-text">字数统计</span>
-                  
-                    <span title="字数统计" }}">
-                      851 字
-                    </span>
+                
+                  <span class="post-meta-item-text">本文字数：</span>
+                
+                <span title="本文字数">1k</span>
               
 
               
@@ -3138,12 +3989,10 @@
                 <span class="post-meta-item-icon">
                   <i class="fa fa-clock-o"></i>
                 </span>
-                  
-                    <span class="post-meta-item-text">阅读时长</span>
-                  
-                    <span title="阅读时长" }}">
-                      3 分钟
-                    </span>
+                
+                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
+                
+                <span title="阅读时长">1 分钟</span>
               
             </div>
           
@@ -3154,7 +4003,9 @@
       </header>
     
 
-
+    
+    
+    
     <div class="post-body" itemprop="articleBody">
 
       
@@ -3183,14 +4034,17 @@
       
     </div>
 
-    <div>
-      
-    </div>
+    
 
-    <div>
-      
-    </div>
+    
+    
+    
 
+    
+
+    
+
+    
 
     <footer class="post-footer">
       
@@ -3204,6 +4058,10 @@
         <div class="post-eof"></div>
       
     </footer>
+  </div>
+  
+  
+  
   </article>
 
 
@@ -3212,15 +4070,12 @@
 
   
   <nav class="pagination">
-    <a class="extend prev" rel="prev" href="/page/2/"><i class="fa fa-angle-left"></i></a><a class="page-number" href="/">1</a><a class="page-number" href="/page/2/">2</a><span class="page-number current">3</span><a class="page-number" href="/page/4/">4</a><a class="page-number" href="/page/5/">5</a><a class="extend next" rel="next" href="/page/4/"><i class="fa fa-angle-right"></i></a>
+    <a class="extend prev" rel="prev" href="/page/2/"><i class="fa fa-angle-left" aria-label="上一页"></i></a><a class="page-number" href="/">1</a><a class="page-number" href="/page/2/">2</a><span class="page-number current">3</span><a class="page-number" href="/page/4/">4</a><a class="page-number" href="/page/5/">5</a><a class="extend next" rel="next" href="/page/4/"><i class="fa fa-angle-right" aria-label="下一页"></i></a>
   </nav>
 
 
-          
+
           </div>
-          
-
-
           
 
         </div>
@@ -3236,136 +4091,498 @@
   </div>
 
   <aside id="sidebar" class="sidebar">
+    
     <div class="sidebar-inner">
 
       
 
       
 
-      <section class="site-overview sidebar-panel sidebar-panel-active">
-        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
-          <img class="site-author-image" itemprop="image"
-               src="http://o8cju5u0y.bkt.clouddn.com/dm-3.jpg"
-               alt="王隐在录音" />
-          <p class="site-author-name" itemprop="name">王隐在录音</p>
-           
+      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <p class="site-author-name" itemprop="name">王隐在录音</p>
               <p class="site-description motion-element" itemprop="description">Apple｜RSS｜Rock&Post Rock｜WEB VIEW 播客｜独立博客｜Non-Cinema Film｜Efficiency App｜反感微信｜反感政治正确 | 搜索引擎爱好者｜黄焖鸡｜远古互联网｜精神程序员｜吉他爱好者｜前端技术好奇者｜老球迷｜在南方的北方人</p>
-          
-        </div>
-        <nav class="site-state motion-element">
-        
-          
-            <div class="site-state-item site-state-posts">
-              <a href="/archives">
-                <span class="site-state-item-count">63</span>
-                <span class="site-state-item-name">日志</span>
-              </a>
-            </div>
-          
-
-          
-            <div class="site-state-item site-state-categories">
-              <a href="/categories">
-                <span class="site-state-item-count">13</span>
-                <span class="site-state-item-name">分类</span>
-              </a>
-            </div>
-          
-
-          
-            <div class="site-state-item site-state-tags">
-              <a href="/tags">
-                <span class="site-state-item-count">172</span>
-                <span class="site-state-item-name">标签</span>
-              </a>
-            </div>
-          
-
-        </nav>
-
-        
-          <div class="feed-link motion-element">
-            <a href="/atom.xml" rel="alternate">
-              <i class="fa fa-rss"></i>
-              RSS
-            </a>
           </div>
-        
 
-        <div class="links-of-author motion-element">
           
-            
-              <span class="links-of-author-item">
-                <a href="https://twitter.com/liki_wang" target="_blank" title="Twitter">
-                  
-                    <i class="fa fa-fw fa-twitter"></i>
-                  
-                  Twitter
-                </a>
-              </span>
-            
-              <span class="links-of-author-item">
-                <a href="http://weibo.com/recwangyin" target="_blank" title="Weibo">
-                  
-                    <i class="fa fa-fw fa-weibo"></i>
-                  
-                  Weibo
-                </a>
-              </span>
-            
-              <span class="links-of-author-item">
-                <a href="https://www.zhihu.com/people/wang-peng-50-40" target="_blank" title="Zhihu">
-                  
-                    <i class="fa fa-fw fa-globe"></i>
-                  
-                  Zhihu
-                </a>
-              </span>
-            
-              <span class="links-of-author-item">
-                <a href="http://webview.tech" target="_blank" title="播客">
-                  
-                    <i class="fa fa-fw fa-headphones"></i>
-                  
-                  播客
-                </a>
-              </span>
-            
-              <span class="links-of-author-item">
-                <a href="mailto:liki_wang@foxmail.com" target="_blank" title="邮件">
-                  
-                    <i class="fa fa-fw fa-envelope"></i>
-                  
-                  邮件
-                </a>
-              </span>
-            
+            <nav class="site-state motion-element">
+              
+                <div class="site-state-item site-state-posts">
+                
+                  <a href="/archives/">
+                
+                    <span class="site-state-item-count">63</span>
+                    <span class="site-state-item-name">日志</span>
+                  </a>
+                </div>
+              
+
+              
+                
+                
+                <div class="site-state-item site-state-categories">
+                  <a href="/categories/index.html">
+                    
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">13</span>
+                    <span class="site-state-item-name">分类</span>
+                  </a>
+                </div>
+              
+
+              
+                
+                
+                <div class="site-state-item site-state-tags">
+                  <a href="/tags/index.html">
+                    
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">172</span>
+                    <span class="site-state-item-name">标签</span>
+                  </a>
+                </div>
+              
+            </nav>
           
-        </div>
 
-        
-        
-
-        
-        
-          <div class="links-of-blogroll motion-element links-of-blogroll-inline">
-            <div class="links-of-blogroll-title">
-              <i class="fa  fa-fw fa-globe"></i>
-              敬礼也有自己写字的地方，欢迎移步
+          
+            <div class="feed-link motion-element">
+              <a href="/atom.xml" rel="alternate">
+                <i class="fa fa-rss"></i>
+                RSS
+              </a>
             </div>
-            <ul class="links-of-blogroll-list">
+          
+
+          
+            <div class="links-of-author motion-element">
               
-                <li class="links-of-blogroll-item">
-                  <a href="http://lolilukia.com/" title="lolilukia" target="_blank">lolilukia</a>
-                </li>
+                <span class="links-of-author-item">
+                  <a href="https://twitter.com/liki_wang" target="_blank" title="Twitter" rel="external nofollow"><i class="fa fa-fw fa-twitter"></i>Twitter</a>
+                  
+                </span>
               
-            </ul>
-          </div>
-        
+                <span class="links-of-author-item">
+                  <a href="http://weibo.com/recwangyin" target="_blank" title="Weibo" rel="external nofollow"><i class="fa fa-fw fa-weibo"></i>Weibo</a>
+                  
+                </span>
+              
+                <span class="links-of-author-item">
+                  <a href="https://www.zhihu.com/people/wang-peng-50-40" target="_blank" title="Zhihu" rel="external nofollow"><i class="fa fa-fw fa-globe"></i>Zhihu</a>
+                  
+                </span>
+              
+                <span class="links-of-author-item">
+                  <a href="https://webview.tech" target="_blank" title="播客" rel="external nofollow"><i class="fa fa-fw fa-headphones"></i>播客</a>
+                  
+                </span>
+              
+                <span class="links-of-author-item">
+                  <a href="mailto:liki_wang@foxmail.com" target="_blank" title="邮件" rel="external nofollow"><i class="fa fa-fw fa-envelope"></i>邮件</a>
+                  
+                </span>
+              
+            </div>
+          
 
-        
+          
+          
 
+          
+          
+            <div class="links-of-blogroll motion-element links-of-blogroll-block">
+              <div class="links-of-blogroll-title">
+                <i class="fa  fa-fw fa-link"></i>
+                敬礼也有自己写字的地方，欢迎移步
+              </div>
+              <ul class="links-of-blogroll-list">
+                
+                  <li class="links-of-blogroll-item">
+                    <a href="http://lolilukia.com/" title="lolilukia" target="_blank">lolilukia</a>
+                  </li>
+                
+              </ul>
+            </div>
+          
 
+          
+            
+          
+          
+
+        </div>
       </section>
 
       
@@ -3382,19 +4599,55 @@
 
     <footer id="footer" class="footer">
       <div class="footer-inner">
-        <div class="copyright" >
-  
-  &copy;  2015 - 
-  <span itemprop="copyrightYear">2018</span>
-  <span class="with-love">
+        <div class="copyright">&copy; 2015 – <span itemprop="copyrightYear">2018</span>
+  <span class="with-love" id="animate">
     <i class="fa fa-heart"></i>
   </span>
   <span class="author" itemprop="copyrightHolder">王隐在录音</span>
+
+  
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item-icon">
+      <i class="fa fa-area-chart"></i>
+    </span>
+    
+      <span class="post-meta-item-text">站点总字数：</span>
+    
+    <span title="站点总字数">120k</span>
+  
+
+  
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item-icon">
+      <i class="fa fa-coffee"></i>
+    </span>
+    
+      <span class="post-meta-item-text">站点阅读时长 &asymp;</span>
+    
+    <span title="站点阅读时长">1:49</span>
+  
 </div>
+
+
+  
+
+
+
+
+
+
+
 
 
 
         
+
+
+
+
+
+
+
 
         
       </div>
@@ -3406,6 +4659,11 @@
         
       </div>
     
+
+    
+	
+    
+
     
   </div>
 
@@ -3425,79 +4683,45 @@
 
 
 
-  
 
 
 
 
-  
-  <script type="text/javascript" src="http://cdn.bootcss.com/jquery/2.1.3/jquery.min.js"></script>
-
-  
-  <script type="text/javascript" src="http://cdn.bootcss.com/fastclick/1.0.6/fastclick.js"></script>
-
-  
-  <script type="text/javascript" src="http://cdn.bootcss.com/jquery_lazyload/1.9.7/jquery.lazyload.js"></script>
-
-  
-  <script type="text/javascript" src="http://cdn.bootcss.com/velocity/1.2.1/velocity.js"></script>
-
-  
-  <script type="text/javascript" src="http://cdn.bootcss.com/velocity/1.2.1/velocity.ui.js"></script>
-
-  
-  <script type="text/javascript" src="https://cdn.staticfile.org/fancybox/2.1.5/jquery.fancybox.js"></script>
-
-
-  
-
-
-  <script type="text/javascript" src="/js/src/utils.js?v=5.1.0"></script>
-
-  <script type="text/javascript" src="/js/src/motion.js?v=5.1.0"></script>
-
-
-
-  
-  
-
-  
-
-  
-
-
-  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.0"></script>
-
-
-
-  
-
-
-
-  
 
 
 
 
-	
+
+
+
+
 
 
 
 
 
   
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
 
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
 
-
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
 
 
   
 
 
+  <script type="text/javascript" src="/js/src/utils.js?v=6.4.0"></script>
 
-
-
-  
+  <script type="text/javascript" src="/js/src/motion.js?v=6.4.0"></script>
 
 
 
@@ -3508,10 +4732,75 @@
 
   
 
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=6.4.0"></script>
+
+
+
+  
+
+
+
+  
+
+
+
+
+
+
+
+
+  <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+  
+  
+  <script src="//unpkg.com/valine/dist/Valine.min.js"></script>
+  
+  <script type="text/javascript">
+    var GUEST = ['nick','mail','link'];
+    var guest = 'nick,mail,link';
+    guest = guest.split(',').filter(function (item) {
+      return GUEST.indexOf(item)>-1;
+    });
+    new Valine({
+        el: '#comments' ,
+        verify: false,
+        notify: false,
+        appId: 'wt4e7Uow9CGBV0ABuIoWFjLb-gzGzoHsz',
+        appKey: 'F980d82qtlWJP3pHwYss6uI6',
+        placeholder: '说点什么',
+        avatar:'mm',
+        meta:guest,
+        pageSize:'10' || 10,
+        visitor: false
+    });
+  </script>
+
+
+
+  
+
+
+
+
+
+  
+
   
 
   
 
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+  
 
   
 

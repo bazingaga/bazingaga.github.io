@@ -1,28 +1,32 @@
-<!doctype html>
+<!DOCTYPE html>
 
 
 
 
-<html class="theme-next muse" lang="zh-Hans">
+
+
+
+
+
+
+
+
+
+<html class="theme-next muse" lang="zh-CN">
 <head>
   <meta charset="UTF-8"/>
-
-<script>
-    (function(){
-        if(''){
-            if (prompt('请输入文章密码') !== ''){
-                alert('密码错误');
-                history.back();
-            }
-        }
-    })();
-</script>
-
-
-
-
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2"/>
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
 
 
 
@@ -43,49 +47,73 @@
 
 
 
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=6.4.0" rel="stylesheet" type="text/css" />
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/favicon.ico?v=6.4.0">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon.ico?v=6.4.0">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon.ico?v=6.4.0">
+
+
+  <link rel="mask-icon" href="/images/favicon.ico?v=6.4.0" color="#222">
+
+
+
+
+
+
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Muse',
+    version: '6.4.0',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: false,
+    fastclick: false,
+    lazyload: false,
+    tabs: true,
+    motion: {"enable":false,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
   
-  
-    
-  
-  <link href="https://cdn.staticfile.org/fancybox/2.1.5/jquery.fancybox.css" rel="stylesheet" type="text/css" />
 
 
 
 
-
-
-
-  
-
-<link href="http://cdn.staticfile.org/font-awesome/4.6.2/css/font-awesome.css" rel="stylesheet" type="text/css" />
-
-<link href="/css/main.css?v=5.1.0" rel="stylesheet" type="text/css" />
-
-
-  <meta name="keywords" content="读书,灵山,呼兰河传," />
-
-
-
-
-
-  <link rel="alternate" href="/atom.xml" title="王尔德的德" type="application/atom+xml" />
-
-
-
-
-  <link rel="shortcut icon" type="image/x-icon" href="/images/favicon.ico?v=5.1.0" />
-
-
-
-
-
-
-<meta name="description" content="最近在整理去年的阅读笔记，发现其中大部分的阅读都是通过kindle完成的，不得不感慨科技让生活更美好。考虑到篇幅的原因，对于每本书的描述感受会很简练，也在这里分享给你。（不断补充中）">
+  <meta name="description" content="最近在整理去年的阅读笔记，发现其中大部分的阅读都是通过kindle完成的，不得不感慨科技让生活更美好。考虑到篇幅的原因，对于每本书的描述感受会很简练，也在这里分享给你。（不断补充中）">
+<meta name="keywords" content="读书,灵山,呼兰河传">
 <meta property="og:type" content="article">
 <meta property="og:title" content="2015的阅读年度总结">
 <meta property="og:url" content="http://yoursite.com/2016/02/20/阅读2015年度总结/index.html">
 <meta property="og:site_name" content="王尔德的德">
 <meta property="og:description" content="最近在整理去年的阅读笔记，发现其中大部分的阅读都是通过kindle完成的，不得不感慨科技让生活更美好。考虑到篇幅的原因，对于每本书的描述感受会很简练，也在这里分享给你。（不断补充中）">
+<meta property="og:locale" content="zh-CN">
 <meta property="og:image" content="http://7xpl7j.com1.z0.glb.clouddn.com/writer_21.jpg">
 <meta property="og:updated_time" content="2018-01-27T16:31:02.632Z">
 <meta name="twitter:card" content="summary">
@@ -95,27 +123,8 @@
 
 
 
-<script type="text/javascript" id="hexo.configurations">
-  var NexT = window.NexT || {};
-  var CONFIG = {
-    root: '/',
-    scheme: 'Muse',
-    sidebar: {"position":"left","display":"post","offset":12,"offset_float":0,"b2t":false,"scrollpercent":false},
-    fancybox: true,
-    motion: false,
-    duoshuo: {
-      userId: '0',
-      author: '博主'
-    },
-    algolia: {
-      applicationID: '',
-      apiKey: '',
-      indexName: '',
-      hits: {"per_page":20},
-      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
-    }
-  };
-</script>
+  <link rel="alternate" href="/atom.xml" title="王尔德的德" type="application/atom+xml" />
+
 
 
 
@@ -123,14 +132,15 @@
 
 
 
+<script type="text/javascript" id="page.configurations">
+  CONFIG.page = {
+    sidebar: "",
+  };
+</script>
 
-
-  <title> 2015的阅读年度总结 | 王尔德的德 </title>
-</head>
-
-<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
-
+  <title>2015的阅读年度总结 | 王尔德的德</title>
   
+
 
 
 
@@ -149,18 +159,43 @@
 
 
 
+  <noscript>
+  <style type="text/css">
+    .use-motion .motion-element,
+    .use-motion .brand,
+    .use-motion .menu-item,
+    .sidebar-inner,
+    .use-motion .post-block,
+    .use-motion .pagination,
+    .use-motion .comments,
+    .use-motion .post-header,
+    .use-motion .post-body,
+    .use-motion .collection-title { opacity: initial; }
 
+    .use-motion .logo,
+    .use-motion .site-title,
+    .use-motion .site-subtitle {
+      opacity: initial;
+      top: initial;
+    }
 
+    .use-motion {
+      .logo-line-before i { left: initial; }
+      .logo-line-after i { right: initial; }
+    }
+  </style>
+</noscript>
 
+</head>
 
-
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-CN">
 
   
   
     
   
 
-  <div class="container one-collumn sidebar-position-left page-post-detail ">
+  <div class="container sidebar-position-left page-post-detail">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -169,19 +204,21 @@
     
 
     <div class="custom-logo-site-title">
-      <a href="/"  class="brand" rel="start">
+      <a href="/" class="brand" rel="start">
         <span class="logo-line-before"><i></i></span>
         <span class="site-title">王尔德的德</span>
         <span class="logo-line-after"><i></i></span>
       </a>
     </div>
+    
       
-        <p class="site-subtitle">我们一路轻歌浅唱，好像漫步在云上</p>
+        <h1 class="site-subtitle" itemprop="description">我们一路轻歌浅唱，好像漫步在云上</h1>
       
+    
   </div>
 
   <div class="site-nav-toggle">
-    <button>
+    <button aria-label="切换导航栏">
       <span class="btn-bar"></span>
       <span class="btn-bar"></span>
       <span class="btn-bar"></span>
@@ -189,55 +226,53 @@
   </div>
 </div>
 
-<nav class="site-nav">
-  
 
+
+<nav class="site-nav">
   
     <ul id="menu" class="menu">
       
         
-        <li class="menu-item menu-item-home">
-          <a href="/" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
-            
-            首页
-          </a>
-        </li>
-      
         
-        <li class="menu-item menu-item-categories">
-          <a href="/categories" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
-            
-            分类
-          </a>
-        </li>
-      
         
-        <li class="menu-item menu-item-archives">
-          <a href="/archives" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
-            
-            归档
-          </a>
-        </li>
-      
+          
+          <li class="menu-item menu-item-home">
+    <a href="/" rel="section">
+      <i class="menu-item-icon fa fa-fw fa-home"></i> <br />首页</a>
+  </li>
         
-        <li class="menu-item menu-item-tags">
-          <a href="/tags" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
-            
-            标签
-          </a>
-        </li>
-      
+        
+        
+          
+          <li class="menu-item menu-item-tags">
+    <a href="/tags/" rel="section">
+      <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />标签</a>
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-categories">
+    <a href="/categories/" rel="section">
+      <i class="menu-item-icon fa fa-fw fa-th"></i> <br />分类</a>
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-archives">
+    <a href="/archives/" rel="section">
+      <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />归档</a>
+  </li>
 
       
+      
     </ul>
+  
+
+  
+    
+
   
 
   
@@ -245,12 +280,20 @@
 
 
 
- </div>
+  
+
+
+
+</div>
     </header>
+
+    
+
 
     <main id="main" class="main">
       <div class="main-inner">
         <div class="content-wrap">
+          
           <div id="content" class="content">
             
 
@@ -263,13 +306,19 @@
   
   
 
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/2016/02/20/阅读2015年度总结/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="王隐在录音">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="http://o8cju5u0y.bkt.clouddn.com/dm-3.jpg">
+      <meta itemprop="description" content="Apple｜RSS｜Rock&Post Rock｜WEB VIEW 播客｜独立博客｜Non-Cinema Film｜Efficiency App｜反感微信｜反感政治正确 | 搜索引擎爱好者｜黄焖鸡｜远古互联网｜精神程序员｜吉他爱好者｜前端技术好奇者｜老球迷｜在南方的北方人">
+      <meta itemprop="image" content="/images/avatar.gif">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
@@ -281,21 +330,38 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">
-            
-            
-              
-                2015的阅读年度总结
+          <h2 class="post-title" itemprop="name headline">2015的阅读年度总结
               
             
-          </h1>
+          </h2>
         
 
         <div class="post-meta">
           <span class="post-time">
 
-   
-           
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            
+            
+            
+
             
               <span class="post-meta-item-icon">
                 <i class="fa fa-calendar-o"></i>
@@ -303,32 +369,32 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2016-02-20T16:17:08+08:00">
-                2016-02-20
-              </time>
+
+              
+                
+              
+
+              <time title="创建时间：2016-02-20 16:17:08" itemprop="dateCreated datePublished" datetime="2016-02-20T16:17:08+08:00">2016-02-20</time>
             
 
             
-              <span class="post-meta-divider">|</span>
-            
+              
 
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-check-o"></i>
-              </span>
               
-                <span class="post-meta-item-text">更新于</span>
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">更新于</span>
+                
+                <time title="修改时间：2018-01-28 00:31:02" itemprop="dateModified" datetime="2018-01-28T00:31:02+08:00">2018-01-28</time>
               
-              <time title="更新于" itemprop="dateModified" datetime="2018-01-28T00:31:02+08:00">
-                2018-01-28
-              </time>
             
           </span>
-
-
- 
-
-
 
           
             <span class="post-category" >
@@ -342,11 +408,7 @@
                 <span class="post-meta-item-text">分类于</span>
               
               
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/读后感/" itemprop="url" rel="index">
-                    <span itemprop="name">读后感</span>
-                  </a>
-                </span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/读后感/" itemprop="url" rel="index"><span itemprop="name">读后感</span></a></span>
 
                 
                 
@@ -356,25 +418,53 @@
 
           
             
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2016/02/20/阅读2015年度总结/#comments" itemprop="discussionUrl">
+                  <span class="post-meta-item-text">评论数：</span> <span class="post-comments-count valine-comment-count" data-xid="/2016/02/20/阅读2015年度总结/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
           
 
           
           
 
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
           
 
           
-            <div class="post-wordcount">
+            <div class="post-symbolscount">
+              
+
               
                 <span class="post-meta-item-icon">
                   <i class="fa fa-file-word-o"></i>
                 </span>
-                  
-                    <span class="post-meta-item-text">字数统计</span>
-                  
-                    <span title="字数统计" }}">
-                      4,921 字
-                    </span>
+                
+                  <span class="post-meta-item-text">本文字数：</span>
+                
+                <span title="本文字数">5.7k</span>
               
 
               
@@ -385,12 +475,10 @@
                 <span class="post-meta-item-icon">
                   <i class="fa fa-clock-o"></i>
                 </span>
-                  
-                    <span class="post-meta-item-text">阅读时长</span>
-                  
-                    <span title="阅读时长" }}">
-                      17 分钟
-                    </span>
+                
+                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
+                
+                <span title="阅读时长">5 分钟</span>
               
             </div>
           
@@ -401,7 +489,9 @@
       </header>
     
 
-
+    
+    
+    
     <div class="post-body" itemprop="articleBody">
 
       
@@ -411,159 +501,159 @@
         <p><img style="border:none" src="http://7xpl7j.com1.z0.glb.clouddn.com/writer_21.jpg"></p>
 <p>最近在整理去年的阅读笔记，发现其中大部分的阅读都是通过kindle完成的，不得不感慨<strong>科技让生活更美好</strong>。考虑到篇幅的原因，对于每本书的描述感受会很简练，也在这里分享给你。<del>（不断补充中）</del><a id="more"></a></p>
 <h2 id="非技术性书籍"><a href="#非技术性书籍" class="headerlink" title="非技术性书籍"></a>非技术性书籍</h2><ol>
-<li><p><a class="book_title" href="http://baike.baidu.com/link?url=rNzIT87kImtrXCKqmgEsUYlJpOthYkuK2yoHm2XdOksp3vjODLJiOQNIxliXT2cvZly-f-p7_HvM6GvJqTRsqpX4hNdfiItneANEuCRfRRm" target="_blank" rel="external">灵山</a></p>
+<li><p><a class="book_title" href="http://baike.baidu.com/link?url=rNzIT87kImtrXCKqmgEsUYlJpOthYkuK2yoHm2XdOksp3vjODLJiOQNIxliXT2cvZly-f-p7_HvM6GvJqTRsqpX4hNdfiItneANEuCRfRRm" target="_blank" rel="noopener">灵山</a></p>
 <p class="feel">为什么村上很难拿诺奖呢，简单的来说就是他太火了，诺奖喜欢相对不太出名的作家，如果rebelled一些，那就最好了，沈从文的突然离世使评委会措手不及，他们急需在中国找一个和沈笔风相近并且反叛一些的作家，于是高就拿了那年的诺奖。当然了，写作实力也是名副其实的。</p>
 </li>
-<li><p><a href="http://book.douban.com/subject/26110579/" class="book_title" target="_blank" rel="external">暗店街</a></p>
+<li><p><a href="http://book.douban.com/subject/26110579/" class="book_title" target="_blank" rel="noopener">暗店街</a></p>
 <p class="feel">记得小说讲的是一个破案的故事，主人公通过条条线索引出众多人物，但说实话，个人感觉很没劲，情节拖沓。</p>
 </li>
-<li><p><a href="http://book.douban.com/subject/25862578/" class="book_title" target="_blank" rel="external">解忧杂货店</a><br><blockquote> 人与人之间的关系往往不是因为某些具体的原因而断绝。不，即使表面上有种原因，其实是因为彼此的心已经不在一起，事后才牵强附会地找这些借口。因为，如果彼此的心没有分开，当发生可能会导致彼此关系断绝的事态时，某一方就会主动修复。之所以没有人主动修复，就是因为彼此的心已经不在一起了。那四个人无意拯救披头四，就好像眼看着船要沉了，仍然在一旁袖手旁观。</blockquote></p>
+<li><p><a href="http://book.douban.com/subject/25862578/" class="book_title" target="_blank" rel="noopener">解忧杂货店</a><br><blockquote> 人与人之间的关系往往不是因为某些具体的原因而断绝。不，即使表面上有种原因，其实是因为彼此的心已经不在一起，事后才牵强附会地找这些借口。因为，如果彼此的心没有分开，当发生可能会导致彼此关系断绝的事态时，某一方就会主动修复。之所以没有人主动修复，就是因为彼此的心已经不在一起了。那四个人无意拯救披头四，就好像眼看着船要沉了，仍然在一旁袖手旁观。</blockquote></p>
 <p class="feel">继白夜行后的第二本书，几个看起来没有联系的小故事，却最后在东野的巧妙构思下结合成一个故事，难得的治愈温馨，且又畅销出名。</p>
 </li>
-<li><p><a href="http://book.douban.com/subject/26340138/" class="book_title" target="_blank" rel="external">岛上书店</a></p>
+<li><p><a href="http://book.douban.com/subject/26340138/" class="book_title" target="_blank" rel="noopener">岛上书店</a></p>
 <p class="feel">同样也是温情且治愈的小说，看惯了国内的鸡汤故事不如换个口味，看看大师是怎么写的，虽是鸡汤却十分下饭。</p>
 </li>
-<li><p><a href="http://book.douban.com/subject/1029111/" class="book_title" target="_blank" rel="external">哭泣的骆驼</a></p>
+<li><p><a href="http://book.douban.com/subject/1029111/" class="book_title" target="_blank" rel="noopener">哭泣的骆驼</a></p>
 <p class="feel">读的三毛的第二本书，沙巴军曹的最后举动让人印象深刻，故事哭泣的骆驼中的情侣分离，其他人物的暴力残酷，何其悲壮。</p>
 </li>
-<li><p><a href="http://book.douban.com/subject/3608208/" class="book_title" target="_blank" rel="external">牧羊少年奇幻之旅</a></p>
+<li><p><a href="http://book.douban.com/subject/3608208/" class="book_title" target="_blank" rel="noopener">牧羊少年奇幻之旅</a></p>
 <p class="feel">很薄的一本书，开头中间很流畅，结尾却总感觉一种中学生作文的感觉。</p>
 </li>
-<li><p><a href="http://book.douban.com/subject/1064275/" class="book_title" target="_blank" rel="external">老人与海</a></p>
+<li><p><a href="http://book.douban.com/subject/1064275/" class="book_title" target="_blank" rel="noopener">老人与海</a></p>
 <p class="feel">中小学就已经有接触的一本书，又重新读了一遍，很强的硬汉形象，圣地亚哥是谁呢，不就写的海明威自己吗。</p>
 </li>
-<li><p><a href="http://book.douban.com/subject/4238362/" class="book_title" target="_blank" rel="external">送你一颗子弹</a></p>
+<li><p><a href="http://book.douban.com/subject/4238362/" class="book_title" target="_blank" rel="noopener">送你一颗子弹</a></p>
 <blockquote>
 <p>我相信，大学精神的本质，并不是为了让我们变得深奥，而恰恰是恢复人类的天真。天真的人，才会无穷无尽地追问关于这个世界的道理。关于自然、关于社会。大学要造就的，正是达尔文的天真，爱因斯坦的天真，黑格尔的天真，顾准的天真。也就是那些“成熟的人”不屑一顾的“呆子气”。“成熟的人”永远是在告诉你：存在的就是合理的，而合理的就是不必追究的，不必改变的。 <br><br>真正的人文教育，是引领一群孩童，突破由事务主义引起的短视，来到星空之下，整个世界，政治、经济、文化、历史、数学、物理、生物、心理，象星星一样在深蓝的天空中闪耀，大人们手把手地告诉儿童，那个星叫什么星，它离我们有多远，它又为什么在那里。 </p>
 </blockquote>
 </li>
-<li><p><a href="http://book.douban.com/subject/1083762/" class="book_title" target="_blank" rel="external">人类群星闪耀时</a></p>
+<li><p><a href="http://book.douban.com/subject/1083762/" class="book_title" target="_blank" rel="noopener">人类群星闪耀时</a></p>
 <blockquote>
 <p>如果您认为人的关系通过爱就能够改善的话，那您就错了。这只适用于富人和衣食无忧的人。但那些从童年就饥寒交迫和毕生都在他们的老爷的统治下受苦受难的人，他们疲惫地、漫长地等待这种兄弟之爱从基督的天国里降临世界，可他们最好是信赖他们的拳头。在您死亡的前夜，我告诉您，列夫·托尔斯泰：这个世界还要淹没在鲜血之中，人们不仅要杀死老爷，也要杀死他们的孩子，把他们撕成碎片，这样这个地球就再不会使那些坏透了的人心存幻想了。但愿您不会成为您的迷雾的证人——这是我对您的衷心希望！愿上帝赐予您一种平静的死亡！</p>
 </blockquote>
 </li>
-<li><p><a href="http://book.douban.com/subject/1428106/" class="book_title" target="_blank" rel="external">双面胶</a></p>
+<li><p><a href="http://book.douban.com/subject/1428106/" class="book_title" target="_blank" rel="noopener">双面胶</a></p>
 <p class="feel"> 和电视剧版的结局可是很不一样。</p>
 </li>
-<li><p><a href="http://book.douban.com/subject/1003000/" class="book_title" target="_blank" rel="external">悟空传</a></p>
+<li><p><a href="http://book.douban.com/subject/1003000/" class="book_title" target="_blank" rel="noopener">悟空传</a></p>
 <p class="feel"> 质量要比一般的网络小说要高很多，可是自己过了喜欢看的年纪，也就并不是太喜欢了。</p></li>
-<li><p><a href="http://book.douban.com/subject/1059336/" class="book_title" target="_blank" rel="external">往事并不如烟</a><br><blockquote>我说：“有两点来自对人的认识。首先，人是不能改造的。罪犯充其量只能做到遏制自己，即遏制犯罪本质。换句话说，人不是不想做坏事，而是不敢做坏事。另外，从前我以为坏人就是坏人，蹲上两年（大牢）便明白一个人坏了，可以再坏，再坏以后，还可以更坏。坏是无底的。”<br><br>“举个例子，说说看。”<br><br>“比如，一些年轻女犯是盗窃罪，即惯偷。劳改队的劳动强度大，肚子总填不饱。除了在农田里偷些可食之物以外，她们便想方设法找男人‘野合’。搞一次，得一个窝头，一个窝头也就值五分钱。她们本来坏在偷盗上，现在又多了个卖淫的毛病。犯人谁不想出狱？我们的劳改条例又鼓励密告。对他人有重大检举，自己可获减刑。于是，告密成风。再沾上这一条，人就更坏了。” </blockquote></p>
+<li><p><a href="http://book.douban.com/subject/1059336/" class="book_title" target="_blank" rel="noopener">往事并不如烟</a><br><blockquote>我说：“有两点来自对人的认识。首先，人是不能改造的。罪犯充其量只能做到遏制自己，即遏制犯罪本质。换句话说，人不是不想做坏事，而是不敢做坏事。另外，从前我以为坏人就是坏人，蹲上两年（大牢）便明白一个人坏了，可以再坏，再坏以后，还可以更坏。坏是无底的。”<br><br>“举个例子，说说看。”<br><br>“比如，一些年轻女犯是盗窃罪，即惯偷。劳改队的劳动强度大，肚子总填不饱。除了在农田里偷些可食之物以外，她们便想方设法找男人‘野合’。搞一次，得一个窝头，一个窝头也就值五分钱。她们本来坏在偷盗上，现在又多了个卖淫的毛病。犯人谁不想出狱？我们的劳改条例又鼓励密告。对他人有重大检举，自己可获减刑。于是，告密成风。再沾上这一条，人就更坏了。” </blockquote></p>
 <p class="feel">作者自己是被迫害过的，这样的亲身经历也更有说服力把。</p>
 </li>
-<li><p><a href="http://book.douban.com/subject/1504957/" class="book_title" target="_blank" rel="external">学会提问批判性思维指南</a><br></p><p class="feel">我们如何质疑证据？</p><p></p>
+<li><p><a href="http://book.douban.com/subject/1504957/" class="book_title" target="_blank" rel="noopener">学会提问批判性思维指南</a><br></p><p class="feel">我们如何质疑证据？</p><p></p>
 <ul class="feel" style="margin-top:-6%"><br><li>  直觉：是否有其他证据支持。 </li><br><li>权威：特定问题，是否专业/特殊方法见到事实/歪曲获利/是否信他以前的声誉。</li><br><li>别人的话：专业/价值观/遗漏/兴趣偏向。</li><br></ul>
 </li>
-<li><p><a href="http://book.douban.com/subject/20507206/" class="book_title" target="_blank" rel="external">众病之王-癌症传</a><br><blockquote>正常的细胞都是相同的，恶性细胞各有各的毒性。</blockquote></p>
+<li><p><a href="http://book.douban.com/subject/20507206/" class="book_title" target="_blank" rel="noopener">众病之王-癌症传</a><br><blockquote>正常的细胞都是相同的，恶性细胞各有各的毒性。</blockquote></p>
 <p class="feel">很好的一本科普书，人类与癌症之间的斗争从来都没有停下来过，之所以很少有古人癌症的记载，是因为当时的人类寿命普遍偏短，<strong>来不及</strong>得癌症就去世了。</p></li>
-<li><p><a href="http://book.douban.com/subject/1418099/" class="book_title" target="_blank" rel="external">如何阅读一本书</a></p>
+<li><p><a href="http://book.douban.com/subject/1418099/" class="book_title" target="_blank" rel="noopener">如何阅读一本书</a></p>
 <p class="feel"><strong>基础阅读，检视阅读，分析阅读，主题阅读。</strong></p>
 </li>
-<li><p><a href="http://book.douban.com/subject/1060068/" class="book_title" target="_blank" rel="external">撒哈拉的故事</a></p>
+<li><p><a href="http://book.douban.com/subject/1060068/" class="book_title" target="_blank" rel="noopener">撒哈拉的故事</a></p>
 <p class="feel">相比哭泣的骆驼，这本书还是很轻快的，尤其是哪个海边洗肠子的故事，印象深刻。</p>
 </li>
-<li><p><a href="http://book.douban.com/subject/1675478/" class="book_title" target="_blank" rel="external">天朝的崩溃</a></p>
+<li><p><a href="http://book.douban.com/subject/1675478/" class="book_title" target="_blank" rel="noopener">天朝的崩溃</a></p>
 <p class="feel">茅海建教授运用大量的史实资料还原了鸦片战争的前期，中期，后期的真实面貌，难能可贵的是，这种分析是站在不同阶级，不同政治势力的角度。不得不让人深思历史课本上所说的仅仅是朝廷腐朽，官员腐败无能真的能败掉当时强大的大清吗。</p></li>
-<li><p><a href="http://book.douban.com/subject/26710670/" class="book_title" target="_blank" rel="external">呐喊</a></p>
+<li><p><a href="http://book.douban.com/subject/26710670/" class="book_title" target="_blank" rel="noopener">呐喊</a></p>
 <blockquote>
 <p>“假如一间铁屋子，是绝无窗户而万难破毁的，里面有许多熟睡的人们，不久都要闷死了，然而是从昏睡入死灭，并不感到就死的悲哀。现在你大嚷起来，惊起了较为清醒的几个人，使这不幸的少数者来受无可挽救的临终的苦楚，你倒以为对得起他们么？”<br><br>“然而几个人既然起来，你不能说决没有毁坏这铁屋的希望。”</p>
 </blockquote>
 </li>
-<li><p><a href="http://book.douban.com/subject/25985021/" class="book_title" target="_blank" rel="external">人类简史</a></p>
+<li><p><a href="http://book.douban.com/subject/25985021/" class="book_title" target="_blank" rel="noopener">人类简史</a></p>
 <p class="jump_p" onclick="location.href='http://wp771.com/2016/01/27/%E4%BA%BA%E7%B1%BB%E7%AE%80%E5%8F%B2/'"><u>群体想象与规模性合作</u></p>
 </li>
-<li><p><a href="http://book.douban.com/subject/6021440/" class="book_title" target="_blank" rel="external">黑客与画家</a></p>
+<li><p><a href="http://book.douban.com/subject/6021440/" class="book_title" target="_blank" rel="noopener">黑客与画家</a></p>
 <blockquote>
 <p>科学家（或者至少是优秀科学家）做事的方式，准确的说，就是寻找传统观点无法自圆其说的地方，然后试着拆开那里，看个究竟。瞧瞧里面到底出了什么问题，新的理论就是这样产生的。换言之，一个好的科学家，并不仅仅是避开传统观点，还要打破传统观点。</p>
 </blockquote>
 </li>
-<li><p><a href="http://book.douban.com/subject/3369793/" class="book_title" target="_blank" rel="external">亲爱的安德烈</a></p>
+<li><p><a href="http://book.douban.com/subject/3369793/" class="book_title" target="_blank" rel="noopener">亲爱的安德烈</a></p>
 <blockquote>
 <p>我们在一个富强的国家，富强的意思就是，年轻人可以对政治经济国际情势一概幼稚无知，他反正承受得起，让别人来为他思考。美国青年的悲哀就是这个，我们对世界完全淡漠，只关心自己的小圈。</p>
 </blockquote>
 </li>
-<li><p><a href="http://book.douban.com/subject/6709783/" class="book_title" target="_blank" rel="external">浪潮之巅</a><br><blockquote>目前最大的障碍是全中国非常缺乏各种顶级的技术人员，因为几乎所有的年轻人工作不了几年就去做管理了。<br><br>中国的现实问题是， 人们似乎不需要靠科技的进步和实业就可以取得财富。看看中罔富豪榜的构成，有几个人是贝尔、福特这样的发明家，又有几个是洛克菲勒和卡内基这样的实业家。几乎所有富豪们的财富，或者来自于股市，或者来自于房市。当人们不再把房市、股市作为最快的挣钱手段时，就是中国可以诞生下一个Google 的时候了。</blockquote></p>
+<li><p><a href="http://book.douban.com/subject/6709783/" class="book_title" target="_blank" rel="noopener">浪潮之巅</a><br><blockquote>目前最大的障碍是全中国非常缺乏各种顶级的技术人员，因为几乎所有的年轻人工作不了几年就去做管理了。<br><br>中国的现实问题是， 人们似乎不需要靠科技的进步和实业就可以取得财富。看看中罔富豪榜的构成，有几个人是贝尔、福特这样的发明家，又有几个是洛克菲勒和卡内基这样的实业家。几乎所有富豪们的财富，或者来自于股市，或者来自于房市。当人们不再把房市、股市作为最快的挣钱手段时，就是中国可以诞生下一个Google 的时候了。</blockquote></p>
 <p class="feel">互联网从业者的入门必读书。</p>
 </li>
-<li><p><a href="http://book.douban.com/subject/1212080/" class="book_title" target="_blank" rel="external">奇鸟行状录</a></p>
+<li><p><a href="http://book.douban.com/subject/1212080/" class="book_title" target="_blank" rel="noopener">奇鸟行状录</a></p>
 <p class="feel">目前读到的村上最好的长篇。</p></li>
-<li><p><a href="http://book.douban.com/subject/1059419/" class="book_title" target="_blank" rel="external">海边的卡夫卡</a><br><blockquote> “就经验性来说，人强烈追求什么的时候，那东西基本上是不来的；而当你极力回避它的时候，它却自然找到头上。当然这仅仅是泛论。”</blockquote></p>
+<li><p><a href="http://book.douban.com/subject/1059419/" class="book_title" target="_blank" rel="noopener">海边的卡夫卡</a><br><blockquote> “就经验性来说，人强烈追求什么的时候，那东西基本上是不来的；而当你极力回避它的时候，它却自然找到头上。当然这仅仅是泛论。”</blockquote></p>
 <p class="feel">永远年轻的十五岁少年。</p>
 </li>
-<li><p><a href="http://book.douban.com/subject/6097966/" class="book_title" target="_blank" rel="external">发条橙</a></p>
+<li><p><a href="http://book.douban.com/subject/6097966/" class="book_title" target="_blank" rel="noopener">发条橙</a></p>
 <p class="feel">觉得电影还不错，所以就去看了原著。</p>
 </li>
-<li><p><a href="http://book.douban.com/subject/3239549/" class="book_title" target="_blank" rel="external">夹边沟纪事</a></p>
+<li><p><a href="http://book.douban.com/subject/3239549/" class="book_title" target="_blank" rel="noopener">夹边沟纪事</a></p>
 <p class="feel">这是一本很标准的纪实文学，作者通过走访多个在夹边沟生活过的人，以他们的口吻重现了那个时代下不为人知的求生故事。</p></li>
-<li><p><a href="http://book.douban.com/subject/4872671/" class="book_title" target="_blank" rel="external">佛祖在一号线</a><br><blockquote>我并不认为这个世界有<strong>独立思考</strong>这回事。除非这种<strong>独立</strong>指的只是立场而不包括思维方式。我们总是使用一些从别人那里学来的见识来琢磨事——但是每个人学到的想问题的方法却有好有坏。</blockquote></p>
+<li><p><a href="http://book.douban.com/subject/4872671/" class="book_title" target="_blank" rel="noopener">佛祖在一号线</a><br><blockquote>我并不认为这个世界有<strong>独立思考</strong>这回事。除非这种<strong>独立</strong>指的只是立场而不包括思维方式。我们总是使用一些从别人那里学来的见识来琢磨事——但是每个人学到的想问题的方法却有好有坏。</blockquote></p>
 <p class="feel">非常喜欢这个记者的文字，看似随意，不加修饰的文字是有经过一番大打磨的，观点既不偏激，也并不是不痛不痒，无病审议，总能有一个正确的，高度的角度看待一些热点事件。通过他的文字，并不是为了有产生一个新的思考方式，只是反复强调一些基本的<strong>常识</strong>，然而这些基本的常识也被人们慢慢遗忘了，所以才要提出要不断的重申常识吧。有古典知识分子的胸襟。</p>
 </li>
-<li><p><a href="http://book.douban.com/subject/1331488/" class="book_title" target="_blank" rel="external">南音</a></p>
+<li><p><a href="http://book.douban.com/subject/1331488/" class="book_title" target="_blank" rel="noopener">南音</a></p>
 <p class="feel">龙城三部曲的最后一部，读完却不知该说些什么。</p></li>
-<li><p><a href="http://book.douban.com/subject/1115748/" class="book_title" target="_blank" rel="external">故事</a></p>
+<li><p><a href="http://book.douban.com/subject/1115748/" class="book_title" target="_blank" rel="noopener">故事</a></p>
 <p class="feel">这并不只是一本叫你写剧本，写小说的书，而是回归了创作的本质，回归到一个最基本<strong>故事</strong>的构思。</p>
 </li>
-<li><p><a href="http://book.douban.com/subject/2567698/" class="book_title" target="_blank" rel="external">三体</a></p>
+<li><p><a href="http://book.douban.com/subject/2567698/" class="book_title" target="_blank" rel="noopener">三体</a></p>
 <p class="feel">天地玄黄，宇宙洪荒。</p></li>
-<li><a href="http://book.douban.com/subject/3066477/" class="book_title" target="_blank" rel="external">三体Ⅱ : 黑暗森林</a></li>
-<li><a href="http://book.douban.com/subject/5363767/" class="book_title" target="_blank" rel="external">三体Ⅲ : 死神永生</a></li>
-<li><p><a href="http://book.douban.com/subject/2297697/" class="book_title" target="_blank" rel="external">zoo</a></p>
+<li><a href="http://book.douban.com/subject/3066477/" class="book_title" target="_blank" rel="noopener">三体Ⅱ : 黑暗森林</a></li>
+<li><a href="http://book.douban.com/subject/5363767/" class="book_title" target="_blank" rel="noopener">三体Ⅲ : 死神永生</a></li>
+<li><p><a href="http://book.douban.com/subject/2297697/" class="book_title" target="_blank" rel="noopener">zoo</a></p>
 <p class="feel">读上帝的咒语这篇时觉得作者很有编程的天赋。</p>
 </li>
-<li><p><a href="http://book.douban.com/subject/1795079/" class="book_title" target="_blank" rel="external">乡土中国</a></p>
+<li><p><a href="http://book.douban.com/subject/1795079/" class="book_title" target="_blank" rel="noopener">乡土中国</a></p>
 <blockquote>
 <p>法治的意思并不是说法律本身能统治，能维持社会秩序，而是说社会上人和人的关系是根据法律来维持的。法律还得靠权力来支持，还得靠人来执行，法治其实是“人依法而治”，并非没有人的因素。<br><br>人治好象是指有权力的人任凭一己的好恶来规定社会上人和人的关系的意思。<br></p>
 </blockquote>
 </li>
-<li><p><a href="https://www.baidu.com/link?url=pn1D68Zl92UvOCKmOMqOPoSGM4X_1eoeI2Di2-5XAWULb-cY7nzYVZhV6YajivpFC-wJ53oSQ1QbogLQmSRcya&wd=&eqid=accfec35000829c30000000456c827ff" class="book_title" target="_blank" rel="external">定西孤儿院纪事</a></p>
+<li><p><a href="https://www.baidu.com/link?url=pn1D68Zl92UvOCKmOMqOPoSGM4X_1eoeI2Di2-5XAWULb-cY7nzYVZhV6YajivpFC-wJ53oSQ1QbogLQmSRcya&wd=&eqid=accfec35000829c30000000456c827ff" class="book_title" target="_blank" rel="noopener">定西孤儿院纪事</a></p>
 <p class="feel">延续了夹边沟的叙事风格。</p>
 </li>
-<li><p><a href="http://www.douban.com/note/68032335/" class="book_title" target="_blank" rel="external">赡养人类</a></p>
+<li><p><a href="http://www.douban.com/note/68032335/" class="book_title" target="_blank" rel="noopener">赡养人类</a></p>
 <p class="feel">在某种条件下，富人还是有可能对穷人很<strong>慷慨</strong>的。</p>
 </li>
-<li><p><a href="http://book.douban.com/subject/1004719/" class="book_title" target="_blank" rel="external">谈修养</a></p>
+<li><p><a href="http://book.douban.com/subject/1004719/" class="book_title" target="_blank" rel="noopener">谈修养</a></p>
 <p class="feel">一个社会到了腐败的时候，大家都跟旁人向坏处走，没有一个人反抗潮流，势必走到一般人完全失去是非好坏分别的意识，而世间便无所谓羞耻事了。所以全社会都坏时，如果有一个好人存在，他的意义与价值是不可测量的。</p>
 </li>
-<li><p><a href="http://book.douban.com/subject/1033778/" class="book_title" target="_blank" rel="external">富爸爸穷爸爸</a><br><blockquote>富人会越来越富。资产项产生的收入足以弥补支出，还可以用剩余的收入对资产项进行再投资。资产项不断增长，相应的收入也会越来越多。<br><br>穷人有一些不好的习惯，其中一个普遍的坏习惯就是随便动用储蓄。富人知道储蓄只能用于创造更多的收入，而不是用来支付账单。</blockquote></p>
+<li><p><a href="http://book.douban.com/subject/1033778/" class="book_title" target="_blank" rel="noopener">富爸爸穷爸爸</a><br><blockquote>富人会越来越富。资产项产生的收入足以弥补支出，还可以用剩余的收入对资产项进行再投资。资产项不断增长，相应的收入也会越来越多。<br><br>穷人有一些不好的习惯，其中一个普遍的坏习惯就是随便动用储蓄。富人知道储蓄只能用于创造更多的收入，而不是用来支付账单。</blockquote></p>
 <p class="feel">关于对于使用钱去创造更多财富的核心观点不断被重复，很好的理财入门书。</p></li>
-<li><p><a href="http://book.douban.com/subject/3071717/" class="book_title" target="_blank" rel="external">爱你就像爱生命</a><br></p>
+<li><p><a href="http://book.douban.com/subject/3071717/" class="book_title" target="_blank" rel="noopener">爱你就像爱生命</a><br></p>
 <blockquote>
 <p>所以，希望你快回来，回来快来找我，早一分钟都好得不得了。祝好!<br><span style="margin-left:3em">此致</span><br><span><strong>敬礼</strong>！</span></p>
 </blockquote>
 </li>
-<li><p><a href="http://book.douban.com/subject/1465324/" class="book_title" target="_blank" rel="external">洛丽塔</a></p>
+<li><p><a href="http://book.douban.com/subject/1465324/" class="book_title" target="_blank" rel="noopener">洛丽塔</a></p>
 <p class="feel">很新颖的叙事风格，很畸形的剧情。而且这个和洛丽塔女装并没有什么关系。</p>
 </li>
-<li><p><a href="http://book.douban.com/subject/1043815/" class="book_title" target="_blank" rel="external">骆驼祥子</a><br><blockquote> 这座城给了他一切，就是在这里饿着也比乡下可爱，这里有的看，有的听，到处是光色，到处是声音；自己只要卖力气，这里还有数不清的钱，吃不尽穿不完的万样好东西。<br><br>苦人的懒是努力而落了空的自然结果，苦人的耍刺儿含着一些公理。<br><br>自己的路既走不通，便没法不承认别人作得对。</blockquote></p>
+<li><p><a href="http://book.douban.com/subject/1043815/" class="book_title" target="_blank" rel="noopener">骆驼祥子</a><br><blockquote> 这座城给了他一切，就是在这里饿着也比乡下可爱，这里有的看，有的听，到处是光色，到处是声音；自己只要卖力气，这里还有数不清的钱，吃不尽穿不完的万样好东西。<br><br>苦人的懒是努力而落了空的自然结果，苦人的耍刺儿含着一些公理。<br><br>自己的路既走不通，便没法不承认别人作得对。</blockquote></p>
 <p class="feel">是说人不可以被打败，但是不幸的情况接踵而来，小说开头的那个祥子就再也看不到了。</p></li>
-<li><p><a href="http://book.douban.com/subject/26318341/" class="book_title" target="_blank" rel="external">风口上的猪</a></p>
+<li><p><a href="http://book.douban.com/subject/26318341/" class="book_title" target="_blank" rel="noopener">风口上的猪</a></p>
 <p class="feel">互联网金融一本兴趣书。</p>
 </li>
-<li><p><a href="http://book.douban.com/subject/1051363/" class="book_title" target="_blank" rel="external">中国农民调查</a></p>
+<li><p><a href="http://book.douban.com/subject/1051363/" class="book_title" target="_blank" rel="noopener">中国农民调查</a></p>
 <p class="feel">讲了很多的实例，也讲了一些<strong>上访</strong>的实例。</p>
 </li>
-<li><p><a href="http://book.douban.com/subject/1060852/" class="book_title" target="_blank" rel="external">呼兰河传</a></p>
+<li><p><a href="http://book.douban.com/subject/1060852/" class="book_title" target="_blank" rel="noopener">呼兰河传</a></p>
 <blockquote>
 <p>呼兰河这城里，就有许多这一类的人。人们关于他们都似乎听得多，看得多，也就不以为奇了。偶尔在庙台上或是大门洞里不幸遇到了一个，刚想多少加一点恻隐之心在那人身上，但是一转念，人间这样的人多着哩！于是转过眼睛去，三步两步的就走过去了。</p>
 </blockquote>
 </li>
-<li><p><a href="http://book.douban.com/subject/2035179/)" class="book_title" target="_blank" rel="external">动物农场</a></p>
+<li><p><a href="http://book.douban.com/subject/2035179/)" class="book_title" target="_blank" rel="noopener">动物农场</a></p>
 <p class="feel"><strong>拳击手</strong>，<strong>拿破仑</strong>。</p>
 </li>
-<li><p><a href="http://book.douban.com/subject/2154960/)" class="book_title" target="_blank" rel="external">一个陌生女人的来信</a></p>
+<li><p><a href="http://book.douban.com/subject/2154960/)" class="book_title" target="_blank" rel="noopener">一个陌生女人的来信</a></p>
 <p class="feel">最后一个象棋的故事让人印象深刻。</p></li>
-<li><a href="http://book.douban.com/subject/20424614/" class="book_title" target="_blank" rel="external">红</a><p style="margin-top:25px" class="feel">赶在电影上映前看完了三部曲，作者不是很喜欢写标点符号。</p></li>
-<li><a href="http://book.douban.com/subject/5327697/" class="book_title" target="_blank" rel="external">橙</a></li>
-<li><a href="http://book.douban.com/subject/25808222/" class="book_title" target="_blank" rel="external">黄</a></li>
-<li><p><a href="http://book.douban.com/subject/1400705/" class="book_title" target="_blank" rel="external">情人</a></p>
+<li><a href="http://book.douban.com/subject/20424614/" class="book_title" target="_blank" rel="noopener">红</a><p style="margin-top:25px" class="feel">赶在电影上映前看完了三部曲，作者不是很喜欢写标点符号。</p></li>
+<li><a href="http://book.douban.com/subject/5327697/" class="book_title" target="_blank" rel="noopener">橙</a></li>
+<li><a href="http://book.douban.com/subject/25808222/" class="book_title" target="_blank" rel="noopener">黄</a></li>
+<li><p><a href="http://book.douban.com/subject/1400705/" class="book_title" target="_blank" rel="noopener">情人</a></p>
 <p class="feel">除了主人公华裔的男朋友之外，并没有太多印象深的地方</p>
 </li>
-<li><p><a href="http://book.douban.com/subject/25827812/)" class="book_title" target="_blank" rel="external"> 我这个普通人的生活 </a></p>
+<li><p><a href="http://book.douban.com/subject/25827812/)" class="book_title" target="_blank" rel="noopener"> 我这个普通人的生活 </a></p>
 <p class="feel">张公子的书，让人看完总是很有食欲。</p>
 </li>
 <li><p><a href="(http://book.douban.com/subject/10801735/" class="book_title">读本王尔德</a><br><blockquote>这世上唯一比有人品头论足更闹心的事情，就是没人说三道四。</blockquote></p>
 <p class="feel">没有judge比被judge更难过，因为这样会让人感觉更没有存在感。</p><br><blockquote>乐观主义的基础是纯粹的恐惧。我们认为我们以和为贵，那是因为我们相信我们的邻居具有那些可能对我们有利无害的道德品质，我们赞扬银行家，是我们可以追求花钱。而在拦路强盗身上还能找到好品质，则是希望他们别把我们口袋里的钱掏净了。</blockquote><br><p class="feel">王尔德关于<strong>乐观</strong>的看法。</p><br><blockquote>生活中的悲剧发生得一点艺术性也没有，它们无情的暴力让我们受伤。它们全然的没有风格让我们受伤，它们荒谬的<strong>缺乏意义</strong>让我们受伤</blockquote><br><p class="feel">苦难本身对一个人是没有任何意义的，真正有意义的是我们对于苦难发生之后的反思与下次规避。苦难本质上让我们对生活的努力缺乏连贯性，这不利于一个人的发展。</p>
 </li>
-<li><p><a href="http://book.douban.com/subject/1529893/" class="book_title" target="_blank" rel="external">莲花</a></p>
+<li><p><a href="http://book.douban.com/subject/1529893/" class="book_title" target="_blank" rel="noopener">莲花</a></p>
 <p class="feel">很快的读完了这本不太长的小说，一共就200多页，在图书馆很快找到了这本书，双线叙述的讲述了善生与内河两个人的不太称得上爱情的故事，与庆昭的相遇与约定一起进入深山的情节插叙了各自的生活，不失为一篇引人深思的小说。</p>
 </li>
 <li><p><a href="(http://book.douban.com/subject/1209899/" class="book_title"> 我与地坛</a></p>
@@ -571,79 +661,76 @@
 <p>船是为了漂泊，漂泊不是为了船。事业是为了活着，是为了活着更有味道。</p>
 </blockquote>
 </li>
-<li><p><a href="http://book.douban.com/subject/1085799/" class="book_title" target="_blank" rel="external">白鹿原</a></p>
+<li><p><a href="http://book.douban.com/subject/1085799/" class="book_title" target="_blank" rel="noopener">白鹿原</a></p>
 <blockquote>
 <p>砥柱人间是此峰<br><br>咱们族里一个娃娃死了<br><br>白鹿原上最好的一个长工死了<br><br>白鹿原最好的一个先生谢世了，世上再也出不了这样好的先生了。</p>
 </blockquote>
 </li>
-<li><p><a href="http://book.douban.com/subject/4820710/" class="book_title" target="_blank" rel="external">1984</a></p>
+<li><p><a href="http://book.douban.com/subject/4820710/" class="book_title" target="_blank" rel="noopener">1984</a></p>
 <blockquote>
 <p>战争及和平<br>自由即奴役<br>无知即力量</p>
 </blockquote>
 </li>
-<li><p><a href="http://book.douban.com/subject/1944495/" class="book_title" target="_blank" rel="external">老子的智慧</a></p>
+<li><p><a href="http://book.douban.com/subject/1944495/" class="book_title" target="_blank" rel="noopener">老子的智慧</a></p>
 <p class="feel">引用庄子的话诠释道德经，并没有细看，毕竟不是这个年纪就可以读懂的书，却也受益匪浅。</p>
 </li>
-<li><p><a href="http://book.douban.com/subject/26268552/" class="book_title" target="_blank" rel="external">如何变得有思想</a><br><blockquote> 思想就是观点，对事物本身有观点，即有思想。观点越多，越接近本质，思想也就越丰富，深刻。</blockquote></p>
+<li><p><a href="http://book.douban.com/subject/26268552/" class="book_title" target="_blank" rel="noopener">如何变得有思想</a><br><blockquote> 思想就是观点，对事物本身有观点，即有思想。观点越多，越接近本质，思想也就越丰富，深刻。</blockquote></p>
 <p class="feel">阮一峰十年博客的<strong>阅读</strong>，思考，见闻的总结。而我也对这本<em>总结之书</em>做了很多的总结。</p>
 </li>
-<li><p><a href="http://book.douban.com/subject/26268552/" class="book_title" target="_blank" rel="external">蔡康永的说话之道</a><br></p><p class="feel">篇幅不是很长，其中的内容也大多是一带而过，挑了几个自己认同的地方做了整理，其他也没有太多闪光的地方，很普通的一本书，但也算开卷有益了。</p><p></p>
+<li><p><a href="http://book.douban.com/subject/26268552/" class="book_title" target="_blank" rel="noopener">蔡康永的说话之道</a><br></p><p class="feel">篇幅不是很长，其中的内容也大多是一带而过，挑了几个自己认同的地方做了整理，其他也没有太多闪光的地方，很普通的一本书，但也算开卷有益了。</p><p></p>
 <h2 id="技术性书籍"><a href="#技术性书籍" class="headerlink" title="技术性书籍"></a>技术性书籍</h2></li>
-<li><p><a href="http://book.douban.com/subject/6038371/" class="book_title_tech" target="_blank" rel="external"> javascript dom编程艺术（第二版） </a></p>
+<li><p><a href="http://book.douban.com/subject/6038371/" class="book_title_tech" target="_blank" rel="noopener"> javascript dom编程艺术（第二版） </a></p>
 <p class="feel">很好的一本入门书，但是有些很久的观念也应该抛弃了，主要了解javascript大概及简单的dom操作即可。</p>
 </li>
-<li><p><a href="http://book.douban.com/subject/11874748/" class="book_title_tech" target="_blank" rel="external">javascript语言精粹</a></p>
+<li><p><a href="http://book.douban.com/subject/11874748/" class="book_title_tech" target="_blank" rel="noopener">javascript语言精粹</a></p>
 <p class="feel">javascript也有很多不好的地方，很薄的一本书，但也很难读，推荐只读最后的讲到的js糟粕部分。</p>
 </li>
-<li><p><a href="http://book.douban.com/subject/10546125/" class="book_title_tech" target="_blank" rel="external">javascript高级程序设计（第三版）</a></p>
+<li><p><a href="http://book.douban.com/subject/10546125/" class="book_title_tech" target="_blank" rel="noopener">javascript高级程序设计（第三版）</a></p>
 <p class="feel">系统接触javascript的第一本书就是高程，当时很多概念都不明白，走马观花的过了一遍，有个印象。第二遍的时候，便想落实到细处了，这个阶段可以说跌跌撞撞，不过还是精读完了前七章，这个时候才是刚入门吧。</p>
 </li>
-<li><p><a href="http://book.douban.com/subject/4736167/" class="book_title_tech" target="_blank" rel="external"> 精通CSS:高级Web标准解决方案</a></p>
+<li><p><a href="http://book.douban.com/subject/4736167/" class="book_title_tech" target="_blank" rel="noopener"> 精通CSS:高级Web标准解决方案</a></p>
 <p class="feel">css最好的入门书。不过翻译有时会让人困惑。</p>
 </li>
-<li><p><a href="http://book.douban.com/subject/10792216/" class="book_title_tech" target="_blank" rel="external">锋利的jquery</a></p>
+<li><p><a href="http://book.douban.com/subject/10792216/" class="book_title_tech" target="_blank" rel="noopener">锋利的jquery</a></p>
 <p class="feel">jquery最好的入门书。</p></li>
-<li><p><a href="http://book.douban.com/subject/10518092/" class="book_title_tech" target="_blank" rel="external">深入浅出程序设计</a></p>
+<li><p><a href="http://book.douban.com/subject/10518092/" class="book_title_tech" target="_blank" rel="noopener">深入浅出程序设计</a></p>
 <p class="feel">以python3为讲述语言讲述了关于程序设计的一些基本概念，非计算机科班出身的必读书。</p>
 </li>
-<li><p><a href="http://book.douban.com/subject/4210602/" class="book_title_tech" target="_blank" rel="external">大道至简</a></p>
+<li><p><a href="http://book.douban.com/subject/4210602/" class="book_title_tech" target="_blank" rel="noopener">大道至简</a></p>
 <p class="feel">简单的了解了软件工程的开发规范。</p>
 </li>
-<li><p><a href="http://book.douban.com/subject/25863515/" class="book_title_tech" target="_blank" rel="external">图解http</a></p>
+<li><p><a href="http://book.douban.com/subject/25863515/" class="book_title_tech" target="_blank" rel="noopener">图解http</a></p>
 <p class="feel"><em>一个网址输入浏览器后都发生了什么？</em></p>
 </li>
-<li><p><a href="http://book.douban.com/subject/1024570/" class="book_title_tech" target="_blank" rel="external">编码的奥秘</a></p>
+<li><p><a href="http://book.douban.com/subject/1024570/" class="book_title_tech" target="_blank" rel="noopener">编码的奥秘</a></p>
 <p class="feel"><em>1+1=2是如何在计算机中实现的？</em>最好的计算机硬件入门必读书。</p></li>
-<li><p><a href="http://book.douban.com/subject/25752357/" class="book_title_tech" target="_blank" rel="external">heard first html css（第二版）</a></p>
+<li><p><a href="http://book.douban.com/subject/25752357/" class="book_title_tech" target="_blank" rel="noopener">heard first html css（第二版）</a></p>
 <p class="feel">head first系列对于初学者很友好。</p>
 </li>
-<li><p><a href="http://book.douban.com/subject/4889838/" class="book_title_tech" target="_blank" rel="external">鸟哥的Linux私房菜.基础学习篇（第三版）</a><br></p><p class="feel">linux的思想直到现在都很超前，很庆幸mac是类unix系统。</p><p></p>
+<li><p><a href="http://book.douban.com/subject/4889838/" class="book_title_tech" target="_blank" rel="noopener">鸟哥的Linux私房菜.基础学习篇（第三版）</a><br></p><p class="feel">linux的思想直到现在都很超前，很庆幸mac是类unix系统。</p><p></p>
 <h2 id="知乎盐与周刊"><a href="#知乎盐与周刊" class="headerlink" title="知乎盐与周刊"></a>知乎盐与周刊</h2></li>
-<li><a href="https://read.douban.com/ebook/16191724/?dcs=book-search" class="book_title_z" target="_blank" rel="external">假性亲密关系</a></li>
-<li><a href="https://read.douban.com/ebook/6108413/?dcs=book-search" class="book_title_z" target="_blank" rel="external">深度学习的艺术</a></li>
+<li><a href="https://read.douban.com/ebook/16191724/?dcs=book-search" class="book_title_z" target="_blank" rel="noopener">假性亲密关系</a></li>
+<li><a href="https://read.douban.com/ebook/6108413/?dcs=book-search" class="book_title_z" target="_blank" rel="noopener">深度学习的艺术</a></li>
 <li><a href="(https://read.douban.com/ebook/3408907/?dcs=book-search" class="book_title_z">行医者说</a></li>
-<li><a href="https://read.douban.com/ebook/15119911/?dcs=book-search" class="book_title_z" target="_blank" rel="external"> 北京1644 </a></li>
-<li><a href="https://read.douban.com/ebook/4857605/?dcs=book-search" class="book_title_z" target="_blank" rel="external">保贝好险</a></li>
-<li><a href="https://read.douban.com/ebook/1869677/?dcs=book-search" class="book_title_z" target="_blank" rel="external">读书这件小事</a></li>
+<li><a href="https://read.douban.com/ebook/15119911/?dcs=book-search" class="book_title_z" target="_blank" rel="noopener"> 北京1644 </a></li>
+<li><a href="https://read.douban.com/ebook/4857605/?dcs=book-search" class="book_title_z" target="_blank" rel="noopener">保贝好险</a></li>
+<li><a href="https://read.douban.com/ebook/1869677/?dcs=book-search" class="book_title_z" target="_blank" rel="noopener">读书这件小事</a></li>
 </ol>
 
       
     </div>
 
-    <div>
-      
-        
+    
 
-      
-    </div>
+    
+    
+    
 
-    <div>
-      
-        
+    
 
-      
-    </div>
+    
 
+    
 
     <footer class="post-footer">
       
@@ -659,7 +746,7 @@
       
 
       
-        
+      
       
 
       
@@ -687,24 +774,24 @@
       
       
     </footer>
+  </div>
+  
+  
+  
   </article>
 
 
-
-    <div class="post-spread">
-      
-    </div>
   </div>
 
-          
+
           </div>
           
 
+  
+    <div class="comments" id="comments">
+    </div>
+  
 
-          
-  <div class="comments" id="comments">
-    
-  </div>
 
 
         </div>
@@ -720,138 +807,525 @@
   </div>
 
   <aside id="sidebar" class="sidebar">
+    
     <div class="sidebar-inner">
 
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview sidebar-panel sidebar-panel-active">
-        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
-          <img class="site-author-image" itemprop="image"
-               src="http://o8cju5u0y.bkt.clouddn.com/dm-3.jpg"
-               alt="王隐在录音" />
-          <p class="site-author-name" itemprop="name">王隐在录音</p>
-           
+      <section class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <p class="site-author-name" itemprop="name">王隐在录音</p>
               <p class="site-description motion-element" itemprop="description">Apple｜RSS｜Rock&Post Rock｜WEB VIEW 播客｜独立博客｜Non-Cinema Film｜Efficiency App｜反感微信｜反感政治正确 | 搜索引擎爱好者｜黄焖鸡｜远古互联网｜精神程序员｜吉他爱好者｜前端技术好奇者｜老球迷｜在南方的北方人</p>
-          
-        </div>
-        <nav class="site-state motion-element">
-        
-          
-            <div class="site-state-item site-state-posts">
-              <a href="/archives">
-                <span class="site-state-item-count">63</span>
-                <span class="site-state-item-name">日志</span>
-              </a>
-            </div>
-          
-
-          
-            <div class="site-state-item site-state-categories">
-              <a href="/categories">
-                <span class="site-state-item-count">13</span>
-                <span class="site-state-item-name">分类</span>
-              </a>
-            </div>
-          
-
-          
-            <div class="site-state-item site-state-tags">
-              <a href="/tags">
-                <span class="site-state-item-count">172</span>
-                <span class="site-state-item-name">标签</span>
-              </a>
-            </div>
-          
-
-        </nav>
-
-        
-          <div class="feed-link motion-element">
-            <a href="/atom.xml" rel="alternate">
-              <i class="fa fa-rss"></i>
-              RSS
-            </a>
           </div>
-        
 
-        <div class="links-of-author motion-element">
           
-            
-              <span class="links-of-author-item">
-                <a href="https://twitter.com/liki_wang" target="_blank" title="Twitter">
-                  
-                    <i class="fa fa-fw fa-twitter"></i>
-                  
-                  Twitter
-                </a>
-              </span>
-            
-              <span class="links-of-author-item">
-                <a href="http://weibo.com/recwangyin" target="_blank" title="Weibo">
-                  
-                    <i class="fa fa-fw fa-weibo"></i>
-                  
-                  Weibo
-                </a>
-              </span>
-            
-              <span class="links-of-author-item">
-                <a href="https://www.zhihu.com/people/wang-peng-50-40" target="_blank" title="Zhihu">
-                  
-                    <i class="fa fa-fw fa-globe"></i>
-                  
-                  Zhihu
-                </a>
-              </span>
-            
-              <span class="links-of-author-item">
-                <a href="http://webview.tech" target="_blank" title="播客">
-                  
-                    <i class="fa fa-fw fa-headphones"></i>
-                  
-                  播客
-                </a>
-              </span>
-            
-              <span class="links-of-author-item">
-                <a href="mailto:liki_wang@foxmail.com" target="_blank" title="邮件">
-                  
-                    <i class="fa fa-fw fa-envelope"></i>
-                  
-                  邮件
-                </a>
-              </span>
-            
+            <nav class="site-state motion-element">
+              
+                <div class="site-state-item site-state-posts">
+                
+                  <a href="/archives/">
+                
+                    <span class="site-state-item-count">63</span>
+                    <span class="site-state-item-name">日志</span>
+                  </a>
+                </div>
+              
+
+              
+                
+                
+                <div class="site-state-item site-state-categories">
+                  <a href="/categories/index.html">
+                    
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">13</span>
+                    <span class="site-state-item-name">分类</span>
+                  </a>
+                </div>
+              
+
+              
+                
+                
+                <div class="site-state-item site-state-tags">
+                  <a href="/tags/index.html">
+                    
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">172</span>
+                    <span class="site-state-item-name">标签</span>
+                  </a>
+                </div>
+              
+            </nav>
           
-        </div>
 
-        
-        
-
-        
-        
-          <div class="links-of-blogroll motion-element links-of-blogroll-inline">
-            <div class="links-of-blogroll-title">
-              <i class="fa  fa-fw fa-globe"></i>
-              敬礼也有自己写字的地方，欢迎移步
+          
+            <div class="feed-link motion-element">
+              <a href="/atom.xml" rel="alternate">
+                <i class="fa fa-rss"></i>
+                RSS
+              </a>
             </div>
-            <ul class="links-of-blogroll-list">
+          
+
+          
+            <div class="links-of-author motion-element">
               
-                <li class="links-of-blogroll-item">
-                  <a href="http://lolilukia.com/" title="lolilukia" target="_blank">lolilukia</a>
-                </li>
+                <span class="links-of-author-item">
+                  <a href="https://twitter.com/liki_wang" target="_blank" title="Twitter" rel="external nofollow"><i class="fa fa-fw fa-twitter"></i>Twitter</a>
+                  
+                </span>
               
-            </ul>
-          </div>
-        
+                <span class="links-of-author-item">
+                  <a href="http://weibo.com/recwangyin" target="_blank" title="Weibo" rel="external nofollow"><i class="fa fa-fw fa-weibo"></i>Weibo</a>
+                  
+                </span>
+              
+                <span class="links-of-author-item">
+                  <a href="https://www.zhihu.com/people/wang-peng-50-40" target="_blank" title="Zhihu" rel="external nofollow"><i class="fa fa-fw fa-globe"></i>Zhihu</a>
+                  
+                </span>
+              
+                <span class="links-of-author-item">
+                  <a href="https://webview.tech" target="_blank" title="播客" rel="external nofollow"><i class="fa fa-fw fa-headphones"></i>播客</a>
+                  
+                </span>
+              
+                <span class="links-of-author-item">
+                  <a href="mailto:liki_wang@foxmail.com" target="_blank" title="邮件" rel="external nofollow"><i class="fa fa-fw fa-envelope"></i>邮件</a>
+                  
+                </span>
+              
+            </div>
+          
 
-        
+          
+          
 
+          
+          
+            <div class="links-of-blogroll motion-element links-of-blogroll-block">
+              <div class="links-of-blogroll-title">
+                <i class="fa  fa-fw fa-link"></i>
+                敬礼也有自己写字的地方，欢迎移步
+              </div>
+              <ul class="links-of-blogroll-list">
+                
+                  <li class="links-of-blogroll-item">
+                    <a href="http://lolilukia.com/" title="lolilukia" target="_blank">lolilukia</a>
+                  </li>
+                
+              </ul>
+            </div>
+          
 
+          
+            
+          
+          
+
+        </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#非技术性书籍"><span class="nav-number">1.</span> <span class="nav-text">非技术性书籍</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#技术性书籍"><span class="nav-number">2.</span> <span class="nav-text">技术性书籍</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#知乎盐与周刊"><span class="nav-number">3.</span> <span class="nav-text">知乎盐与周刊</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
@@ -866,19 +1340,55 @@
 
     <footer id="footer" class="footer">
       <div class="footer-inner">
-        <div class="copyright" >
-  
-  &copy;  2015 - 
-  <span itemprop="copyrightYear">2018</span>
-  <span class="with-love">
+        <div class="copyright">&copy; 2015 – <span itemprop="copyrightYear">2018</span>
+  <span class="with-love" id="animate">
     <i class="fa fa-heart"></i>
   </span>
   <span class="author" itemprop="copyrightHolder">王隐在录音</span>
+
+  
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item-icon">
+      <i class="fa fa-area-chart"></i>
+    </span>
+    
+      <span class="post-meta-item-text">站点总字数：</span>
+    
+    <span title="站点总字数">120k</span>
+  
+
+  
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item-icon">
+      <i class="fa fa-coffee"></i>
+    </span>
+    
+      <span class="post-meta-item-text">站点阅读时长 &asymp;</span>
+    
+    <span title="站点阅读时长">1:49</span>
+  
 </div>
+
+
+  
+
+
+
+
+
+
+
 
 
 
         
+
+
+
+
+
+
+
 
         
       </div>
@@ -890,6 +1400,11 @@
         
       </div>
     
+
+    
+	
+    
+
     
   </div>
 
@@ -909,79 +1424,61 @@
 
 
 
-  
 
 
 
 
-  
-  <script type="text/javascript" src="http://cdn.bootcss.com/jquery/2.1.3/jquery.min.js"></script>
-
-  
-  <script type="text/javascript" src="http://cdn.bootcss.com/fastclick/1.0.6/fastclick.js"></script>
-
-  
-  <script type="text/javascript" src="http://cdn.bootcss.com/jquery_lazyload/1.9.7/jquery.lazyload.js"></script>
-
-  
-  <script type="text/javascript" src="http://cdn.bootcss.com/velocity/1.2.1/velocity.js"></script>
-
-  
-  <script type="text/javascript" src="http://cdn.bootcss.com/velocity/1.2.1/velocity.ui.js"></script>
-
-  
-  <script type="text/javascript" src="https://cdn.staticfile.org/fancybox/2.1.5/jquery.fancybox.js"></script>
-
-
-  
-
-
-  <script type="text/javascript" src="/js/src/utils.js?v=5.1.0"></script>
-
-  <script type="text/javascript" src="/js/src/motion.js?v=5.1.0"></script>
-
-
-
-  
-  
-
-  
-  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.0"></script>
-<script type="text/javascript" src="/js/src/post-details.js?v=5.1.0"></script>
-
-
-
-  
-
-
-  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.0"></script>
-
-
-
-  
-
-
-
-  
 
 
 
 
-	
+
+
+
+
 
 
 
 
 
   
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
 
 
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=6.4.0"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=6.4.0"></script>
+
+
+
+  
+  
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=6.4.0"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=6.4.0"></script>
 
 
 
   
 
 
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=6.4.0"></script>
 
 
 
@@ -990,7 +1487,46 @@
 
 
   
+
+
+
+
+
+
+
+
+  <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
   
+  
+  <script src="//unpkg.com/valine/dist/Valine.min.js"></script>
+  
+  <script type="text/javascript">
+    var GUEST = ['nick','mail','link'];
+    var guest = 'nick,mail,link';
+    guest = guest.split(',').filter(function (item) {
+      return GUEST.indexOf(item)>-1;
+    });
+    new Valine({
+        el: '#comments' ,
+        verify: false,
+        notify: false,
+        appId: 'wt4e7Uow9CGBV0ABuIoWFjLb-gzGzoHsz',
+        appKey: 'F980d82qtlWJP3pHwYss6uI6',
+        placeholder: '说点什么',
+        avatar:'mm',
+        meta:guest,
+        pageSize:'10' || 10,
+        visitor: false
+    });
+  </script>
+
+
+
+  
+
+
+
+
 
   
 
@@ -1000,6 +1536,16 @@
 
   
 
+  
+  
+
+  
+
+  
+
+  
+
+  
 
   
 

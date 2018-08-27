@@ -1,28 +1,32 @@
-<!doctype html>
+<!DOCTYPE html>
 
 
 
 
-<html class="theme-next muse" lang="zh-Hans">
+
+
+
+
+
+
+
+
+
+<html class="theme-next muse" lang="zh-CN">
 <head>
   <meta charset="UTF-8"/>
-
-<script>
-    (function(){
-        if(''){
-            if (prompt('请输入文章密码') !== ''){
-                alert('密码错误');
-                history.back();
-            }
-        }
-    })();
-</script>
-
-
-
-
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2"/>
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
 
 
 
@@ -43,73 +47,73 @@
 
 
 
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=6.4.0" rel="stylesheet" type="text/css" />
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/favicon.ico?v=6.4.0">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon.ico?v=6.4.0">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon.ico?v=6.4.0">
+
+
+  <link rel="mask-icon" href="/images/favicon.ico?v=6.4.0" color="#222">
+
+
+
+
+
+
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Muse',
+    version: '6.4.0',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: false,
+    fastclick: false,
+    lazyload: false,
+    tabs: true,
+    motion: {"enable":false,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
   
-  
-    
-  
-  <link href="https://cdn.staticfile.org/fancybox/2.1.5/jquery.fancybox.css" rel="stylesheet" type="text/css" />
 
 
 
 
-
-
-
-  
-
-<link href="http://cdn.staticfile.org/font-awesome/4.6.2/css/font-awesome.css" rel="stylesheet" type="text/css" />
-
-<link href="/css/main.css?v=5.1.0" rel="stylesheet" type="text/css" />
-
-
-  <meta name="keywords" content="专辑,爬虫,Chrome," />
-
-
-
-
-
-  <link rel="alternate" href="/atom.xml" title="王尔德的德" type="application/atom+xml" />
-
-
-
-
-  <link rel="shortcut icon" type="image/x-icon" href="/images/favicon.ico?v=5.1.0" />
-
-
-
-
-
-
-<meta name="description" content="需求寻找值得听的专辑，并排序
-数据来源豆瓣音乐 250
-工具
-Web Scraper
-Excel
-
-方法
-
-Chrome 商店安装下载 Web Scraper 插件
-选择爬取页面
-选择器鼠标点选所爬元素与子元素
-Scrape
-下载 csv 文件">
+  <meta name="description" content="需求寻找值得听的专辑，并排序 数据来源豆瓣音乐 250 工具 Web Scraper Excel  方法  Chrome 商店安装下载 Web Scraper 插件 选择爬取页面 选择器鼠标点选所爬元素与子元素 Scrape 下载 csv 文件">
+<meta name="keywords" content="专辑,爬虫,Chrome">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Web Scraper——简单爬取豆瓣音乐250">
 <meta property="og:url" content="http://yoursite.com/2018/04/17/Web-Scraper——简单爬取豆瓣音乐250/index.html">
 <meta property="og:site_name" content="王尔德的德">
-<meta property="og:description" content="需求寻找值得听的专辑，并排序
-数据来源豆瓣音乐 250
-工具
-Web Scraper
-Excel
-
-方法
-
-Chrome 商店安装下载 Web Scraper 插件
-选择爬取页面
-选择器鼠标点选所爬元素与子元素
-Scrape
-下载 csv 文件">
+<meta property="og:description" content="需求寻找值得听的专辑，并排序 数据来源豆瓣音乐 250 工具 Web Scraper Excel  方法  Chrome 商店安装下载 Web Scraper 插件 选择爬取页面 选择器鼠标点选所爬元素与子元素 Scrape 下载 csv 文件">
+<meta property="og:locale" content="zh-CN">
 <meta property="og:image" content="http://o8cju5u0y.bkt.clouddn.com/UC20180417_014520.png">
 <meta property="og:image" content="http://o8cju5u0y.bkt.clouddn.com/UC20180417_010657.png">
 <meta property="og:image" content="http://o8cju5u0y.bkt.clouddn.com/UC20180417_011511.png">
@@ -119,44 +123,13 @@ Scrape
 <meta property="og:updated_time" content="2018-04-16T17:59:19.225Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Web Scraper——简单爬取豆瓣音乐250">
-<meta name="twitter:description" content="需求寻找值得听的专辑，并排序
-数据来源豆瓣音乐 250
-工具
-Web Scraper
-Excel
-
-方法
-
-Chrome 商店安装下载 Web Scraper 插件
-选择爬取页面
-选择器鼠标点选所爬元素与子元素
-Scrape
-下载 csv 文件">
+<meta name="twitter:description" content="需求寻找值得听的专辑，并排序 数据来源豆瓣音乐 250 工具 Web Scraper Excel  方法  Chrome 商店安装下载 Web Scraper 插件 选择爬取页面 选择器鼠标点选所爬元素与子元素 Scrape 下载 csv 文件">
 <meta name="twitter:image" content="http://o8cju5u0y.bkt.clouddn.com/UC20180417_014520.png">
 
 
 
-<script type="text/javascript" id="hexo.configurations">
-  var NexT = window.NexT || {};
-  var CONFIG = {
-    root: '/',
-    scheme: 'Muse',
-    sidebar: {"position":"left","display":"post","offset":12,"offset_float":0,"b2t":false,"scrollpercent":false},
-    fancybox: true,
-    motion: false,
-    duoshuo: {
-      userId: '0',
-      author: '博主'
-    },
-    algolia: {
-      applicationID: '',
-      apiKey: '',
-      indexName: '',
-      hits: {"per_page":20},
-      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
-    }
-  };
-</script>
+  <link rel="alternate" href="/atom.xml" title="王尔德的德" type="application/atom+xml" />
+
 
 
 
@@ -164,14 +137,15 @@ Scrape
 
 
 
+<script type="text/javascript" id="page.configurations">
+  CONFIG.page = {
+    sidebar: "",
+  };
+</script>
 
-
-  <title> Web Scraper——简单爬取豆瓣音乐250 | 王尔德的德 </title>
-</head>
-
-<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
-
+  <title>Web Scraper——简单爬取豆瓣音乐250 | 王尔德的德</title>
   
+
 
 
 
@@ -190,18 +164,43 @@ Scrape
 
 
 
+  <noscript>
+  <style type="text/css">
+    .use-motion .motion-element,
+    .use-motion .brand,
+    .use-motion .menu-item,
+    .sidebar-inner,
+    .use-motion .post-block,
+    .use-motion .pagination,
+    .use-motion .comments,
+    .use-motion .post-header,
+    .use-motion .post-body,
+    .use-motion .collection-title { opacity: initial; }
 
+    .use-motion .logo,
+    .use-motion .site-title,
+    .use-motion .site-subtitle {
+      opacity: initial;
+      top: initial;
+    }
 
+    .use-motion {
+      .logo-line-before i { left: initial; }
+      .logo-line-after i { right: initial; }
+    }
+  </style>
+</noscript>
 
+</head>
 
-
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-CN">
 
   
   
     
   
 
-  <div class="container one-collumn sidebar-position-left page-post-detail ">
+  <div class="container sidebar-position-left page-post-detail">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -210,19 +209,21 @@ Scrape
     
 
     <div class="custom-logo-site-title">
-      <a href="/"  class="brand" rel="start">
+      <a href="/" class="brand" rel="start">
         <span class="logo-line-before"><i></i></span>
         <span class="site-title">王尔德的德</span>
         <span class="logo-line-after"><i></i></span>
       </a>
     </div>
+    
       
-        <p class="site-subtitle">我们一路轻歌浅唱，好像漫步在云上</p>
+        <h1 class="site-subtitle" itemprop="description">我们一路轻歌浅唱，好像漫步在云上</h1>
       
+    
   </div>
 
   <div class="site-nav-toggle">
-    <button>
+    <button aria-label="切换导航栏">
       <span class="btn-bar"></span>
       <span class="btn-bar"></span>
       <span class="btn-bar"></span>
@@ -230,55 +231,53 @@ Scrape
   </div>
 </div>
 
-<nav class="site-nav">
-  
 
+
+<nav class="site-nav">
   
     <ul id="menu" class="menu">
       
         
-        <li class="menu-item menu-item-home">
-          <a href="/" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
-            
-            首页
-          </a>
-        </li>
-      
         
-        <li class="menu-item menu-item-categories">
-          <a href="/categories" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
-            
-            分类
-          </a>
-        </li>
-      
         
-        <li class="menu-item menu-item-archives">
-          <a href="/archives" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
-            
-            归档
-          </a>
-        </li>
-      
+          
+          <li class="menu-item menu-item-home">
+    <a href="/" rel="section">
+      <i class="menu-item-icon fa fa-fw fa-home"></i> <br />首页</a>
+  </li>
         
-        <li class="menu-item menu-item-tags">
-          <a href="/tags" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
-            
-            标签
-          </a>
-        </li>
-      
+        
+        
+          
+          <li class="menu-item menu-item-tags">
+    <a href="/tags/" rel="section">
+      <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />标签</a>
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-categories">
+    <a href="/categories/" rel="section">
+      <i class="menu-item-icon fa fa-fw fa-th"></i> <br />分类</a>
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-archives">
+    <a href="/archives/" rel="section">
+      <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />归档</a>
+  </li>
 
       
+      
     </ul>
+  
+
+  
+    
+
   
 
   
@@ -286,12 +285,20 @@ Scrape
 
 
 
- </div>
+  
+
+
+
+</div>
     </header>
+
+    
+
 
     <main id="main" class="main">
       <div class="main-inner">
         <div class="content-wrap">
+          
           <div id="content" class="content">
             
 
@@ -304,13 +311,19 @@ Scrape
   
   
 
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/04/17/Web-Scraper——简单爬取豆瓣音乐250/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="王隐在录音">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="http://o8cju5u0y.bkt.clouddn.com/dm-3.jpg">
+      <meta itemprop="description" content="Apple｜RSS｜Rock&Post Rock｜WEB VIEW 播客｜独立博客｜Non-Cinema Film｜Efficiency App｜反感微信｜反感政治正确 | 搜索引擎爱好者｜黄焖鸡｜远古互联网｜精神程序员｜吉他爱好者｜前端技术好奇者｜老球迷｜在南方的北方人">
+      <meta itemprop="image" content="/images/avatar.gif">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
@@ -322,21 +335,38 @@ Scrape
 
         
         
-          <h1 class="post-title" itemprop="name headline">
-            
-            
-              
-                Web Scraper——简单爬取豆瓣音乐250
+          <h2 class="post-title" itemprop="name headline">Web Scraper——简单爬取豆瓣音乐250
               
             
-          </h1>
+          </h2>
         
 
         <div class="post-meta">
           <span class="post-time">
 
-   
-           
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            
+            
+            
+
             
               <span class="post-meta-item-icon">
                 <i class="fa fa-calendar-o"></i>
@@ -344,32 +374,20 @@ Scrape
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-04-17T01:38:16+08:00">
-                2018-04-17
-              </time>
+
+              
+                
+              
+
+              <time title="创建时间：2018-04-17 01:38:16 / 修改时间：01:59:19" itemprop="dateCreated datePublished" datetime="2018-04-17T01:38:16+08:00">2018-04-17</time>
             
 
             
-              <span class="post-meta-divider">|</span>
-            
+              
 
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-check-o"></i>
-              </span>
               
-                <span class="post-meta-item-text">更新于</span>
-              
-              <time title="更新于" itemprop="dateModified" datetime="2018-04-17T01:59:19+08:00">
-                2018-04-17
-              </time>
             
           </span>
-
-
- 
-
-
 
           
             <span class="post-category" >
@@ -383,11 +401,7 @@ Scrape
                 <span class="post-meta-item-text">分类于</span>
               
               
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/简易实用技术/" itemprop="url" rel="index">
-                    <span itemprop="name">简易实用技术</span>
-                  </a>
-                </span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/简易实用技术/" itemprop="url" rel="index"><span itemprop="name">简易实用技术</span></a></span>
 
                 
                 
@@ -397,25 +411,53 @@ Scrape
 
           
             
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2018/04/17/Web-Scraper——简单爬取豆瓣音乐250/#comments" itemprop="discussionUrl">
+                  <span class="post-meta-item-text">评论数：</span> <span class="post-comments-count valine-comment-count" data-xid="/2018/04/17/Web-Scraper——简单爬取豆瓣音乐250/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
           
 
           
           
 
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
           
 
           
-            <div class="post-wordcount">
+            <div class="post-symbolscount">
+              
+
               
                 <span class="post-meta-item-icon">
                   <i class="fa fa-file-word-o"></i>
                 </span>
-                  
-                    <span class="post-meta-item-text">字数统计</span>
-                  
-                    <span title="字数统计" }}">
-                      788 字
-                    </span>
+                
+                  <span class="post-meta-item-text">本文字数：</span>
+                
+                <span title="本文字数">1.9k</span>
               
 
               
@@ -426,12 +468,10 @@ Scrape
                 <span class="post-meta-item-icon">
                   <i class="fa fa-clock-o"></i>
                 </span>
-                  
-                    <span class="post-meta-item-text">阅读时长</span>
-                  
-                    <span title="阅读时长" }}">
-                      3 分钟
-                    </span>
+                
+                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
+                
+                <span title="阅读时长">2 分钟</span>
               
             </div>
           
@@ -442,7 +482,9 @@ Scrape
       </header>
     
 
-
+    
+    
+    
     <div class="post-body" itemprop="articleBody">
 
       
@@ -450,7 +492,7 @@ Scrape
 
       
         <h2 id="需求"><a href="#需求" class="headerlink" title="需求"></a>需求</h2><p>寻找值得听的专辑，并排序</p>
-<h2 id="数据来源"><a href="#数据来源" class="headerlink" title="数据来源"></a>数据来源</h2><p><a href="https://music.douban.com/top250" target="_blank" rel="external">豆瓣音乐 250</a></p>
+<h2 id="数据来源"><a href="#数据来源" class="headerlink" title="数据来源"></a>数据来源</h2><p><a href="https://music.douban.com/top250" target="_blank" rel="noopener">豆瓣音乐 250</a></p>
 <h2 id="工具"><a href="#工具" class="headerlink" title="工具"></a>工具</h2><ul>
 <li>Web Scraper</li>
 <li>Excel</li>
@@ -465,7 +507,7 @@ Scrape
 </ol>
 </blockquote>
 <a id="more"></a>
-<h3 id="1-Web-Scraper"><a href="#1-Web-Scraper" class="headerlink" title="1. Web Scraper"></a>1. Web Scraper</h3><p> <a href="https://chrome.google.com/webstore/detail/web-scraper/jnhgnonknehpejjnehehllkliplmbmhn?hl=zh-CN" target="_blank" rel="external">Web Scraper - Chrome 网上应用店 - Google</a></p>
+<h3 id="1-Web-Scraper"><a href="#1-Web-Scraper" class="headerlink" title="1. Web Scraper"></a>1. Web Scraper</h3><p> <a href="https://chrome.google.com/webstore/detail/web-scraper/jnhgnonknehpejjnehehllkliplmbmhn?hl=zh-CN" target="_blank" rel="noopener">Web Scraper - Chrome 网上应用店 - Google</a></p>
 <h3 id="2-选择爬取页面"><a href="#2-选择爬取页面" class="headerlink" title="2. 选择爬取页面"></a>2. 选择爬取页面</h3><p>Chrome 打开开发者模式，快捷键：com+option+i。</p>
 <p><img src="http://o8cju5u0y.bkt.clouddn.com/UC20180417_014520.png" alt=""></p>
 <p>发现 Web Scraper 已经集合了进来。</p>
@@ -503,35 +545,32 @@ Scrape
 <h3 id="5-下载-csv-文件"><a href="#5-下载-csv-文件" class="headerlink" title="5. 下载 csv 文件"></a>5. 下载 csv 文件</h3><p>爬取完毕可导出 csv 文件。</p>
 <h2 id="注意分页"><a href="#注意分页" class="headerlink" title="注意分页"></a>注意分页</h2><p>比如你需要爬的数据不会全部显示在一个页面中，这个时候就需要你观察网址后面带的参数。</p>
 <p>比如知乎：</p>
-<p>我关注的人：url 为 <a href="https://www.zhihu.com/people/wang-peng-50-40/following?page=2" target="_blank" rel="external">https://www.zhihu.com/people/wang-peng-50-40/following?page=2</a></p>
+<p>我关注的人：url 为 <a href="https://www.zhihu.com/people/wang-peng-50-40/following?page=2" target="_blank" rel="noopener">https://www.zhihu.com/people/wang-peng-50-40/following?page=2</a></p>
 <p>如果你需要爬取 50 页，你就将最一开始设置网址的那个页面改写为</p>
-<p><a href="https://www.zhihu.com/people/wang-peng-50-40/following?page=[0-50]" target="_blank" rel="external">https://www.zhihu.com/people/wang-peng-50-40/following?page=[0-50]</a></p>
+<p><a href="https://www.zhihu.com/people/wang-peng-50-40/following?page=[0-50]" target="_blank" rel="noopener">https://www.zhihu.com/people/wang-peng-50-40/following?page=[0-50]</a></p>
 <p>比如豆瓣：</p>
-<p><a href="https://music.douban.com/top250?start=50" target="_blank" rel="external">https://music.douban.com/top250?start=50</a></p>
+<p><a href="https://music.douban.com/top250?start=50" target="_blank" rel="noopener">https://music.douban.com/top250?start=50</a></p>
 <p>改为</p>
-<p><a href="https://music.douban.com/top250?start=[0-20]" target="_blank" rel="external">https://music.douban.com/top250?start=[0-20]</a></p>
+<p><a href="https://music.douban.com/top250?start=[0-20]" target="_blank" rel="noopener">https://music.douban.com/top250?start=[0-20]</a></p>
 <p>即爬取前20页的数据。</p>
 <h2 id="爬虫导出与导入"><a href="#爬虫导出与导入" class="headerlink" title="爬虫导出与导入"></a>爬虫导出与导入</h2><p>爬虫不仅可以自己用，还可以用别人的和给别人做。导出格式为 json</p>
 <p>比如我「爬取豆瓣音乐250」的爬虫 json ：</p>
-<figure class="highlight json"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&#123;<span class="attr">"_id"</span>:<span class="string">"douban-music"</span>,<span class="attr">"startUrl"</span>:[<span class="string">"https://music.douban.com/top250?start=[0-225:25]"</span>],<span class="attr">"selectors"</span>:[&#123;<span class="attr">"id"</span>:<span class="string">"专辑名"</span>,<span class="attr">"type"</span>:<span class="string">"SelectorElement"</span>,<span class="attr">"selector"</span>:<span class="string">"div.pl2"</span>,<span class="attr">"parentSelectors"</span>:[<span class="string">"_root"</span>],<span class="attr">"multiple"</span>:<span class="literal">true</span>,<span class="attr">"delay"</span>:<span class="number">0</span>&#125;,&#123;<span class="attr">"id"</span>:<span class="string">"专辑的名字"</span>,<span class="attr">"type"</span>:<span class="string">"SelectorText"</span>,<span class="attr">"selector"</span>:<span class="string">"a:nth-of-type(1)"</span>,<span class="attr">"parentSelectors"</span>:[<span class="string">"专辑名"</span>],<span class="attr">"multiple"</span>:<span class="literal">false</span>,<span class="attr">"regex"</span>:<span class="string">""</span>,<span class="attr">"delay"</span>:<span class="number">0</span>&#125;,&#123;<span class="attr">"id"</span>:<span class="string">"作者是谁"</span>,<span class="attr">"type"</span>:<span class="string">"SelectorText"</span>,<span class="attr">"selector"</span>:<span class="string">"p.pl"</span>,<span class="attr">"parentSelectors"</span>:[<span class="string">"专辑名"</span>],<span class="attr">"multiple"</span>:<span class="literal">false</span>,<span class="attr">"regex"</span>:<span class="string">""</span>,<span class="attr">"delay"</span>:<span class="number">0</span>&#125;,&#123;<span class="attr">"id"</span>:<span class="string">"排名分数"</span>,<span class="attr">"type"</span>:<span class="string">"SelectorText"</span>,<span class="attr">"selector"</span>:<span class="string">"span.rating_nums"</span>,<span class="attr">"parentSelectors"</span>:[<span class="string">"专辑名"</span>],<span class="attr">"multiple"</span>:<span class="literal">false</span>,<span class="attr">"regex"</span>:<span class="string">""</span>,<span class="attr">"delay"</span>:<span class="number">0</span>&#125;]&#125;</div></pre></td></tr></table></figure>
+<figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#123;<span class="attr">"_id"</span>:<span class="string">"douban-music"</span>,<span class="attr">"startUrl"</span>:[<span class="string">"https://music.douban.com/top250?start=[0-225:25]"</span>],<span class="attr">"selectors"</span>:[&#123;<span class="attr">"id"</span>:<span class="string">"专辑名"</span>,<span class="attr">"type"</span>:<span class="string">"SelectorElement"</span>,<span class="attr">"selector"</span>:<span class="string">"div.pl2"</span>,<span class="attr">"parentSelectors"</span>:[<span class="string">"_root"</span>],<span class="attr">"multiple"</span>:<span class="literal">true</span>,<span class="attr">"delay"</span>:<span class="number">0</span>&#125;,&#123;<span class="attr">"id"</span>:<span class="string">"专辑的名字"</span>,<span class="attr">"type"</span>:<span class="string">"SelectorText"</span>,<span class="attr">"selector"</span>:<span class="string">"a:nth-of-type(1)"</span>,<span class="attr">"parentSelectors"</span>:[<span class="string">"专辑名"</span>],<span class="attr">"multiple"</span>:<span class="literal">false</span>,<span class="attr">"regex"</span>:<span class="string">""</span>,<span class="attr">"delay"</span>:<span class="number">0</span>&#125;,&#123;<span class="attr">"id"</span>:<span class="string">"作者是谁"</span>,<span class="attr">"type"</span>:<span class="string">"SelectorText"</span>,<span class="attr">"selector"</span>:<span class="string">"p.pl"</span>,<span class="attr">"parentSelectors"</span>:[<span class="string">"专辑名"</span>],<span class="attr">"multiple"</span>:<span class="literal">false</span>,<span class="attr">"regex"</span>:<span class="string">""</span>,<span class="attr">"delay"</span>:<span class="number">0</span>&#125;,&#123;<span class="attr">"id"</span>:<span class="string">"排名分数"</span>,<span class="attr">"type"</span>:<span class="string">"SelectorText"</span>,<span class="attr">"selector"</span>:<span class="string">"span.rating_nums"</span>,<span class="attr">"parentSelectors"</span>:[<span class="string">"专辑名"</span>],<span class="attr">"multiple"</span>:<span class="literal">false</span>,<span class="attr">"regex"</span>:<span class="string">""</span>,<span class="attr">"delay"</span>:<span class="number">0</span>&#125;]&#125;</span><br></pre></td></tr></table></figure>
 
       
     </div>
 
-    <div>
-      
-        
+    
 
-      
-    </div>
+    
+    
+    
 
-    <div>
-      
-        
+    
 
-      
-    </div>
+    
 
+    
 
     <footer class="post-footer">
       
@@ -547,7 +586,7 @@ Scrape
       
 
       
-        
+      
       
 
       
@@ -575,24 +614,24 @@ Scrape
       
       
     </footer>
+  </div>
+  
+  
+  
   </article>
 
 
-
-    <div class="post-spread">
-      
-    </div>
   </div>
 
-          
+
           </div>
           
 
+  
+    <div class="comments" id="comments">
+    </div>
+  
 
-          
-  <div class="comments" id="comments">
-    
-  </div>
 
 
         </div>
@@ -608,138 +647,525 @@ Scrape
   </div>
 
   <aside id="sidebar" class="sidebar">
+    
     <div class="sidebar-inner">
 
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview sidebar-panel sidebar-panel-active">
-        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
-          <img class="site-author-image" itemprop="image"
-               src="http://o8cju5u0y.bkt.clouddn.com/dm-3.jpg"
-               alt="王隐在录音" />
-          <p class="site-author-name" itemprop="name">王隐在录音</p>
-           
+      <section class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <p class="site-author-name" itemprop="name">王隐在录音</p>
               <p class="site-description motion-element" itemprop="description">Apple｜RSS｜Rock&Post Rock｜WEB VIEW 播客｜独立博客｜Non-Cinema Film｜Efficiency App｜反感微信｜反感政治正确 | 搜索引擎爱好者｜黄焖鸡｜远古互联网｜精神程序员｜吉他爱好者｜前端技术好奇者｜老球迷｜在南方的北方人</p>
-          
-        </div>
-        <nav class="site-state motion-element">
-        
-          
-            <div class="site-state-item site-state-posts">
-              <a href="/archives">
-                <span class="site-state-item-count">63</span>
-                <span class="site-state-item-name">日志</span>
-              </a>
-            </div>
-          
-
-          
-            <div class="site-state-item site-state-categories">
-              <a href="/categories">
-                <span class="site-state-item-count">13</span>
-                <span class="site-state-item-name">分类</span>
-              </a>
-            </div>
-          
-
-          
-            <div class="site-state-item site-state-tags">
-              <a href="/tags">
-                <span class="site-state-item-count">172</span>
-                <span class="site-state-item-name">标签</span>
-              </a>
-            </div>
-          
-
-        </nav>
-
-        
-          <div class="feed-link motion-element">
-            <a href="/atom.xml" rel="alternate">
-              <i class="fa fa-rss"></i>
-              RSS
-            </a>
           </div>
-        
 
-        <div class="links-of-author motion-element">
           
-            
-              <span class="links-of-author-item">
-                <a href="https://twitter.com/liki_wang" target="_blank" title="Twitter">
-                  
-                    <i class="fa fa-fw fa-twitter"></i>
-                  
-                  Twitter
-                </a>
-              </span>
-            
-              <span class="links-of-author-item">
-                <a href="http://weibo.com/recwangyin" target="_blank" title="Weibo">
-                  
-                    <i class="fa fa-fw fa-weibo"></i>
-                  
-                  Weibo
-                </a>
-              </span>
-            
-              <span class="links-of-author-item">
-                <a href="https://www.zhihu.com/people/wang-peng-50-40" target="_blank" title="Zhihu">
-                  
-                    <i class="fa fa-fw fa-globe"></i>
-                  
-                  Zhihu
-                </a>
-              </span>
-            
-              <span class="links-of-author-item">
-                <a href="http://webview.tech" target="_blank" title="播客">
-                  
-                    <i class="fa fa-fw fa-headphones"></i>
-                  
-                  播客
-                </a>
-              </span>
-            
-              <span class="links-of-author-item">
-                <a href="mailto:liki_wang@foxmail.com" target="_blank" title="邮件">
-                  
-                    <i class="fa fa-fw fa-envelope"></i>
-                  
-                  邮件
-                </a>
-              </span>
-            
+            <nav class="site-state motion-element">
+              
+                <div class="site-state-item site-state-posts">
+                
+                  <a href="/archives/">
+                
+                    <span class="site-state-item-count">63</span>
+                    <span class="site-state-item-name">日志</span>
+                  </a>
+                </div>
+              
+
+              
+                
+                
+                <div class="site-state-item site-state-categories">
+                  <a href="/categories/index.html">
+                    
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">13</span>
+                    <span class="site-state-item-name">分类</span>
+                  </a>
+                </div>
+              
+
+              
+                
+                
+                <div class="site-state-item site-state-tags">
+                  <a href="/tags/index.html">
+                    
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">172</span>
+                    <span class="site-state-item-name">标签</span>
+                  </a>
+                </div>
+              
+            </nav>
           
-        </div>
 
-        
-        
-
-        
-        
-          <div class="links-of-blogroll motion-element links-of-blogroll-inline">
-            <div class="links-of-blogroll-title">
-              <i class="fa  fa-fw fa-globe"></i>
-              敬礼也有自己写字的地方，欢迎移步
+          
+            <div class="feed-link motion-element">
+              <a href="/atom.xml" rel="alternate">
+                <i class="fa fa-rss"></i>
+                RSS
+              </a>
             </div>
-            <ul class="links-of-blogroll-list">
+          
+
+          
+            <div class="links-of-author motion-element">
               
-                <li class="links-of-blogroll-item">
-                  <a href="http://lolilukia.com/" title="lolilukia" target="_blank">lolilukia</a>
-                </li>
+                <span class="links-of-author-item">
+                  <a href="https://twitter.com/liki_wang" target="_blank" title="Twitter" rel="external nofollow"><i class="fa fa-fw fa-twitter"></i>Twitter</a>
+                  
+                </span>
               
-            </ul>
-          </div>
-        
+                <span class="links-of-author-item">
+                  <a href="http://weibo.com/recwangyin" target="_blank" title="Weibo" rel="external nofollow"><i class="fa fa-fw fa-weibo"></i>Weibo</a>
+                  
+                </span>
+              
+                <span class="links-of-author-item">
+                  <a href="https://www.zhihu.com/people/wang-peng-50-40" target="_blank" title="Zhihu" rel="external nofollow"><i class="fa fa-fw fa-globe"></i>Zhihu</a>
+                  
+                </span>
+              
+                <span class="links-of-author-item">
+                  <a href="https://webview.tech" target="_blank" title="播客" rel="external nofollow"><i class="fa fa-fw fa-headphones"></i>播客</a>
+                  
+                </span>
+              
+                <span class="links-of-author-item">
+                  <a href="mailto:liki_wang@foxmail.com" target="_blank" title="邮件" rel="external nofollow"><i class="fa fa-fw fa-envelope"></i>邮件</a>
+                  
+                </span>
+              
+            </div>
+          
 
-        
+          
+          
 
+          
+          
+            <div class="links-of-blogroll motion-element links-of-blogroll-block">
+              <div class="links-of-blogroll-title">
+                <i class="fa  fa-fw fa-link"></i>
+                敬礼也有自己写字的地方，欢迎移步
+              </div>
+              <ul class="links-of-blogroll-list">
+                
+                  <li class="links-of-blogroll-item">
+                    <a href="http://lolilukia.com/" title="lolilukia" target="_blank">lolilukia</a>
+                  </li>
+                
+              </ul>
+            </div>
+          
 
+          
+            
+          
+          
+
+        </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#需求"><span class="nav-number">1.</span> <span class="nav-text">需求</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#数据来源"><span class="nav-number">2.</span> <span class="nav-text">数据来源</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#工具"><span class="nav-number">3.</span> <span class="nav-text">工具</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#方法"><span class="nav-number">4.</span> <span class="nav-text">方法</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-Web-Scraper"><span class="nav-number">4.1.</span> <span class="nav-text">1. Web Scraper</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-选择爬取页面"><span class="nav-number">4.2.</span> <span class="nav-text">2. 选择爬取页面</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-选择器鼠标点选所爬元素与子元素"><span class="nav-number">4.3.</span> <span class="nav-text">3. 选择器鼠标点选所爬元素与子元素</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-运行-Scrape"><span class="nav-number">4.4.</span> <span class="nav-text">4. 运行 Scrape</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#5-下载-csv-文件"><span class="nav-number">4.5.</span> <span class="nav-text">5. 下载 csv 文件</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#注意分页"><span class="nav-number">5.</span> <span class="nav-text">注意分页</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#爬虫导出与导入"><span class="nav-number">6.</span> <span class="nav-text">爬虫导出与导入</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
@@ -754,19 +1180,55 @@ Scrape
 
     <footer id="footer" class="footer">
       <div class="footer-inner">
-        <div class="copyright" >
-  
-  &copy;  2015 - 
-  <span itemprop="copyrightYear">2018</span>
-  <span class="with-love">
+        <div class="copyright">&copy; 2015 – <span itemprop="copyrightYear">2018</span>
+  <span class="with-love" id="animate">
     <i class="fa fa-heart"></i>
   </span>
   <span class="author" itemprop="copyrightHolder">王隐在录音</span>
+
+  
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item-icon">
+      <i class="fa fa-area-chart"></i>
+    </span>
+    
+      <span class="post-meta-item-text">站点总字数：</span>
+    
+    <span title="站点总字数">120k</span>
+  
+
+  
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item-icon">
+      <i class="fa fa-coffee"></i>
+    </span>
+    
+      <span class="post-meta-item-text">站点阅读时长 &asymp;</span>
+    
+    <span title="站点阅读时长">1:49</span>
+  
 </div>
+
+
+  
+
+
+
+
+
+
+
 
 
 
         
+
+
+
+
+
+
+
 
         
       </div>
@@ -778,6 +1240,11 @@ Scrape
         
       </div>
     
+
+    
+	
+    
+
     
   </div>
 
@@ -797,79 +1264,61 @@ Scrape
 
 
 
-  
 
 
 
 
-  
-  <script type="text/javascript" src="http://cdn.bootcss.com/jquery/2.1.3/jquery.min.js"></script>
-
-  
-  <script type="text/javascript" src="http://cdn.bootcss.com/fastclick/1.0.6/fastclick.js"></script>
-
-  
-  <script type="text/javascript" src="http://cdn.bootcss.com/jquery_lazyload/1.9.7/jquery.lazyload.js"></script>
-
-  
-  <script type="text/javascript" src="http://cdn.bootcss.com/velocity/1.2.1/velocity.js"></script>
-
-  
-  <script type="text/javascript" src="http://cdn.bootcss.com/velocity/1.2.1/velocity.ui.js"></script>
-
-  
-  <script type="text/javascript" src="https://cdn.staticfile.org/fancybox/2.1.5/jquery.fancybox.js"></script>
-
-
-  
-
-
-  <script type="text/javascript" src="/js/src/utils.js?v=5.1.0"></script>
-
-  <script type="text/javascript" src="/js/src/motion.js?v=5.1.0"></script>
-
-
-
-  
-  
-
-  
-  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.0"></script>
-<script type="text/javascript" src="/js/src/post-details.js?v=5.1.0"></script>
-
-
-
-  
-
-
-  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.0"></script>
-
-
-
-  
-
-
-
-  
 
 
 
 
-	
+
+
+
+
 
 
 
 
 
   
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
 
 
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=6.4.0"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=6.4.0"></script>
+
+
+
+  
+  
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=6.4.0"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=6.4.0"></script>
 
 
 
   
 
 
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=6.4.0"></script>
 
 
 
@@ -878,7 +1327,46 @@ Scrape
 
 
   
+
+
+
+
+
+
+
+
+  <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
   
+  
+  <script src="//unpkg.com/valine/dist/Valine.min.js"></script>
+  
+  <script type="text/javascript">
+    var GUEST = ['nick','mail','link'];
+    var guest = 'nick,mail,link';
+    guest = guest.split(',').filter(function (item) {
+      return GUEST.indexOf(item)>-1;
+    });
+    new Valine({
+        el: '#comments' ,
+        verify: false,
+        notify: false,
+        appId: 'wt4e7Uow9CGBV0ABuIoWFjLb-gzGzoHsz',
+        appKey: 'F980d82qtlWJP3pHwYss6uI6',
+        placeholder: '说点什么',
+        avatar:'mm',
+        meta:guest,
+        pageSize:'10' || 10,
+        visitor: false
+    });
+  </script>
+
+
+
+  
+
+
+
+
 
   
 
@@ -888,6 +1376,16 @@ Scrape
 
   
 
+  
+  
+
+  
+
+  
+
+  
+
+  
 
   
 
